@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IntroductionsService } from 'src/app/services/introductions-service.service';
 import { ProjectService } from 'src/app/services/project-service.service';
 
 @Component({
@@ -9,17 +8,12 @@ import { ProjectService } from 'src/app/services/project-service.service';
 })
 export class ProjectspageComponent {
   ProjectList: any = [];
-  ProjectIntroduction: any;
   
-  constructor(private projectService: ProjectService, private introductionService: IntroductionsService) {}
+  constructor(private projectService: ProjectService) {}
 
   ngOnInit(){
     this.projectService.getProjectsData().subscribe(projectData=>{
       this.ProjectList = projectData
-    })
-
-    this.introductionService.getIntroductionsData().subscribe(introductionsData=>{
-      this.ProjectIntroduction = introductionsData
     })
   }
 }

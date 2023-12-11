@@ -12,10 +12,16 @@ import { ContactmepageComponent } from './pages/contactmepage/contactmepage.comp
 import { HexagonComponent } from './components/hexagon/hexagon.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TestHexagonComponent } from './components/test-hexagon/test-hexagon.component';
 import { TextBlockComponent } from './components/text-block/text-block.component';
 import { CertificateCardComponent } from './components/certificate-card/certificate-card.component';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -36,7 +42,15 @@ import { CertificateCardComponent } from './components/certificate-card/certific
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'it',
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+    }
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

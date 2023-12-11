@@ -1,34 +1,31 @@
-import { Component, OnInit } from '@angular/core';
-import { IntroductionsService } from 'src/app/services/introductions-service.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-homepage',
   templateUrl: './homepage.component.html',
   styleUrls: ['./homepage.component.scss']
 })
-export class HomepageComponent implements OnInit {
+export class HomepageComponent {
   hexagons = [
     {
-      title: 'Chi Sono',
+      title: 'aboutme_title',
       link: 'about_me',
     },
     {
-      title: 'Progetti',
+      title: 'projects_title',
       link: 'projects',
     },
     {
-      title: 'Attestati',
+      title: 'certificates_title',
       link: 'certificates',
     },
     {
-      title: 'Dettagli',
+      title: 'details_title',
       link: 'details',
     },
     {
-      title: 'Contattami',
+      title: 'contactme_title',
       link: 'contact_me',
     },
   ];
-
-  ngOnInit(): void {}
 }

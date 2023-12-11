@@ -3,7 +3,7 @@
     <div class="inner-page">
         <div *ngFor="let hexagon of hexagons" class="hexagon"> 
             <a [href]="hexagon.link">
-                {{ hexagon.title }}
+                {{ hexagon.title | translate }}
             </a>
         </div>  
     </div>
