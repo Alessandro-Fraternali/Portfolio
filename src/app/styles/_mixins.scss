@@ -1,0 +1,10 @@
+@import 'colors';
+
+@mixin on-off-text {
+    color: $text-color;
+    transition: 0.6s;
+
+    &:hover{
+        color: $accent-color;
+    }
+}

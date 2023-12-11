@@ -1,0 +1,10 @@
+<app-header></app-header>
+<div class="page-container">
+    <div class="inner-page">
+        <div *ngFor="let hexagon of hexagons" class="hexagon"> 
+            <a [href]="hexagon.link">
+                {{ hexagon.title }}
+            </a>
+        </div>  
+    </div>
+</div>

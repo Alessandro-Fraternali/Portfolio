@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Certificato1",
+        "img": "../assets/images/marathon.svg",
+        "site_link": "",
+        "code_link": ""
+    },
+    {
+        "title": "Certificato2",
+        "img": "../assets/images/vergil.svg"
+    },
+    {
+        "title": "Certificato3",
+        "img": "../assets/images/pokeball.svg"
+    }
+]

@@ -1,0 +1,51 @@
+@import '../../../styles.scss';
+
+.hexagon {
+    position: relative;
+    width: 190px;
+    height: 109.70px;
+    background-color: $text-color;
+    margin: 54.85px 0;
+    border-left: solid 10px $text-color;
+    border-right: solid 10px $text-color;
+    transition: 0.5s;
+
+    &:hover{
+        border-color: $accent-color;
+
+        &:before, &:after {
+            border-top-color: $accent-color;
+            border-right-color: $accent-color;
+            border-bottom-color: $accent-color;
+            border-left-color: $accent-color;
+        }
+    }
+ }
+ .hexagon:before,
+ .hexagon:after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    width: 134.35px;
+    height: 134.35px;
+    -webkit-transform: scaleY(0.5774) rotate(-45deg);
+    -ms-transform: scaleY(0.5774) rotate(-45deg);
+    transform: scaleY(0.5774) rotate(-45deg);
+    background-color: inherit;
+    left: 17.8249px;
+    transition: 0.5s;
+ }
+ .hexagon:before {
+    top: -67.1751px;
+    border-top: solid 14.1421px $text-color;
+    border-right: solid 14.1421px $text-color;
+ }
+ .hexagon:after {
+    bottom: -67.1751px;
+    border-bottom: solid 14.1421px $text-color;
+    border-left: solid 14.1421px $text-color;
+ }
+ *,*:before,*:after {
+    box-sizing:border-box;
+ }
+ 

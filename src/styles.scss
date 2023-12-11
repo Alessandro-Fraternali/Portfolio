@@ -1,0 +1,18 @@
+@import 'app/styles/animations';
+@import 'app/styles/colors';
+@import 'app/styles/fonts';
+@import 'app/styles/mixins';
+@import 'app/styles/responsive';
+@import 'app/styles/typography';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-container{
+    margin-top: 50px;
+    // width: 100vw;
+    background-color: pink;
+}

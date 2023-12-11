@@ -1,0 +1,7 @@
+<app-header></app-header>
+<div class="page-container">
+    <div class="inner-page">
+        <h2> {{ CertificateIntroduction[2].title }} </h2>
+        <app-certificate-card *ngFor="let certificateCard of CertificateList" [certificateCard]="certificateCard"></app-certificate-card>
+    </div>
+</div>
