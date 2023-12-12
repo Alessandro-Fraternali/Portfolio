@@ -6,19 +6,18 @@ a{
 }
 
 .page-container{
-    height: 100vh;
+    height: calc(100vh - 50px);
     display: flex;
     justify-content: center;
     align-items: center;
 
     .inner-page{
         width: 50%;
-        height: 200px;
-        background-color: cornflowerblue;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-
+        gap: 10px;
+        
         .hexagon {
             position: relative;
             width: 190px;
@@ -31,9 +30,12 @@ a{
             display: flex;
             justify-content: center;
             align-items: center;
-        
+            margin-top: revert-layer;
+            background-image: url('../../../assets/images/placeholder.jpg');
+            
             &:hover{
                 border-color: $accent-color;
+                cursor: pointer;
         
                 &:before, &:after {
                     border-top-color: $accent-color;
@@ -41,10 +43,20 @@ a{
                     border-bottom-color: $accent-color;
                     border-left-color: $accent-color;
                 }
+                
+                a{
+                    color: $accent-color;
+                }
             }
 
             a{
-                z-index: 3;
+                z-index: 2;
+                text-decoration: none;
+                color: $text-color;
+                font-family: $font-default;
+                transition: 0.5s;
+                text-align: center;
+                font-size: 20px;
             }
          }
          .hexagon:before,
@@ -60,6 +72,7 @@ a{
             background-color: inherit;
             left: 17.8249px;
             transition: 0.5s;
+            background-image: url('../../../assets/images/placeholder.jpg');
          }
          .hexagon:before {
             top: -67.1751px;
