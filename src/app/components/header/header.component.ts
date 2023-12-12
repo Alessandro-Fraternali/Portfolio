@@ -7,25 +7,24 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  // Dichiarazione della proprietà translate
-  translate: TranslateService;
+  activeLanguage: string; // Aggiungi questa variabile
 
-  constructor(translate: TranslateService) {
-    this.translate = translate;
+  constructor(private translate: TranslateService) {
+    this.activeLanguage = 'it'; // Imposta la lingua predefinita
     this.translate.setDefaultLang('it');
   }
 
   ngOnInit() {
-    // Leggi la lingua memorizzata nel localStorage e imposta la lingua
     const storedLang = localStorage.getItem('lang');
     if (storedLang) {
+      this.activeLanguage = storedLang; // Imposta la lingua memorizzata come lingua attiva
       this.translate.use(storedLang);
     }
   }
 
-  switchLanguage(language: string){
-    // Salva la lingua nel localStorage
+  switchLanguage(language: string) {
     localStorage.setItem('lang', language);
+    this.activeLanguage = language; // Imposta la lingua attiva quando viene cambiata
     this.translate.use(language);
   }
 }

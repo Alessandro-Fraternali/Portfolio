@@ -1,10 +1,12 @@
 <app-header></app-header>
 <div class="page-container">
-    <div class="inner-page">
-        <div *ngFor="let hexagon of hexagons" class="hexagon"> 
-            <a [href]="hexagon.link">
+    <div class="hexagons-container">
+        <div *ngFor="let hexagon of hexagons" class="hexagon">
+            <div class="inner-hexagon">
+              <a [href]="hexagon.link" class="hexagon-link">
                 {{ hexagon.title | translate }}
-            </a>
-        </div>  
+              </a>
+            </div>
+          </div> 
     </div>
 </div>

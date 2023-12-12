@@ -1,7 +1,7 @@
 <header>
-    <a href="/homepage">Torna alla home</a>
+    <a href="/homepage">ALESSANDRO FRATERNALI</a>
     <ul>
-        <li (click)="switchLanguage('it')">ITA</li>
-        <li (click)="switchLanguage('en')">ENG</li>
+        <li (click)="switchLanguage('it')" [class.active]="activeLanguage === 'it'">ITA</li>
+        <li (click)="switchLanguage('en')" [class.active]="activeLanguage === 'en'">ENG</li>
     </ul>
 </header>

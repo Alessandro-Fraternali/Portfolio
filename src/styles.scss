@@ -4,16 +4,17 @@
 @import 'app/styles/mixins';
 @import 'app/styles/responsive';
 @import 'app/styles/typography';
+@import 'app/styles/variables';
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: $default-font;
 }
 
 .page-container{
-    margin-top: 50px;
-    // width: 100vw;
-    // background-color: $background-color;
-    background-color: rgb(32, 32, 32);
+    height: calc(100vh - $header-height);
+    margin-top: $header-height;
+    background-color: $background-color;
 }
