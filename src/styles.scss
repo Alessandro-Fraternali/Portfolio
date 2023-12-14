@@ -13,8 +13,46 @@
     font-family: $default-font;
 }
 
+html{
+    background-color: $background-color;
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.page-container::-webkit-scrollbar {
+  width: 6px;
+}
+.page-container::-webkit-scrollbar-thumb {
+  background-color: $accent-color;
+}
+
 .page-container{
     height: calc(100vh - $header-height);
     margin-top: $header-height;
     background-color: $background-color;
+    overflow-y: scroll;
+    
+    .inner-page{
+        background-color: $background-color;
+        padding: $inner-container;
+        position: relative;
+    }
+}
+
+h2, h3, h4, h5, h6{
+  color: $text-color;
+  font-weight: normal;
+  @include responsive-subtitle;
+}
+
+p, li{
+  color: $text-color;
+  @include responsive-text
+}
+
+a{
+  color: $text-color;
+  @include responsive-anchor;
 }

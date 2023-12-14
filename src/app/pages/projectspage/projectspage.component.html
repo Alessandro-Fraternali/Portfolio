@@ -2,8 +2,9 @@
 <div class="page-container">
     <div class="inner-page">
         <h2>{{ 'projects_intro' | translate }}</h2>
-        <p>{{ 'projects_visit_the_site' | translate }}</p>
-        <p>{{ 'projects_explore_the_code' | translate }}</p>
-        <app-project-card *ngFor="let projectCard of ProjectList" [projectCard]="projectCard"></app-project-card>
+        <div class="project-cards-container">
+            <app-project-card *ngFor="let projectCard of ProjectList" [projectCard]="projectCard"></app-project-card>
+        </div>
+        <app-home-button></app-home-button>
     </div>
 </div>

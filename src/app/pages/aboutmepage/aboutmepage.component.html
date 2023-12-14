@@ -3,6 +3,12 @@
     <div class="inner-page">
         <h2>{{ 'aboutme_intro' | translate }}</h2>
         <p>{{ 'aboutme_text' | translate }}</p>
-        <app-test-hexagon></app-test-hexagon>
+        <ul>
+            <li *ngFor="let skill of SkillsList">{{ skill.title }}</li>
+        </ul>
+        <div class="introduction-container">
+
+        </div>
+        
     </div>
 </div>

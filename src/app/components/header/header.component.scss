@@ -10,24 +10,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 30px;
     border-bottom: 3px solid $accent-color;
+    z-index: 10;
 
-    a{
-        @include on-off-text;
-        font-size: 24px
-    }
-
-    p{
-        @include on-off-text;
+    h1{
+      a{
+        color: $accent-color;
+        text-decoration: none;
+        @include responsive-title;
+      }
     }
 
     ul {
         display: flex;
         list-style: none;
+        gap: 6px;
     
         li {
-          margin-left: 30px;
           cursor: pointer;
           @include on-off-text;
     

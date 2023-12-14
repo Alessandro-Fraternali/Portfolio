@@ -1,9 +1,15 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SkillsServiceService {
+export class SkillsService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  getSkillsData(){
+    return this.http.get('../../assets/skills-list.json')
+  }
 }
+

@@ -1,5 +1,64 @@
+@import 'responsive';
+
 $default-font: 'Orbitron', sans-serif;
 
 :root {
   --font-family-default: #{$default-font};
+}
+
+$mobile-title: 22px;
+$desktop-title: 24px;
+$mobile-subtitle: 18px;
+$desktop-subtitle: 20px;
+$mobile-anchor: 16px;
+$desktop-anchor: 18px;
+$mobile-text: 14px;
+$desktop-text: 16px;
+
+@mixin responsive-title{
+  font-size: $mobile-title;
+
+  @include laptop {
+      font-size: $desktop-title;
+  }
+
+  @include desktop {
+      font-size: $desktop-title;
+  }
+}
+
+@mixin responsive-subtitle{
+  font-size: $mobile-subtitle;
+
+  @include laptop {
+      font-size: $desktop-subtitle;
+  }
+
+  @include desktop {
+      font-size: $desktop-subtitle;
+  }
+}
+
+@mixin responsive-anchor{
+  font-size: $mobile-anchor;
+
+  @include laptop {
+      font-size: $desktop-anchor;
+  }
+
+  @include desktop {
+      font-size: $desktop-anchor;
+  }
+}
+
+@mixin responsive-text{
+  font-size: $mobile-text;
+
+  @include laptop {
+      font-size: $desktop-text;
+  }
+
+  @include desktop {
+      font-size: $desktop-text;
+  }
 }

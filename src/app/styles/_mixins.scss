@@ -2,9 +2,8 @@
 
 @mixin on-off-text {
     color: $text-color;
-    transition: 0.6s;
+    transition: $transition;
     text-decoration: none;
-    font-style: 20px;
 
     &:hover{
         color: $accent-color;

@@ -13,11 +13,11 @@ import { HexagonComponent } from './components/hexagon/hexagon.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { TestHexagonComponent } from './components/test-hexagon/test-hexagon.component';
 import { TextBlockComponent } from './components/text-block/text-block.component';
 import { CertificateCardComponent } from './components/certificate-card/certificate-card.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HomeButtonComponent } from './components/home-button/home-button.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -35,9 +35,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     HexagonComponent,
     HeaderComponent,
     ProjectCardComponent,
-    TestHexagonComponent,
     TextBlockComponent,
-    CertificateCardComponent
+    CertificateCardComponent,
+    HomeButtonComponent
   ],
   imports: [
     BrowserModule,

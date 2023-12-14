@@ -1,0 +1,70 @@
+@import '../../../styles.scss';
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    // height: 210px;
+    justify-content: space-around;
+    align-items: center;
+
+    &:hover .project-card-img img{
+        filter: grayscale(0);
+        border-color: $accent-color;
+    }
+
+    &:hover .project-card-img .project-card-buttons a{
+        opacity: 1;
+    }
+
+    &:hover h3{
+        color: $accent-color;
+    }
+
+    .project-card-img{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: relative;
+        height: 180px;
+        width: 300px;
+        padding: 20px;
+
+        img{
+            transition: $transition;
+            position: absolute;
+            filter: grayscale(1);
+            border-radius: 10px;
+            border: 2px solid $text-color;
+        }
+        
+        .project-card-buttons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            min-width: 300px;
+            height: 180px;
+
+            a{
+                z-index: 2;
+                padding: 6px;
+                border-radius: 6px;
+                @include on-off-text;
+                border: 2px solid $text-color;
+                background-color: $background-color;
+                opacity: 0;
+                text-align: center;
+                width: 40%;
+    
+                &:hover{
+                    border-color: $accent-color;
+                }
+            }
+        }
+    }
+
+    h3{
+        transition: $transition;
+        @include responsive-title;
+        margin-top: 5px;
+    }
+}

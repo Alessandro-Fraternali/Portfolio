@@ -1,0 +1,16 @@
+@import '../../../styles.scss';
+
+a{
+    padding: 10px;
+    background-color: $background-color;
+    color: $text-color;
+    border: 1px solid $text-color;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    @include on-off-text;
+
+    &:hover{
+        border-color: $accent-color;
+    }
+}
