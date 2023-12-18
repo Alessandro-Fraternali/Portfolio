@@ -1,5 +1,50 @@
+@import 'responsive';
+
 //hexagons
-$hexagon-lg: 180px;
+$hexagon-xs: 130px;
+$hexagon-sm: 160px;
+$hexagon-md: 100px;
+$hexagon-lg: 163px;
+$hexagon-xl: 180px;
+$hexagon-xxl: 225px;
+
+@mixin responsive-hexagon{
+
+    @include smaller-smartphone{
+        width: $hexagon-xs;
+        height: $hexagon-xs;
+    }
+
+    @include smartphone {
+        width: $hexagon-sm;
+        height: $hexagon-sm;
+    }
+
+    @include tablet {
+        width: $hexagon-lg;
+        height: $hexagon-lg;
+    }
+
+    @include laptop {
+        width: $hexagon-lg;
+        height: $hexagon-lg;
+    }
+
+    @media (min-width: 1370px) and (max-width: 1399px) {
+        width: $hexagon-xl;
+        height: $hexagon-xl;
+    }
+
+    @include desktop {
+        width: $hexagon-xxl;
+        height: $hexagon-xxl;
+    }
+
+    @include bigger-desktop {
+        width: $hexagon-xxl;
+        height: $hexagon-xxl;
+    }
+}
 
 // header
 $header-height: 60px;

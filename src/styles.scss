@@ -38,6 +38,10 @@ body{
         background-color: $background-color;
         padding: $inner-container;
         position: relative;
+
+        h2{
+          padding: 40px 0;
+        }
     }
 }
 

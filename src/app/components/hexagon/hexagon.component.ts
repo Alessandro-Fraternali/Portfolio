@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-hexagon',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./hexagon.component.scss']
 })
 export class HexagonComponent {
-
+  @Input() hexagon: any;
+  constructor() {}
 }

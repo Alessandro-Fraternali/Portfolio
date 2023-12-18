@@ -11,5 +11,19 @@
     "details_title": "Dietro le quinte",
     "details_intro": "Introduzione al dietro le quinte",
     "details_text": "Testo del dietro le quinte",
-    "contactme_title": "Contattami"
+    "contactme_title": "Contattami",
+    "timeline":{
+        "title1": "Primo titolo timeline",
+        "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+        "title2": "Secondo titolo timeline",
+        "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+        "title3": "Terzo titolo timeline",
+        "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+        "title4": "Quarto titolo timeline",
+        "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+        "title5": "Quinto titolo timeline",
+        "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+        "title6": "Sesto titolo timeline",
+        "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
+    }
 }

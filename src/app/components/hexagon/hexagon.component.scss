@@ -1,9 +1,77 @@
 @import '../../../styles.scss';
 
-p{
-    font-family: $default-font;
-    text-transform: uppercase;
-    padding: 2%;
+.hexagon {
+    @include responsive-hexagon;
+    position: relative;
     background-color: $background-color;
-    @include on-off-text;
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+    &:hover{
+      background-color: $accent-color;
+    }
+
+    &:hover .inner-hexagon::before {
+      transform: scale(0.94);
+    }
+  
+    .inner-hexagon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+  
+    .inner-hexagon::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../assets/images/placeholder2.jpg");
+      transition: $transition;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    }
+  
+    .hexagon-link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+      @include on-off-text;
+      text-align: center;
+    }  
+}
+
+/* Stili specifici per gli ultimi due esagoni */
+.hexagon:nth-last-child(-n+2) {
+    margin-top: -46px;
+
+    @include smaller-smartphone{
+      margin-top: -40px;
+    }
+
+    @include smartphone{
+      margin-top: -42px;
+    }
+
+    @include tablet{
+      margin-top: -41px;
+    }
+
+    @include laptop{
+      margin-top: -43px;
+    }
+
+    @include desktop{
+      margin-top: -58px;
+    }
+    
+    @include bigger-desktop{
+      margin-top: -58px;
+    }
 }

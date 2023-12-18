@@ -1,0 +1,57 @@
+@import '../../../styles.scss';
+.page-container{
+    overflow-y: hidden;
+
+    .inner-page{
+        display: grid;
+        overflow-y: hidden;
+    
+        .info-container{
+            height: calc(100vh - $header-height * 4);
+            display: grid;
+            grid-template-columns: 3fr 3px 1fr;
+    
+            .introduction-container{
+                height: 100%;
+                overflow-y: auto;
+            }
+    
+            .introduction-container::-webkit-scrollbar {
+                width: 6px;
+            }
+            
+            .introduction-container::-webkit-scrollbar-thumb {
+            background-color: $accent-color;
+            }
+    
+            .separator{
+                height: 100%;
+                width: 3px;
+                background-color: $accent-color;
+            }
+    
+            .skills-list-container{
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                padding-left: 20px;
+                
+                ul{
+                    list-style-type: none;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 6px;
+    
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,6 +3,11 @@
     <div class="inner-page">
         <h2>{{ 'details_intro' | translate }}</h2>
         <p>{{ 'details_text' | translate }}</p>
+        <div class="timeline-container">
+            <div *ngFor="let timelineElement of timelineArray" class="timeline-element">
+                <h2>{{ timelineElement.title | translate }}</h2>
+                <p>{{ timelineElement.text | translate }}</p>
+            </div>
+        </div>
     </div>
 </div>
-

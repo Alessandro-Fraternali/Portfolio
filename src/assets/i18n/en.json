@@ -11,5 +11,19 @@
     "details_title": "Backstage",
     "details_intro": "Backstage introduction",
     "details_text": "Backstage long text",
-    "contactme_title": "Contact me"
+    "contactme_title": "Contact me",
+    "timeline":{
+        "title1": "First titolo timeline",
+        "text1": "First testo timeline",
+        "title2": "Second titolo timeline",
+        "text2": "Second testo timeline",
+        "title3": "Third titolo timeline",
+        "text3": "Third testo timeline",
+        "title4": "Fourth titolo timeline",
+        "text4": "Fourth testo timeline",
+        "title5": "Fifth titolo timeline",
+        "text5": "Fifth testo timeline",
+        "title6": "Sixth titolo timeline",
+        "text6": "Sixth testo timeline"
+    }
 }

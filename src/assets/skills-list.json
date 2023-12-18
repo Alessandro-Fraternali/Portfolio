@@ -1,11 +1,82 @@
 [
     {
-        "title": "HTML"
+        "title": "HTML5",
+        "icon": "../assets/images/icons/html5.png"
     },
     {
-        "title": "CSS"
+        "title": "CSS3",
+        "icon": "../assets/images/icons/css3.png"
     },
     {
-        "title": "JS"
+        "title": "SASS",
+        "icon": "../assets/images/icons/sass.png"
+    },
+    {
+        "title": "JavaScript",
+        "icon": "../assets/images/icons/js.png"
+    },
+    {
+        "title": "jQuery",
+        "icon": "../assets/images/icons/jquery.png"
+    },
+    {
+        "title": "TypeScript",
+        "icon": "../assets/images/icons/typescript.png"
+    },
+    {
+        "title": "Angular",
+        "icon": "../assets/images/icons/angular.png"
+    },
+    {
+        "title": "RxJS",
+        "icon": "../assets/images/icons/rxjs.png"
+    },
+    {
+        "title": "Material",
+        "icon": "../assets/images/icons/material.png"
+    },
+    {
+        "title": "Bootstrap",
+        "icon": "../assets/images/icons/bootstrap.png"
+    },
+    {
+        "title": "WordPress",
+        "icon": "../assets/images/icons/wordpress.png"
+    },
+    {
+        "title": "Laravel",
+        "icon": "../assets/images/icons/laravel.png"
+    },
+    {
+        "title": "Vue",
+        "icon": "../assets/images/icons/vue.png"
+    },
+    {
+        "title": "React",
+        "icon": "../assets/images/icons/react.png"
+    },
+    {
+        "title": "PHP",
+        "icon": "../assets/images/icons/php.png"
+    },
+    {
+        "title": "SQL",
+        "icon": "../assets/images/icons/sql.png"
+    },
+    {
+        "title": "GitHub",
+        "icon": "../assets/images/icons/github.png"
+    },
+    {
+        "title": "GitLab",
+        "icon": "../assets/images/icons/gitlab.png"
+    },
+    {
+        "title": "Photoshop",
+        "icon": "../assets/images/icons/photoshop.png"
+    },
+    {
+        "title": "3DStudio Max",
+        "icon": "../assets/images/icons/3dsm.png"
     }
 ]

@@ -1,0 +1,30 @@
+@import '../../../styles.scss';
+
+.inner-page{
+    .timeline-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .timeline-element{
+            height: 100px;
+            width: 50%;
+
+            &:nth-child(odd) {
+                text-align: right;
+            }
+
+            &:nth-child(even) {
+                align-self: flex-end;
+            }
+
+            h2{
+                padding: 10px 0;
+            }
+
+            p{
+                text-align: center;
+            }
+        }
+    }
+}
