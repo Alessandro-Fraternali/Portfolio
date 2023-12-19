@@ -1,5 +1,5 @@
-
-.side-slide-out{
+//
+.alternated-side-slide-out{
     opacity: 0;
     transition: 1000ms;
 
@@ -12,7 +12,7 @@
     }
 }
 
-.side-slide-in{
+.alternated-side-slide-in{
     opacity: 1;
 
     &:nth-child(odd){
@@ -25,7 +25,19 @@
 }
 
 //
+.right-slide-out{
+    opacity: 0;
+    // transition: calc(var(--order) * 10 + 200ms);
+    transition: calc(var(--order) * 50ms + 300ms);
+    transform: translateX(100%);
+}
 
+.right-slide-in{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+//
 .scale-out{
     opacity: 0;
     transform: scale(0);

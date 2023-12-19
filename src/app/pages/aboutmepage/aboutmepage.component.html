@@ -20,10 +20,10 @@
             <div class="separator"></div>
             <div class="skills-list-container">
                 <ul>
-                    <li *ngFor="let skill of SkillsList">
+                    <li #rightSlideOut class="right-slide-out" *ngFor="let skill of SkillsList; let i = index" [style.--order]="i + 1">
                         <img [src]="skill.icon" [alt]="skill.title">
                         {{ skill.title }}
-                    </li>
+                    </li>                   
                 </ul>
             </div>
         </div>        

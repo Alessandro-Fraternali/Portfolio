@@ -86,7 +86,7 @@ export class DetailspageComponent {
       entries.forEach((entry) => {
     
         if (entry.isIntersecting) {
-          entry.target.classList.add("side-slide-in");
+          entry.target.classList.add("alternated-side-slide-in");
         } else {
           // entry.target.classList.remove("side-slide");
         }
@@ -94,7 +94,7 @@ export class DetailspageComponent {
     });
     
     document.addEventListener("DOMContentLoaded", () => {
-      const hiddenElements = document.querySelectorAll('.side-slide-out');
+      const hiddenElements = document.querySelectorAll('.alternated-side-slide-out');
       hiddenElements.forEach((el) => observer.observe(el as Element));
     });
   }
