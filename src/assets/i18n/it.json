@@ -1,29 +1,47 @@
 {
-    "aboutme_title": "Chi sono",
-    "aboutme_intro": "Introduzione del chi sono",
-    "aboutme_text": "Testo lungo del chi sono",
-    "projects_title": "Progetti",
-    "projects_intro": "Introduzione dei progetti",
-    "projects_visit_the_site": "Visita il sito",
-    "projects_explore_the_code": "Esplora il codice",
-    "certificates_title": "Attestati",
-    "certificates_intro": "Introduzione agli attestati",
-    "details_title": "Dietro le quinte",
-    "details_intro": "Introduzione al dietro le quinte",
-    "details_text": "Testo del dietro le quinte",
-    "contactme_title": "Contattami",
-    "timeline":{
-        "title1": "Primo titolo timeline",
-        "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-        "title2": "Secondo titolo timeline",
-        "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-        "title3": "Terzo titolo timeline",
-        "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-        "title4": "Quarto titolo timeline",
-        "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-        "title5": "Quinto titolo timeline",
-        "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-        "title6": "Sesto titolo timeline",
-        "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
+    "aboutme":{
+        "title": "Chi sono",
+        "intro": "Introduzione della pagina Chi Sono",
+        "text": "Biografia"
+    },
+    "projects":{
+        "title": "Progetti",
+        "intro": "Introduzione della pagina Progetti",
+        "visit_the_site": "Visita il sito",
+        "explore_the_code": "Esplora il codice"
+    },
+    "certificates":{
+        "title": "Attestati",
+        "intro": "Introduzione della pagina Attestati",
+        "download_file": "Scarica l'attestato"
+    },
+    "details":{
+        "title": "Dietro le quinte",
+        "intro": "Introduzione della pagina Dietro le quinte",
+        "timeline":{
+            "title1": "Primo titolo timeline",
+            "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title2": "Secondo titolo timeline",
+            "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title3": "Terzo titolo timeline",
+            "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title4": "Quarto titolo timeline",
+            "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title5": "Quinto titolo timeline",
+            "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title6": "Sesto titolo timeline",
+            "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
+        }
+    },
+    "contactme":{
+        "title": "Contattami",
+        "intro": "Introduzione della pagina Contattami",
+        "form":{
+            "your_name": "Tuo nome",
+            "your_email": "Tua email",
+            "subject": "Oggetto della mail",
+            "message": "Tuo messaggio",
+            "button": "Invia mail"
+        }
     }
 }

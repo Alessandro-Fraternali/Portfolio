@@ -1,29 +1,47 @@
 {
-    "aboutme_title": "About me",
-    "aboutme_intro": "About me introduction",
-    "aboutme_text": "About me long text",
-    "projects_title": "Projects",
-    "projects_intro": "Projects introduction",
-    "projects_visit_the_site": "Visit the site",
-    "projects_explore_the_code": "Explore the code",
-    "certificates_title": "Certificates",
-    "certificates_intro": "Certificates introduction",
-    "details_title": "Backstage",
-    "details_intro": "Backstage introduction",
-    "details_text": "Backstage long text",
-    "contactme_title": "Contact me",
-    "timeline":{
-        "title1": "First titolo timeline",
-        "text1": "First testo timeline",
-        "title2": "Second titolo timeline",
-        "text2": "Second testo timeline",
-        "title3": "Third titolo timeline",
-        "text3": "Third testo timeline",
-        "title4": "Fourth titolo timeline",
-        "text4": "Fourth testo timeline",
-        "title5": "Fifth titolo timeline",
-        "text5": "Fifth testo timeline",
-        "title6": "Sixth titolo timeline",
-        "text6": "Sixth testo timeline"
+    "aboutme":{
+        "title": "About Me",
+        "intro": "Introduction to the About Me page",
+        "text": "Biography"
+    },
+    "projects":{
+        "title": "Projects",
+        "intro": "Introduction to the Projects page",
+        "visit_the_site": "Visit the site",
+        "explore_the_code": "Explore the code"
+    },
+    "certificates":{
+        "title": "Certificates",
+        "intro": "Introduction to the Certificates page",
+        "download_file": "Download the certificate"
+    },
+    "details":{
+        "title": "Behind the Scenes",
+        "intro": "Introduction to the Behind the Scenes page",
+        "timeline":{
+            "title1": "First timeline title",
+            "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title2": "Second timeline title",
+            "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title3": "Third timeline title",
+            "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title4": "Fourth timeline title",
+            "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title5": "Fifth timeline title",
+            "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
+            "title6": "Sixth timeline title",
+            "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
+        }
+    },
+    "contactme":{
+        "title": "Contact Me",
+        "intro": "Introduction to the Contact Me page",
+        "form":{
+            "your_name": "Your name",
+            "your_email": "Your email",
+            "subject": "Email subject",
+            "message": "Your message",
+            "button": "Send email"
+        }
     }
 }

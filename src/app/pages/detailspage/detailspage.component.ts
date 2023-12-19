@@ -8,76 +8,28 @@ import { Component } from '@angular/core';
 export class DetailspageComponent {
   timelineArray = [
     {
-      title: 'timeline.title1',
-      text: 'timeline.text1',
+      title: 'details.timeline.title1',
+      text: 'details.timeline.text1',
     },
     {
-      title: 'timeline.title2',
-      text: 'timeline.text2',
+      title: 'details.timeline.title2',
+      text: 'details.timeline.text2',
     },
     {
-      title: 'timeline.title3',
-      text: 'timeline.text3',
+      title: 'details.timeline.title3',
+      text: 'details.timeline.text3',
     },
     {
-      title: 'timeline.title4',
-      text: 'timeline.text4',
+      title: 'details.timeline.title4',
+      text: 'details.timeline.text4',
     },
     {
-      title: 'timeline.title5',
-      text: 'timeline.text5',
+      title: 'details.timeline.title5',
+      text: 'details.timeline.text5',
     },
     {
-      title: 'timeline.title6',
-      text: 'timeline.text6',
-    },
-    {
-      title: 'timeline.title2',
-      text: 'timeline.text2',
-    },
-    {
-      title: 'timeline.title3',
-      text: 'timeline.text3',
-    },
-    {
-      title: 'timeline.title4',
-      text: 'timeline.text4',
-    },
-    {
-      title: 'timeline.title5',
-      text: 'timeline.text5',
-    },
-    {
-      title: 'timeline.title2',
-      text: 'timeline.text2',
-    },
-    {
-      title: 'timeline.title3',
-      text: 'timeline.text3',
-    },
-    {
-      title: 'timeline.title4',
-      text: 'timeline.text4',
-    },
-    {
-      title: 'timeline.title5',
-      text: 'timeline.text5',
-    },
-    {
-      title: 'timeline.title2',
-      text: 'timeline.text2',
-    },
-    {
-      title: 'timeline.title3',
-      text: 'timeline.text3',
-    },
-    {
-      title: 'timeline.title4',
-      text: 'timeline.text4',
-    },
-    {
-      title: 'timeline.title5',
-      text: 'timeline.text5',
+      title: 'details.timeline.title6',
+      text: 'details.timeline.text6',
     }
   ];
 
@@ -88,7 +40,6 @@ export class DetailspageComponent {
         if (entry.isIntersecting) {
           entry.target.classList.add("alternated-side-slide-in");
         } else {
-          // entry.target.classList.remove("side-slide");
         }
       });
     });
