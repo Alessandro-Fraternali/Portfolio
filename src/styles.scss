@@ -47,24 +47,3 @@ body {
     }
   }
 }
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $text-color;
-  font-weight: normal;
-  @include responsive-subtitle;
-}
-
-p,
-li {
-  color: $text-color;
-  @include responsive-text
-}
-
-a {
-  color: $text-color;
-  @include responsive-anchor;
-}

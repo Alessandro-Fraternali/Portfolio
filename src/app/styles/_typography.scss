@@ -62,3 +62,31 @@ $desktop-text: 16px;
       font-size: $desktop-text;
   }
 }
+
+//regole generiche dei testi
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $text-color;
+  font-weight: normal;
+  @include responsive-subtitle;
+}
+
+p,
+li {
+  letter-spacing: .12em;
+  color: $text-color;
+  @include responsive-text
+}
+
+p{
+  letter-spacing: .14em;
+}
+
+a {
+  color: $text-color;
+  @include responsive-anchor;
+}
