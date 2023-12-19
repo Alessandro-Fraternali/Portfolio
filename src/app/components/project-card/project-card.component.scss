@@ -45,19 +45,7 @@
             height: 180px;
 
             a{
-                z-index: 2;
-                padding: 6px;
-                border-radius: 6px;
-                @include on-off-text;
-                border: 2px solid $text-color;
-                background-color: $background-color;
-                opacity: 0;
-                text-align: center;
-                width: 40%;
-    
-                &:hover{
-                    border-color: $accent-color;
-                }
+                @include button;
             }
         }
     }

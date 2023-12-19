@@ -1,6 +1,4 @@
-<div>
-    <h3>
-        {{ certificateCard.title }}
-    </h3>
-    <img style="height: 30px; width: 30px;" [src]="certificateCard.img" alt="">
-</div>
+<article class="certificate-card">
+    <img [src]="certificateCard.img" [alt]="certificateCard.title">
+    <a [href]="certificateCard.img">Scarica l'attestato</a>
+</article>

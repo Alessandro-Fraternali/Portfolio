@@ -1,0 +1,45 @@
+@import '../../../styles.scss';
+
+.certificate-card{
+    display: grid;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: grayscale(1);
+    transition: $transition;
+    
+    @include laptop{
+        flex-wrap: wrap;
+    }
+
+    &:hover{
+        filter: grayscale(0);
+        cursor: pointer;
+    }
+
+    &:hover a{
+        opacity: 1;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+        justify-self: center
+    }
+
+    a{
+        @include button;
+        width: 100px;
+        position: absolute;
+        align-self: center;
+        justify-self: center;
+        min-height: fit-content;
+        min-width: fit-content;
+        padding: 10px;
+
+        @include laptop{
+            min-width: min-content;
+            width: min-content;
+        }
+    }
+}
