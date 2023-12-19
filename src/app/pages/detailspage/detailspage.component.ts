@@ -80,22 +80,25 @@ export class DetailspageComponent {
       text: 'timeline.text5',
     }
   ];
+
+  ngOnInit(){
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+    
+        if (entry.isIntersecting) {
+          entry.target.classList.add("side-slide-in");
+        } else {
+          // entry.target.classList.remove("side-slide");
+        }
+      });
+    });
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      const hiddenElements = document.querySelectorAll('.side-slide-out');
+      hiddenElements.forEach((el) => observer.observe(el as Element));
+    });
+  }
 }
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-
-    if (entry.isIntersecting) {
-      entry.target.classList.add("side-slide");
-    } else {
-      // entry.target.classList.remove("side-slide");
-    }
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el as Element));
-});
 
 

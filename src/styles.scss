@@ -6,57 +6,63 @@
 @import 'app/styles/typography';
 @import 'app/styles/variables';
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: $default-font;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $default-font;
 }
 
-html{
-    background-color: $background-color;
+html {
+  background-color: $background-color;
 }
 
-body{
-    overflow-y: hidden;
+body {
+  overflow-y: hidden;
 }
 
 .page-container::-webkit-scrollbar {
   width: 6px;
 }
+
 .page-container::-webkit-scrollbar-thumb {
   background-color: $accent-color;
 }
 
-.page-container{
-    height: calc(100vh - $header-height);
-    margin-top: $header-height;
-    background-color: $background-color;
-    overflow-y: scroll;
-    
-    .inner-page{
-        background-color: $background-color;
-        padding: $inner-container;
-        position: relative;
+.page-container {
+  height: calc(100vh - $header-height);
+  margin-top: $header-height;
+  background-color: $background-color;
+  overflow-y: scroll;
 
-        h2{
-          padding: 40px 0;
-        }
+  .inner-page {
+    background-color: $background-color;
+    padding: $inner-container;
+    position: relative;
+
+    h2 {
+      padding: 40px 0;
     }
+  }
 }
 
-h2, h3, h4, h5, h6{
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $text-color;
   font-weight: normal;
   @include responsive-subtitle;
 }
 
-p, li{
+p,
+li {
   color: $text-color;
   @include responsive-text
 }
 
-a{
+a {
   color: $text-color;
   @include responsive-anchor;
 }

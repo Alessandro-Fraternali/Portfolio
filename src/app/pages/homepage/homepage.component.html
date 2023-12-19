@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="page-container">
     <div class="hexagons-container">
-        <app-hexagon *ngFor="let hexagon of hexagons" [hexagon]="hexagon"></app-hexagon>
+        <app-hexagon class="scale-out" *ngFor="let hexagon of hexagons; let i = index" [hexagon]="hexagon" [style.--order]="i + 1"></app-hexagon>
     </div>
 </div>

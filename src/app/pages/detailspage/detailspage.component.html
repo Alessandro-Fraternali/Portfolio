@@ -4,7 +4,7 @@
         <h2>{{ 'details_intro' | translate }}</h2>
         <p>{{ 'details_text' | translate }}</p>
         <div class="timeline-container">
-            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element hidden">
+            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element side-slide-out">
                 <div class="timeline-title">
                     <h2>{{ timelineElement.title | translate }}</h2>
                     <div class="hexa-counter">{{ i + 1}}</div>
