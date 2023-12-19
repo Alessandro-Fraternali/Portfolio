@@ -30,6 +30,72 @@ export class DetailspageComponent {
     {
       title: 'timeline.title6',
       text: 'timeline.text6',
+    },
+    {
+      title: 'timeline.title2',
+      text: 'timeline.text2',
+    },
+    {
+      title: 'timeline.title3',
+      text: 'timeline.text3',
+    },
+    {
+      title: 'timeline.title4',
+      text: 'timeline.text4',
+    },
+    {
+      title: 'timeline.title5',
+      text: 'timeline.text5',
+    },
+    {
+      title: 'timeline.title2',
+      text: 'timeline.text2',
+    },
+    {
+      title: 'timeline.title3',
+      text: 'timeline.text3',
+    },
+    {
+      title: 'timeline.title4',
+      text: 'timeline.text4',
+    },
+    {
+      title: 'timeline.title5',
+      text: 'timeline.text5',
+    },
+    {
+      title: 'timeline.title2',
+      text: 'timeline.text2',
+    },
+    {
+      title: 'timeline.title3',
+      text: 'timeline.text3',
+    },
+    {
+      title: 'timeline.title4',
+      text: 'timeline.text4',
+    },
+    {
+      title: 'timeline.title5',
+      text: 'timeline.text5',
     }
   ];
 }
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+
+    if (entry.isIntersecting) {
+      entry.target.classList.add("side-slide");
+    } else {
+      // entry.target.classList.remove("side-slide");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el as Element));
+});
+
+

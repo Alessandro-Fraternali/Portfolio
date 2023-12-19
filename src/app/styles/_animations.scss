@@ -1,0 +1,24 @@
+.hidden{
+    opacity: 0;
+    transition: 1000ms;
+
+    &:nth-child(odd){
+        transform: translateX(-100%);
+    }
+
+    &:nth-child(even){
+        transform: translateX(100%);
+    }
+}
+
+.side-slide{
+    opacity: 1;
+
+    &:nth-child(odd){
+        transform: translateX(0);
+    }
+
+    &:nth-child(even){
+        transform: translateX(0);
+    }
+}

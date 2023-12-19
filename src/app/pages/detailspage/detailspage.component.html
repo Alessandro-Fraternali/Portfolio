@@ -4,9 +4,14 @@
         <h2>{{ 'details_intro' | translate }}</h2>
         <p>{{ 'details_text' | translate }}</p>
         <div class="timeline-container">
-            <div *ngFor="let timelineElement of timelineArray" class="timeline-element">
-                <h2>{{ timelineElement.title | translate }}</h2>
-                <p>{{ timelineElement.text | translate }}</p>
+            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element hidden">
+                <div class="timeline-title">
+                    <h2>{{ timelineElement.title | translate }}</h2>
+                    <div class="hexa-counter">{{ i + 1}}</div>
+                </div>
+                <div class="timeline-text">
+                    <p>{{ timelineElement.text | translate }}</p>
+                </div>
             </div>
         </div>
     </div>
