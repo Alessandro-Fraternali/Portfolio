@@ -1,6 +1,12 @@
 <app-header></app-header>
 <div class="page-container">
     <div class="inner-page">
-       form qua
+       <div class="form-container" [formGroup]="form">
+        <input formControlName="from_name" [placeholder]="'aboutme_title' | translate" type="text">
+        <input formControlName="from_email" placeholder="Inserisci la tua email" type="mail">
+        <input formControlName="subject" placeholder="Inserisci il titolo della mail" type="text">
+        <textarea formControlName="message" placeholder="Scemochilegge" rows="6"></textarea>
+        <button (click)="send()" type="submit">Manda mail</button>
+       </div>
     </div>
 </div>

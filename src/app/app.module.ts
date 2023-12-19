@@ -18,6 +18,7 @@ import { CertificateCardComponent } from './components/certificate-card/certific
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeButtonComponent } from './components/home-button/home-button.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -43,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       defaultLanguage: 'it',
       loader: {
