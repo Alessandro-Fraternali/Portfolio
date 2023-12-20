@@ -1,70 +1,74 @@
 @import '../../../styles.scss';
 
-.inner-page{
+.page-container{
     overflow-x: hidden;
 
-    .timeline-container{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+    .inner-page{
+        overflow-x: hidden;
 
-        .timeline-element{
-            height: 100px;
-            width: 50%;
-            
-            &:nth-child(odd) {
-                text-align: right;
-                // border-right: 3px solid $accent-color;
-                padding-right: 10px;
+        .timeline-container{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .timeline-element{
+                height: 100px;
+                width: 50%;
                 
-                .timeline-text{
-                    p{
-                        text-align: right;
+                &:nth-child(odd) {
+                    text-align: right;
+                    // border-right: 3px solid $accent-color;
+                    padding-right: 10px;
+                    
+                    .timeline-text{
+                        p{
+                            text-align: right;
+                        }
                     }
                 }
-            }
-            
-            &:nth-child(even) {
-                align-self: flex-end;
-                // border-left: 3px solid $accent-color;
-                padding-left: 10px;
+                
+                &:nth-child(even) {
+                    align-self: flex-end;
+                    // border-left: 3px solid $accent-color;
+                    padding-left: 10px;
+
+                    .timeline-title{
+                        flex-direction: row-reverse;
+                    }
+
+                    .timeline-text{
+                        p{
+                            text-align: left;
+                        }
+                    }
+                }
 
                 .timeline-title{
-                    flex-direction: row-reverse;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 20px;
+                    h2{
+                        padding: 10px 0;
+                    }
+
+                    .hexa-counter{
+                        width: 30px;
+                        height: 30px;
+                        background-color: $accent-color;
+                        color: $background-color;
+                        display: flex;
+                        font-size: 20px;
+                        align-items: center;
+                        justify-content: center;
+                        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+                    }
                 }
 
                 .timeline-text{
                     p{
-                        text-align: left;
+                        text-align: center;
                     }
-                }
-            }
-
-            .timeline-title{
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                gap: 20px;
-                h2{
-                    padding: 10px 0;
-                }
-
-                .hexa-counter{
-                    width: 30px;
-                    height: 30px;
-                    background-color: $accent-color;
-                    color: $background-color;
-                    display: flex;
-                    font-size: 20px;
-                    align-items: center;
-                    justify-content: center;
-                    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-                }
-            }
-
-            .timeline-text{
-                p{
-                    text-align: center;
                 }
             }
         }

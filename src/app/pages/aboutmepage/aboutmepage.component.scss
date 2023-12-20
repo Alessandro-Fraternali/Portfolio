@@ -1,8 +1,10 @@
 @import '../../../styles.scss';
 
 .page-container{
+    overflow-x: hidden;
     .inner-page{
         display: grid;
+        padding: 0 30px 30px 30px;
     
         .info-container{
             height: calc(100vh - $header-height * 4);

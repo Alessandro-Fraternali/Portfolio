@@ -1,13 +1,14 @@
 <app-header></app-header>
 <div class="page-container">
     <div class="inner-page">
-        {{ 'contactme.intro' | translate }}
+        {{ 'contact_me.intro' | translate }}
        <div class="form-container" [formGroup]="form">
-        <input formControlName="from_name" [placeholder]="'contactme.form.your_name' | translate" type="text">
-        <input formControlName="from_email" [placeholder]="'contactme.form.your_email' | translate" type="mail">
-        <input formControlName="subject" [placeholder]="'contactme.form.subject' | translate" type="text">
-        <textarea formControlName="message" [placeholder]="'contactme.form.message' | translate" rows="6"></textarea>
-        <button (click)="send()" type="submit">{{ 'contactme.form.button' | translate}}</button>
+        <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text">
+        <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="mail">
+        <input formControlName="subject" [placeholder]="'contact_me.form.subject' | translate" type="text">
+        <textarea formControlName="message" [placeholder]="'contact_me.form.message' | translate" rows="6"></textarea>
+        <button (click)="send()" type="submit">{{ 'contact_me.form.button' | translate}}</button>
        </div>
     </div>
+    <app-footer [links]="footerLinks"></app-footer>
 </div>

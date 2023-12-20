@@ -8,6 +8,11 @@ import { SkillsService } from 'src/app/services/skills-service.service';
 })
 export class AboutmepageComponent {
   SkillsList: any = [];
+  footerLinks = [
+    { url: '/contact_me', label: 'contact_me.title' },
+    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/projects', label: 'projects.title' },
+  ];
   
   constructor(private skillsService: SkillsService) {}
 
@@ -30,7 +35,7 @@ export class AboutmepageComponent {
     setTimeout(() => {
       const hiddenElements = document.querySelectorAll('.right-slide-out');
       hiddenElements.forEach((el) => observer.observe(el as Element));
-    }, 120);
+    }, 200);
   
   }
 }

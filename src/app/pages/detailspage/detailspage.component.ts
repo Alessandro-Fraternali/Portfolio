@@ -32,6 +32,11 @@ export class DetailspageComponent {
       text: 'details.timeline.text6',
     }
   ];
+  footerLinks = [
+    { url: '/certificates', label: 'certificates.title' },
+    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/contact_me', label: 'contact_me.title' },
+  ];
 
   ngOnInit(){
     const observer = new IntersectionObserver((entries) => {

@@ -8,6 +8,11 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contactmepage.component.scss']
 })
 export class ContactmepageComponent {
+  footerLinks = [
+    { url: '/details', label: 'details.title' },
+    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/about_me', label: 'about_me.title' },
+  ];
 
   form: FormGroup = this.fb.group({
     from_name: "",
@@ -31,3 +36,5 @@ export class ContactmepageComponent {
     this.form.reset();
   }
 }
+
+//https://dashboard.emailjs.com/admin/templates/itkvoue

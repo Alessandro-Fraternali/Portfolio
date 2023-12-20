@@ -19,6 +19,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeButtonComponent } from './components/home-button/home-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -38,7 +39,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     ProjectCardComponent,
     TextBlockComponent,
     CertificateCardComponent,
-    HomeButtonComponent
+    HomeButtonComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

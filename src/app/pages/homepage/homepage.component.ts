@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class HomepageComponent {
   hexagons = [
     {
-      title: 'aboutme.title',
+      title: 'about_me.title',
       link: 'about_me',
     },
     {
@@ -24,7 +24,7 @@ export class HomepageComponent {
       link: 'details',
     },
     {
-      title: 'contactme.title',
+      title: 'contact_me.title',
       link: 'contact_me',
     },
   ];

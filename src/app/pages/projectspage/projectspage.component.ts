@@ -8,6 +8,11 @@ import { ProjectService } from 'src/app/services/project-service.service';
 })
 export class ProjectspageComponent {
   ProjectList: any = [];
+  footerLinks = [
+    { url: '/projects', label: 'projects.title' },
+    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/certificates', label: 'certificates.title' },
+  ];
   
   constructor(private projectService: ProjectService) {}
 

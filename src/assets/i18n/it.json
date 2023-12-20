@@ -1,5 +1,8 @@
 {
-    "aboutme":{
+    "homepage":{
+        "return_button": "Torna alla Homepage"
+    },
+    "about_me":{
         "title": "Chi sono",
         "intro": "Introduzione della pagina Chi Sono",
         "text": "Biografia"
@@ -33,7 +36,7 @@
             "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
         }
     },
-    "contactme":{
+    "contact_me":{
         "title": "Contattami",
         "intro": "Introduzione della pagina Contattami",
         "form":{

@@ -8,6 +8,11 @@ import { CertificatesService } from 'src/app/services/certificates-service.servi
 })
 export class CertificatespageComponent {
   CertificateList: any = [];
+  footerLinks = [
+    { url: '/projects', label: 'projects.title' },
+    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/details', label: 'details.title' },
+  ];
   
   constructor(private certificatesService: CertificatesService) {}
 

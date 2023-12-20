@@ -1,23 +1,27 @@
 @import '../../../styles.scss';
 
-.inner-page{    
-    .project-cards-container{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 30px;
-        row-gap: 40px;
+.page-container{
+    overflow-x: hidden;
 
-        @include smartphone{
-            grid-template-columns: 1fr;
-        }
-        @include tablet{
-            grid-template-columns: repeat(2, 1fr);
-        }
-        @include laptop{
+    .inner-page{    
+        .project-cards-container{
+            display: grid;
             grid-template-columns: repeat(4, 1fr);
-        }
-        @include desktop{
-            grid-template-columns: repeat(5, 1fr);
+            gap: 30px;
+            row-gap: 40px;
+
+            @include smartphone{
+                grid-template-columns: 1fr;
+            }
+            @include tablet{
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include laptop{
+                grid-template-columns: repeat(4, 1fr);
+            }
+            @include desktop{
+                grid-template-columns: repeat(5, 1fr);
+            }
         }
     }
 }
