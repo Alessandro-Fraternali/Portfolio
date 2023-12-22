@@ -10,7 +10,7 @@ $hexagon-xxl: 225px;
 
 @mixin responsive-hexagon{
 
-    @include smaller-smartphone{
+    @media (max-width: 374px){
         width: $hexagon-xs;
         height: $hexagon-xs;
     }
@@ -40,7 +40,7 @@ $hexagon-xxl: 225px;
         height: $hexagon-xxl;
     }
 
-    @include bigger-desktop {
+    @media (min-width: 1865px) {
         width: $hexagon-xxl;
         height: $hexagon-xxl;
     }

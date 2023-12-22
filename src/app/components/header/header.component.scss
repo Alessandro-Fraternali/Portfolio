@@ -20,7 +20,7 @@ header{
         text-decoration: none;
         @include responsive-title;
 
-        @include smaller-smartphone{
+        @media (max-width: 374px){
           display: block;
           height: 20px;
         }

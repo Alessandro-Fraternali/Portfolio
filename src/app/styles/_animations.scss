@@ -27,7 +27,6 @@
 //
 .right-slide-out{
     opacity: 0;
-    // transition: calc(var(--order) * 10 + 200ms);
     transition: calc(var(--order) * 50ms + 300ms);
     transform: translateX(100%);
 }
@@ -41,7 +40,7 @@
 .scale-out{
     opacity: 0;
     transform: scale(0);
-    transition: calc(400ms * var(--order));
+    transition: calc(var(--order) * 150ms + 350ms);
 }
 
 .scale-in{

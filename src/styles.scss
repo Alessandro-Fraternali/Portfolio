@@ -41,9 +41,10 @@ body {
     position: relative;
     overflow-y: hidden;
     overflow-x: hidden;
+    min-height: calc(100vh - 121px);
 
     h2 {
-      padding: 40px 0;
+      padding: 32px 0;
     }
   }
 }

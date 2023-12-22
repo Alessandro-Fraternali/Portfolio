@@ -21,7 +21,7 @@
           grid-template-columns: repeat(4, 1fr);
       }
   
-      @include bigger-desktop{
+      @media (min-width: 1865px){
       grid-template-columns: repeat(4, 1fr);
       }
   

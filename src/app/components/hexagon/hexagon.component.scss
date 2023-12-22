@@ -52,7 +52,7 @@
 .hexagon:nth-last-child(-n+2) {
     margin-top: -46px;
 
-    @include smaller-smartphone{
+    @media (max-width: 374px){
       margin-top: -40px;
     }
 
@@ -72,7 +72,7 @@
       margin-top: -58px;
     }
     
-    @include bigger-desktop{
+    @media (min-width: 1865px){
       margin-top: -58px;
     }
 }

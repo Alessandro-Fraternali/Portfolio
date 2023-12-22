@@ -35,7 +35,7 @@ export class AboutmepageComponent {
     setTimeout(() => {
       const hiddenElements = document.querySelectorAll('.right-slide-out');
       hiddenElements.forEach((el) => observer.observe(el as Element));
-    }, 200);
+    }, 500);
   
   }
 }

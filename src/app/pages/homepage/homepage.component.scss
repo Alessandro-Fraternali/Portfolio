@@ -17,7 +17,7 @@
         gap: 10px;
         // background-color: whit
 
-        @include smaller-smartphone {
+        @media (max-width: 374px) {
             width: 90%;
             gap: 20px;
 
@@ -63,7 +63,7 @@
             width: 49%;
         }
 
-        @include bigger-desktop {
+        @media (min-width: 1865px) {
             width: 37.5%;
             background-color: red;
         }

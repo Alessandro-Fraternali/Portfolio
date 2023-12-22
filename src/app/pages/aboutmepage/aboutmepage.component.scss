@@ -2,15 +2,37 @@
 
 .page-container{
     overflow-x: hidden;
+
+    @include laptop{
+        overflow-y: hidden;
+    }
+    @include desktop{
+        overflow-y: hidden;
+    }
+    
     .inner-page{
         display: grid;
         padding: 0 30px 30px 30px;
     
         .info-container{
-            height: calc(100vh - $header-height * 4);
             display: grid;
-            grid-template-columns: 3fr 3px 1fr;
-    
+            grid-template-rows: auto 3px auto;
+            gap: 20px;
+            
+            @include laptop{
+                height: calc(100vh - $header-height * 4);
+                grid-template-rows: initial;
+                grid-template-columns: 3fr 3px 1fr;
+                gap: 0;
+            }
+            
+            @include desktop{
+                height: calc(100vh - $header-height * 4);
+                grid-template-rows: initial;
+                grid-template-columns: 3fr 3px 1fr;
+                gap: 0;
+            }
+            
             .introduction-container{
                 height: 100%;
                 overflow-y: auto;
@@ -21,13 +43,22 @@
             }
             
             .introduction-container::-webkit-scrollbar-thumb {
-            background-color: $accent-color;
+                background-color: $accent-color;
             }
     
             .separator{
-                height: 100%;
-                width: 3px;
                 background-color: $accent-color;
+                height: 3px;
+                width: 100%;
+
+                @include laptop{
+                    height: 100%;
+                    width: 3px;
+                }
+                @include desktop{
+                    height: 100%;
+                    width: 3px;
+                }
             }
     
             .skills-list-container{
@@ -40,7 +71,15 @@
                     list-style-type: none;
                     display: grid;
                     grid-template-columns: 1fr 1fr;
-                    gap: 6px;
+                    gap: 10px;
+                    
+                    @include laptop{
+                        gap: 6px;
+                    }
+                    
+                    @include desktop{
+                        gap: 6px;
+                    }
     
                     li{
                         display: flex;
