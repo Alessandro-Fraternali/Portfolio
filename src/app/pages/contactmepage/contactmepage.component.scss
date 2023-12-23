@@ -1,3 +1,5 @@
+@import '../../../styles.scss';
+
 .page-container{
     overflow-x: hidden;
 
@@ -6,10 +8,48 @@
             display: flex;
             flex-direction: column;
             gap: 20px;
-            padding-top: 40px;
+            margin: auto;
+
+            @include laptop{
+                width: 60%;
+            }
+
+            @include desktop{
+                width: 60%;
+            }
         
             input, textarea, button{
                 padding: 10px;
+                border-radius: 6px;
+                border: 2px solid $text-color;
+                background-color: $background-color;
+                color: $text-color;
+
+                &:focus-visible {
+                    outline: 0;
+                    border-color: $accent-color;
+                }
+            }
+
+            textarea{
+                height: 300px;
+                
+                @include laptop{
+                    height: 150px;
+                }
+    
+                @include desktop{
+                    // height: 300px;
+                }
+            }
+
+            button{
+                color: $text-color;
+                margin: auto;
+                @include button;
+                opacity: 1;
+                width: 200px;
+                cursor: pointer;
             }
         }
     }

@@ -4,16 +4,23 @@ $default-font: 'Orbitron', sans-serif;
 
 :root {
   --font-family-default: #{$default-font};
+  font-size: 16px;
 }
 
-$mobile-title: 14px;
-$desktop-title: 24px;
-$mobile-subtitle: 18px;
-$desktop-subtitle: 20px;
-$mobile-anchor: 16px;
-$desktop-anchor: 18px;
-$mobile-text: 14px;
-$desktop-text: 16px;
+$mobile-title: 0.875rem; /* Corrisponde a 14px */
+$desktop-title: 1.5rem; /* Corrisponde a 24px */
+
+$mobile-subtitle: 1.125rem; /* Corrisponde a 18px */
+$desktop-subtitle: 1.25rem; /* Corrisponde a 20px */
+
+$mobile-tertiary-title: 1.25rem; /* Corrisponde a 20px */
+$desktop-tertiary-title: 1.25rem; /* Corrisponde a 20px */
+
+$mobile-anchor: 1rem; /* Corrisponde a 16px */
+$desktop-anchor: 1.125rem; /* Corrisponde a 18px */
+
+$mobile-text: 0.875rem; /* Corrisponde a 14px */
+$desktop-text: 1rem; /* Corrisponde a 16px */
 
 @mixin responsive-title{
   font-size: $mobile-title;
@@ -36,6 +43,18 @@ $desktop-text: 16px;
 
   @include desktop {
       font-size: $desktop-subtitle;
+  }
+}
+
+@mixin responsive-tertiary-title{
+  font-size: $mobile-tertiary-title;
+
+  @include laptop {
+      font-size: $desktop-tertiary-title;
+  }
+
+  @include desktop {
+      font-size: $desktop-tertiary-title;
   }
 }
 
@@ -66,10 +85,7 @@ $desktop-text: 16px;
 //regole generiche dei testi
 
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   color: $text-color;
   font-weight: normal;
   @include responsive-subtitle;

@@ -33,18 +33,18 @@ body {
   height: calc(100vh - $header-height);
   margin-top: $header-height;
   background-color: $background-color;
-  overflow-y: scroll;
+  overflow-x: hidden;
 
   .inner-page {
     background-color: $background-color;
     padding: $inner-container;
     position: relative;
-    overflow-y: hidden;
     overflow-x: hidden;
-    min-height: calc(100vh - 121px);
+    min-height: calc(100vh - $header-height - $footer-height);
 
     h2 {
-      padding: 32px 0;
+      padding: $standard-pagging 0;
+      @include responsive-subtitle;
     }
   }
 }

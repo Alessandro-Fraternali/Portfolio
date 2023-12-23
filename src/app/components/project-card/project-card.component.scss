@@ -52,7 +52,7 @@
 
     h3{
         transition: $transition;
-        @include responsive-title;
+        @include responsive-tertiary-title;
         margin-top: 5px;
     }
 }

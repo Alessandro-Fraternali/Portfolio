@@ -8,44 +8,6 @@ $hexagon-lg: 163px;
 $hexagon-xl: 180px;
 $hexagon-xxl: 225px;
 
-@mixin responsive-hexagon{
-
-    @media (max-width: 374px){
-        width: $hexagon-xs;
-        height: $hexagon-xs;
-    }
-
-    @include smartphone {
-        width: $hexagon-sm;
-        height: $hexagon-sm;
-    }
-
-    @include tablet {
-        width: $hexagon-lg;
-        height: $hexagon-lg;
-    }
-
-    @include laptop {
-        width: $hexagon-lg;
-        height: $hexagon-lg;
-    }
-
-    @media (min-width: 1370px) and (max-width: 1399px) {
-        width: $hexagon-xl;
-        height: $hexagon-xl;
-    }
-
-    @include desktop {
-        width: $hexagon-xxl;
-        height: $hexagon-xxl;
-    }
-
-    @media (min-width: 1865px) {
-        width: $hexagon-xxl;
-        height: $hexagon-xxl;
-    }
-}
-
 // header
 $header-height: 60px;
 
@@ -54,3 +16,9 @@ $inner-container: 0 30px 50px 30px;
 
 //transizione standard
 $transition: 0.6s;
+
+//footer
+$footer-height: 60px;
+
+//padding standard
+$standard-pagging: 32px;

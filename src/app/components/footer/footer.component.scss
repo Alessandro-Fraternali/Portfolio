@@ -6,10 +6,11 @@ footer {
     padding: 10px;
     background-color: $background-color;
     border-top: 3px solid $accent-color;
-    // position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100vw;
+    height: $footer-height;
 
     a {
         @include button;

@@ -15,12 +15,11 @@
         justify-content: center;
         flex-wrap: wrap;
         gap: 10px;
-        // background-color: whit
 
         @media (max-width: 374px) {
             width: 90%;
             gap: 20px;
-
+            
             ::ng-deep {
                 &:nth-child(3) {
                     margin-left: 50%;
@@ -28,7 +27,7 @@
                 }
             }
         }
-
+        
         @include smartphone {
             width: 90%;
 
@@ -43,7 +42,7 @@
         @media (min-width: 768px) and (max-width: 780px){
             width: 66.5%;
         }
-
+        
         @include tablet {
             width: 67%;
         }
@@ -65,7 +64,10 @@
 
         @media (min-width: 1865px) {
             width: 37.5%;
-            background-color: red;
+        }
+
+        @media (min-width: 2480px) {
+            width: 35%;
         }
     }
 }

@@ -1,10 +1,44 @@
 @import '../../../styles.scss';
 
 .hexagon {
-    @include responsive-hexagon;
     position: relative;
     background-color: $text-color;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+
+    @media (max-width: 374px){
+      width: $hexagon-xs;
+      height: $hexagon-xs;
+    }
+
+    @include smartphone {
+      width: $hexagon-sm;
+      height: $hexagon-sm;
+    }
+
+    @include tablet {
+      width: $hexagon-lg;
+      height: $hexagon-lg;
+    }
+
+    @include laptop {
+      width: $hexagon-lg;
+      height: $hexagon-lg;
+    }
+
+    @media (min-width: 1370px) and (max-width: 1399px) {
+      width: $hexagon-xl;
+      height: $hexagon-xl;
+    }
+
+    @include desktop {
+      width: $hexagon-xxl;
+      height: $hexagon-xxl;
+    }
+
+    @media (min-width: 1865px) {
+      width: $hexagon-xxl;
+      height: $hexagon-xxl;
+    }
 
     &:hover{
       background-color: $accent-color;

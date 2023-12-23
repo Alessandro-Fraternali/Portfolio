@@ -1,3 +1,10 @@
 $accent-color: rgb(233, 62, 0);
-$text-color: gray;
+$text-color: rgb(128, 128, 128);
 $background-color: rgb(32, 32, 32);;
+
+//per il cambiacolore
+// :root {
+//   --accent-color: #{$accent-color};
+//   --text-color: #{$text-color};
+//   --background-color: #{$background-color};
+// }
