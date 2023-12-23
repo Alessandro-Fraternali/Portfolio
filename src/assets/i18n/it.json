@@ -16,18 +16,18 @@
     },
     "projects": {
         "title": "Progetti",
-        "intro": "Introduzione della pagina Progetti",
+        "intro": "Esplora il mio percorso nel mondo dello sviluppo web attraverso i progetti che ho realizzato",
         "visit_the_site": "Visita il sito",
         "explore_the_code": "Esplora il codice"
     },
     "certificates": {
         "title": "Attestati",
-        "intro": "Introduzione della pagina Attestati",
+        "intro": "Scopri i riconoscimenti che testimoniano il mio impegno costante e la crescita nel settore",
         "download_file": "Scarica l'attestato"
     },
     "details": {
         "title": "Dietro le quinte",
-        "intro": "Introduzione della pagina Dietro le quinte",
+        "intro": "Esplora il backstage del mio portfolio: curiosità e scelte di sviluppo",
         "timeline": [
             {
                 "title": "Il mio portfolio: powered by Angular",
@@ -38,54 +38,34 @@
                 "text": "La creazione di questo portfolio ha richiesto un'orchestrazione precisa di linguaggi e tecnologie per garantire un'esperienza utente fluida e coinvolgente. La struttura solida è stata costruita con HTML5, lo stile curato con CSS3 e SCSS per una gestione avanzata dei fogli di stile, infine, TypeScript conferisce affidabilità e robustezza al codice. \n\n Per rendere il portfolio accessibile a un pubblico internazionale, ho implementato la gestione del multilingua tramite la libreria ngx-translate, consentendo una traduzione fluida del contenuto in italiano e inglese. \nLe form, essenziali per l'interazione, sono gestite con precisione attraverso emailJS, garantendo una consegna sicura dei messaggi inviati. \n\n Questo è solo un assaggio delle tecnologie utilizzate, sempre in sintonia con le ultime novità del mondo della programmazione web"
             },
             {
+                "title": "Impaginazione e navigazione",
+                "text": "L'impaginazione è progettata per una navigazione intuitiva: \n l'homepage decisamente minimalista, presenta senza perdite di tempo il fulcro della pagina: 5 bottoni esagonali che fungono da gateway verso le altre sezioni. \n\n Ogni pagina, seguendo uno schema coerente, presenta un header, un corpo centrale e un footer dedicato alla navigazione. Questa struttura uniforme offre una familiarità costante, rendendo la navigazione fluida e agevole per gli utenti. \n\n L'header fornisce un ancoraggio visivo costante, è lì letteralemnte per dire 'quello che stai guardando è roba mia e di nessun altro', a cui ho unito l'utilità della selezione del multilingua.\nIl corpo centrale offre dettagli specifici sulla sezione in esame, mentre il footer, con opzioni per la pagina precedente, successiva e il ritorno alla homepage, consente una navigazione senza sforzo tra le diverse sezioni del portfolio. \n\n Questa impaginazione intuitiva mira a garantire una user experience coesa, permettendo agli utenti di esplorare agevolmente il mio progetto con una struttura chiara e uniforme."
+            },
+            {
                 "title": "Accessibilità e scalabilità: la scelta del REM",
                 "text": "Nel mio approccio alla progettazione web, scelgo l'uso dei REM per definire le dimensioni del testo. Questa scelta non solo ottimizza l'accessibilità, agevolando l'esperienza di tutti gli utenti, ma garantisce anche una scalabilità naturale su diverse piattaforme. Optando per i REM, cerco di creare un design adatto a ogni dimensione di schermo e alle esigenze di utenti potenzialmente ipovedenti."
             },
             {
-                "title": "Responsive",
-                "text": "Esempio"
+                "title": "Design responsivo: un'esperienza fluida su ogni schermo",
+                "text": "Al centro del mio portfolio si manifesta l'impegno per un'esperienza utente fluida e accessibile su ogni dispositivo. La base di questo approccio è il design responsivo, progettato per garantire una visualizzazione ottimale su smartphone, tablet, laptop e desktop. La filosofia 'mobile first' guida il processo, ponendo particolare attenzione all'instaurazione di un'interfaccia intuitiva per i dispositivi mobili. \n\n Attraverso l'uso di mixin personalizzati posso sfruttare con precisione i quattro viewport, adattando dimensioni e disposizione degli elementi per massimizzare la fruibilità. Lo sviluppo responsivo non è solo una reazione alle dimensioni dello schermo, ma una considerazione attenta dell'esperienza utente. Grazie a un design fluido, il portfolio si adatta con naturalezza a una varietà di contesti, assicurando che ogni visitatore possa esplorare il mio lavoro in modo intuitivo, indipendentemente dal dispositivo utilizzato. \n\n L'approccio 'mobile first' sottolinea la priorità assegnata alle versioni mobili, garantendo navigazione e interazione ottimali anche su schermi più piccoli. Ogni componente è accuratamente plasmato per assicurare una presentazione accattivante su tutti i dispositivi. In un mondo digitale in continua evoluzione, il responsive design è cruciale per mantenere un'esperienza coesa e coinvolgente, rendendo il mio portfolio accessibile a una vasta gamma di utenti, ovunque essi si trovino."
             },
             {
-                "title": "Ottimizzazione dello stile",
-                "text": "Esempio"
+                "title": "Stiloso e ottimizzato allo stesso tempo",
+                "text": "L'arte di definire stili personalizzati per ciascun componente si unisce a un approccio strategico di ottimizzazione dei fogli di stile. Ogni componente ha il proprio stile distintivo, ma per garantire efficienza e coerenza, gli stili comuni sono centralizzati in file SCSS dedicati: questi file SCSS vengono condivisi importandoli in styles.scss, e garantiscono efficienza e coerenza per un design uniforme. \n L'importanza di questa pratica risiede nella sua comodità e nel risparmio di risorse. Gli stili dichiarati una sola volta diventano immediatamente disponibili a tutti i componenti senza la necessità di duplicazioni inutili. \n\n Questo approccio non solo semplifica la manutenzione e l'aggiornamento degli stili, ma garantisce anche coerenza visiva in tutto il portfolio. Quando nuovi componenti si integrano nel sistema, possono beneficiare istantaneamente degli stili già esistenti, riducendo il tempo di sviluppo e garantendo uniformità nel design. \n\n L'ottimizzazione dei fogli di stile non è solo una questione di efficienza tecnica, ma un elemento chiave per mantenere uno stile coerente e professionale in tutte le pagine del mio portfolio. Un'organizzazione intelligente degli stili consolida la gestione complessiva del design, dimostrando come la praticità si unisca all'eleganza in ogni aspetto dello sviluppo web."
             },
             {
                 "title": "Non ci saranno sventolii di Material o stupide classi di Bootstrap nel mio portfolio.",
                 "text": "Fin dall'inizio, ho scelto un percorso diverso per questo progetto. Preferisco evitare l'uso massiccio di framework preconfezionati, trovando che le loro classi siano spesso invasive. \nLa libertà di progettare uno stile unico è essenziale, e credo che Material e Bootstrap siano più adatti quando la grafica del sito è pensata per adattarsi al loro stile predefinito."
             },
             {
-                "title": "Github",
-                "text": "Esempio"
-            },
-            {
-                "title": "Navigazione strutturata",
-                "text": "Esempio"
-            },
-            {
-                "title": "Esempio",
-                "text": "Esempio"
-            },
-            {
-                "title": "Esempio",
-                "text": "Esempio"
-            },
-            {
-                "title": "Esempio",
-                "text": "Esempio"
-            },
-            {
-                "title": "Esempio",
-                "text": "Esempio"
-            },
-            {
-                "title": "Esempio",
-                "text": "Esempio"
+                "title": "GitHub: trasparenza e sicurezza",
+                "text": "La trasparenza nel mio processo di sviluppo è una priorità, motivo per cui puoi esplorare il codice del mio portfolio su GitHub. Durante lo sviluppo, ho mantenuto un approccio organizzato utilizzando commit e branch dedicati. \n\n GitHub diventa così un ulteriore dietro le quinte del mio progetto. I commit riflettono le varie fasi dello sviluppo, consentendo di seguire l'evoluzione del codice. I branch, utilizzati in modo strategico, evidenziano le diverse funzionalità implementate o le correzioni apportate. \n\n Questa pratica non solo facilita il controllo del codice, ma dimostra anche impegno e trasparenza nella gestione del progetto. Spero che esplorare il mio repository su GitHub aggiunga un livello di comprensione e fiducia nel processo di sviluppo dietro il mio portfolio."
             }
         ]
     },
     "contact_me": {
         "title": "Contattami",
-        "intro": "Introduzione della pagina Contattami",
+        "intro": "Hai domande o suggerimenti? Compila la form per una risposta veloce",
         "form": {
             "your_name": "Tuo nome",
             "your_email": "Tua email",

@@ -3,12 +3,11 @@
 .project-card{
     display: flex;
     flex-direction: column;
-    // height: 210px;
     justify-content: space-around;
     align-items: center;
+    @include slide-up;
 
     &:hover .project-card-img img{
-        filter: grayscale(0);
         border-color: $accent-color;
     }
 
@@ -31,10 +30,10 @@
         img{
             transition: $transition;
             position: absolute;
-            filter: grayscale(1);
             border-radius: 10px;
             border: 2px solid $text-color;
-            min-width: 280px;
+            width: 300px;
+            height: 150px;
         }
         
         .project-card-buttons{

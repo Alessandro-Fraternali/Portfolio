@@ -4,6 +4,7 @@
     overflow-x: hidden;
 
     .inner-page{    
+        overflow-y: hidden;
         .project-cards-container{
             display: grid;
             gap: 40px;

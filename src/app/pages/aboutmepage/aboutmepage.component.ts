@@ -23,7 +23,6 @@ export class AboutmepageComponent {
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
-        console.log(entry.target); // Verifica che l'elemento target sia corretto
         if (entry.isIntersecting) {
             entry.target.classList.add("right-slide-in");
         } else {

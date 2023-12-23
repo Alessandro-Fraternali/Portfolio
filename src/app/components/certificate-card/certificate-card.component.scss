@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     filter: grayscale(1);
     transition: $transition;
+    @include slide-up;
     
     @include laptop{
         flex-wrap: wrap;

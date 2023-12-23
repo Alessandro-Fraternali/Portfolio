@@ -1,68 +1,104 @@
 [
     {
-        "title": "Progetto 1",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Netbooks",
+        "img": "../assets/images/projects/netbooks.jpg",
+        "site_link": "https://netbooks6.netlify.app/NetBooks/home",
+        "code_link": "https://github.com/Alessandro-Fraternali/NetBooks"
     },
     {
-        "title": "Progetto 2",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
+        "title": "Piccoli Grandi Cuori",
+        "img": "../assets/images/projects/piccoligrandicuori.jpg",
+        "site_link": "https://www.piccoligrandicuori.it/",
         "code_link": ""
     },
     {
-        "title": "Progetto 3",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Cosmobile",
+        "img": "../assets/images/projects/cosmobile.jpg",
+        "site_link": "https://www.cosmobile.com/",
+        "code_link": ""
     },
     {
-        "title": "Progetto 4",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Novalux",
+        "img": "../assets/images/projects/novalux.jpg",
+        "site_link": "https://novalux.com/",
+        "code_link": ""
     },
     {
-        "title": "Progetto 5",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Estalia",
+        "img": "../assets/images/projects/estalia.jpg",
+        "site_link": "https://estaliacoatings.it/it",
+        "code_link": ""
     },
     {
-        "title": "Progetto 6",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Franchi & Kim",
+        "img": "../assets/images/projects/franchi&kim.jpg",
+        "site_link": "https://franchi-kim.it/",
+        "code_link": ""
     },
     {
-        "title": "Progetto 7",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Damiani",
+        "img": "../assets/images/projects/damiani.jpg",
+        "site_link": "https://color-damiani.com/it",
+        "code_link": ""
     },
     {
-        "title": "Progetto 8",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Opacmare",
+        "img": "../assets/images/projects/opacmare.jpg",
+        "site_link": "https://www.opacmare.com/it",
+        "code_link": ""
     },
     {
-        "title": "Progetto 9",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Centro Gamma",
+        "img": "../assets/images/projects/centrogamma.jpg",
+        "site_link": "https://www.centrogamma.com/",
+        "code_link": ""
     },
     {
-        "title": "Progetto 10",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Order Factory",
+        "img": "../assets/images/projects/orderfactory.jpg",
+        "site_link": "https://www.orderfactory.it/",
+        "code_link": ""
     },
     {
-        "title": "Progetto 11",
-        "img": "../assets/images/littleark.jpg",
-        "site_link": "www.sito.it",
-        "code_link": "www.codice.it"
+        "title": "Funlab",
+        "img": "../assets/images/projects/funlab.jpg",
+        "site_link": "https://www.funlab.it/",
+        "code_link": ""
+    },
+    {
+        "title": "Italiafruit",
+        "img": "../assets/images/projects/italiafruit.jpg",
+        "site_link": "https://italiafruit.cosmobile.net/",
+        "code_link": ""
+    },
+    {
+        "title": "Martinelli",
+        "img": "../assets/images/projects/martinelli.jpg",
+        "site_link": "https://martinellibevande.it/",
+        "code_link": ""
+    },
+    {
+        "title": "Dampi",
+        "img": "../assets/images/projects/dampi.jpg",
+        "site_link": "https://www.dampi.it/it/",
+        "code_link": ""
+    },
+    {
+        "title": "Asiatrade",
+        "img": "../assets/images/projects/asiatrade.jpg",
+        "site_link": "https://makito.es/epages/Makito.sf/?URI=",
+        "code_link": ""
+    },
+    {
+        "title": "Order Sender",
+        "img": "../assets/images/projects/ordersender.jpg",
+        "site_link": "https://www.ordersender.com/en/",
+        "code_link": ""
+    },
+    {
+        "title": "Order Sender Enterprise",
+        "img": "../assets/images/projects/ordersenderenterprise.jpg",
+        "site_link": "https://www.ordersender.com/en/os-enterprise/",
+        "code_link": ""
     }
 ]

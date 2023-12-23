@@ -9,7 +9,7 @@ import { ProjectService } from 'src/app/services/project-service.service';
 export class ProjectspageComponent {
   ProjectList: any = [];
   footerLinks = [
-    { url: '/projects', label: 'projects.title' },
+    { url: '/about_me', label: 'about_me.title' },
     { url: '/homepage', label: 'homepage.return_button' },
     { url: '/certificates', label: 'certificates.title' },
   ];
