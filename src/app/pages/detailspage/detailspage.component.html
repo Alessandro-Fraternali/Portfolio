@@ -2,29 +2,14 @@
 <div class="page-container">
     <div class="inner-page">
         <h2>{{ 'details.intro' | translate }}</h2>
-        <div class="timeline-container">
-            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element alternated-side-slide-out">
+        <div class="timeline-container"  *ngIf="details?.timeline">
+            <div 
+                *ngFor="let timelineElement of details.timeline; let i = index" 
+                class="timeline-element"
+            >
                 <div class="timeline-title">
-                    <h2>{{ timelineElement.title | translate }}</h2>
+                    <h3>{{ timelineElement.title | translate }}</h3>
                     <div class="hexa-counter">{{ i + 1}}</div>
-                </div>
-                <div class="timeline-text">
-                    <p>{{ timelineElement.text | translate }}</p>
-                </div>
-            </div>
-            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element alternated-side-slide-out">
-                <div class="timeline-title">
-                    <h2>{{ timelineElement.title | translate }}</h2>
-                    <div class="hexa-counter">{{ i + 7}}</div>
-                </div>
-                <div class="timeline-text">
-                    <p>{{ timelineElement.text | translate }}</p>
-                </div>
-            </div>
-            <div *ngFor="let timelineElement of timelineArray; let i = index" class="timeline-element alternated-side-slide-out">
-                <div class="timeline-title">
-                    <h2>{{ timelineElement.title | translate }}</h2>
-                    <div class="hexa-counter">{{ i + 13}}</div>
                 </div>
                 <div class="timeline-text">
                     <p>{{ timelineElement.text | translate }}</p>

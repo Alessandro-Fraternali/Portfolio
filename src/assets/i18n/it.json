@@ -1,45 +1,92 @@
 {
-    "homepage":{
+    "homepage": {
         "return_button": "Torna alla Homepage"
     },
-    "about_me":{
+    "about_me": {
         "title": "Chi sono",
-        "intro": "Introduzione della pagina Chi Sono",
-        "text": "Biografia"
+        "intro": "Un'occhiata al mio percorso, tra codice e passioni",
+        "background_title": "Background e formazione",
+        "background_text": "La mia avventura nel mondo dello sviluppo è iniziata a 15 anni, quando HTML4 e CSS2 dominavano la scena digitale. I primi passi li ho fatti creando componenti per i portali su forumfree, forumcommunity e, di tanto in tanto, anche su MySpace. Nel 2020 ho preso una decisione significativa: iscrivermi al corso di Boolean Careers, che prometteva di formare Full Stack Web Developer da zero.\n\nDa quel momento, la mia passione per il coding si è trasformata in un percorso di formazione strutturato. Durante il corso ho acquisito competenze approfondite e, successivamente, ho scelto di specializzarmi nel frontend, completando ulteriori corsi, tra cui due focalizzati sul SEO. Dal 2021, ho avuto l'opportunità di lavorare in team su progetti Angular, che ad oggi considero il mio cavallo di battaglia.\n\nQuesto percorso di crescita continua è alimentato dalla curiosità e dalla voglia di apprendere sempre di più nel vasto universo dello sviluppo web. La creazione di questo portfolio nasce anche dalla mia volontà di mettere in pratica ciò che ho imparato negli ultimi anni. Il passaggio dal lavoro in team al lavoro individuale mi ha permesso di approfondire parti di Angular solitamente gestite da altri colleghi.",
+        "job_title": "Filosofia di lavoro",
+        "job_text": "Nel mio approccio al lavoro, sono sempre alla ricerca di nuovi spunti e soluzioni nel mondo dello sviluppo web. Mi piace confrontarmi con diverse prospettive e chiedere il parere di colleghi e amici, e recentemente ho trovato in ChatGPT un ottimo compagno di studi, capace di consigliarmi come approcciarmi a diverse situazioni e allo stesso tempo in grado di crearmi degli esercizi per migliorare le mie competenze.\n\nDurante il mio percorso, ho adottato come mantra una semplice affermazione di uno dei miei docenti in Boolean, che il primo giorno quasi per caso disse 'Sempre formarsi'. Solo due parole, che però mi segnai subito nel mio quaderno e che ancora mi porto dietro, un invito costante a mantenere vivo il desiderio di apprendere e crescere professionalmente.",
+        "goals_title": "Obiettivi futuri",
+        "goals_text": "Nel corso del 2021 ho iniziato un corso su React, ma a causa delle dinamiche lavorative ho interrotto quel percorso, ma mi piacerebbe riprenderlo e usarlo per un paio di progetti personali, considerandolo una tecnologia di grande rilevanza nel mondo dello sviluppo web. Sono certo che sarebbe un'importante freccia al mio arco.\n\nInoltre, mi piacerebbe anche approfondire l'ambito dell'UX/UI. La progettazione dell'esperienza utente e dell'interfaccia è un elemento cruciale per il successo di qualsiasi progetto, e ritengo che investire del tempo in questo settore possa contribuire significativamente alla mia crescita professionale, dato che i frontendisti lavorano a stretto contatto con i web designer.",
+        "hobby_title": "Hobby",
+        "hobby_text": "Al di fuori del mondo del coding, trovo il mio rifugio nella lettura, esplorando generi come fantasy, fantascienza, storici e gialli, e ultimamente ho riscoperto con piacere i libri gioco.\nAmo i giochi da tavolo, pratico scherma rinascimentale, pesca sportiva, trekking e tiro con l'arco.\nE ovviamente non possono mancare i miei gatti, compagni più che preziosi nel tempo che passo a casa, nonché assidui controllori di praticamente qualsiasi faccenda domestica, quando non cercano di mangiarmi il cavo del mouse."
     },
-    "projects":{
+    "projects": {
         "title": "Progetti",
         "intro": "Introduzione della pagina Progetti",
         "visit_the_site": "Visita il sito",
         "explore_the_code": "Esplora il codice"
     },
-    "certificates":{
+    "certificates": {
         "title": "Attestati",
         "intro": "Introduzione della pagina Attestati",
         "download_file": "Scarica l'attestato"
     },
-    "details":{
+    "details": {
         "title": "Dietro le quinte",
         "intro": "Introduzione della pagina Dietro le quinte",
-        "timeline":{
-            "title1": "Primo titolo timeline",
-            "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title2": "Secondo titolo timeline",
-            "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title3": "Terzo titolo timeline",
-            "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title4": "Quarto titolo timeline",
-            "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title5": "Quinto titolo timeline",
-            "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title6": "Non ci saranno sventolii di Material o stupide classi di Bootstrap nel mio portfolio",
-            "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
-        }
+        "timeline": [
+            {
+                "title": "Il mio portfolio: powered by Angular",
+                "text": "La scelta di sviluppare questo portfolio con Angular mira a evidenziare le mie competenze come sviluppatore. Angular offre un ambiente robusto e scalabile, permettendomi di mostrare appieno le mie abilità nella creazione di progetti web avanzati e dinamici."
+            },
+            {
+                "title": "L'arsenale di sviluppo",
+                "text": "La creazione di questo portfolio ha richiesto un'orchestrazione precisa di linguaggi e tecnologie per garantire un'esperienza utente fluida e coinvolgente. La struttura solida è stata costruita con HTML5, lo stile curato con CSS3 e SCSS per una gestione avanzata dei fogli di stile, infine, TypeScript conferisce affidabilità e robustezza al codice. \n\n Per rendere il portfolio accessibile a un pubblico internazionale, ho implementato la gestione del multilingua tramite la libreria ngx-translate, consentendo una traduzione fluida del contenuto in italiano e inglese. \nLe form, essenziali per l'interazione, sono gestite con precisione attraverso emailJS, garantendo una consegna sicura dei messaggi inviati. \n\n Questo è solo un assaggio delle tecnologie utilizzate, sempre in sintonia con le ultime novità del mondo della programmazione web"
+            },
+            {
+                "title": "Accessibilità e scalabilità: la scelta del REM",
+                "text": "Nel mio approccio alla progettazione web, scelgo l'uso dei REM per definire le dimensioni del testo. Questa scelta non solo ottimizza l'accessibilità, agevolando l'esperienza di tutti gli utenti, ma garantisce anche una scalabilità naturale su diverse piattaforme. Optando per i REM, cerco di creare un design adatto a ogni dimensione di schermo e alle esigenze di utenti potenzialmente ipovedenti."
+            },
+            {
+                "title": "Responsive",
+                "text": "Esempio"
+            },
+            {
+                "title": "Ottimizzazione dello stile",
+                "text": "Esempio"
+            },
+            {
+                "title": "Non ci saranno sventolii di Material o stupide classi di Bootstrap nel mio portfolio.",
+                "text": "Fin dall'inizio, ho scelto un percorso diverso per questo progetto. Preferisco evitare l'uso massiccio di framework preconfezionati, trovando che le loro classi siano spesso invasive. \nLa libertà di progettare uno stile unico è essenziale, e credo che Material e Bootstrap siano più adatti quando la grafica del sito è pensata per adattarsi al loro stile predefinito."
+            },
+            {
+                "title": "Github",
+                "text": "Esempio"
+            },
+            {
+                "title": "Navigazione strutturata",
+                "text": "Esempio"
+            },
+            {
+                "title": "Esempio",
+                "text": "Esempio"
+            },
+            {
+                "title": "Esempio",
+                "text": "Esempio"
+            },
+            {
+                "title": "Esempio",
+                "text": "Esempio"
+            },
+            {
+                "title": "Esempio",
+                "text": "Esempio"
+            },
+            {
+                "title": "Esempio",
+                "text": "Esempio"
+            }
+        ]
     },
-    "contact_me":{
+    "contact_me": {
         "title": "Contattami",
         "intro": "Introduzione della pagina Contattami",
-        "form":{
+        "form": {
             "your_name": "Tuo nome",
             "your_email": "Tua email",
             "subject": "Oggetto della mail",

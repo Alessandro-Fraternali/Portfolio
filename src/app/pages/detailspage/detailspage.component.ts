@@ -1,60 +1,43 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
+import { TranslationService } from '../../../app/services/translation-service.service';
 
 @Component({
   selector: 'app-detailspage',
   templateUrl: './detailspage.component.html',
-  styleUrls: ['./detailspage.component.scss']
+  styleUrls: ['./detailspage.component.scss'],
 })
 export class DetailspageComponent {
-  timelineArray = [
-    {
-      title: 'details.timeline.title1',
-      text: 'details.timeline.text1',
-    },
-    {
-      title: 'details.timeline.title2',
-      text: 'details.timeline.text2',
-    },
-    {
-      title: 'details.timeline.title3',
-      text: 'details.timeline.text3',
-    },
-    {
-      title: 'details.timeline.title4',
-      text: 'details.timeline.text4',
-    },
-    {
-      title: 'details.timeline.title5',
-      text: 'details.timeline.text5',
-    },
-    {
-      title: 'details.timeline.title6',
-      text: 'details.timeline.text6',
-    }
-  ];
+  details: any;
+  detailsLoaded = false;
+  visibleElementsCount = 0;
+
   footerLinks = [
     { url: '/certificates', label: 'certificates.title' },
     { url: '/homepage', label: 'homepage.return_button' },
     { url: '/contact_me', label: 'contact_me.title' },
   ];
 
-  ngOnInit(){
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-    
-        if (entry.isIntersecting) {
-          entry.target.classList.add("alternated-side-slide-in");
-        } else {
-        }
-      });
+  constructor(private translationService: TranslationService) {}
+
+  ngOnInit(): void {
+    this.translationService.getTranslations().subscribe((translations) => {
+      if (translations) {
+        this.details = translations.details;
+        this.detailsLoaded = true;
+      }
     });
-    
-    document.addEventListener("DOMContentLoaded", () => {
-      const hiddenElements = document.querySelectorAll('.alternated-side-slide-out');
-      hiddenElements.forEach((el) => observer.observe(el as Element));
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  checkScroll(): void {
+    // Calcolare l'indice degli elementi visibili durante lo scrolling
+    const timelineElements = document.querySelectorAll('.timeline-element');
+    timelineElements.forEach((element, index) => {
+      const rect = element.getBoundingClientRect();
+      const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
+      if (isVisible) {
+        this.visibleElementsCount = Math.max(this.visibleElementsCount, index + 1);
+      }
     });
   }
 }
-
-
-
