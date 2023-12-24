@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-title-text',
@@ -8,9 +8,5 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class TitleTextComponent {
   @Input() titleText: any;
-  constructor(private translate: TranslateService) {}
-
-  getTranslatedText(key: string): string {
-    return this.translate.instant(key);
-  }
+  constructor() {}
 }

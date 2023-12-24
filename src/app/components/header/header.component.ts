@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationService } from '../../../app/services/translation-service.service';
+import { TranslationService } from '../../../app/services/translation-service.service'; // Assicurati di importare il servizio
 
 @Component({
   selector: 'app-header',
@@ -25,12 +25,9 @@ export class HeaderComponent implements OnInit {
       this.translate.use(storedLang);
     }
 
+    // Notifica il servizio di traduzione quando la lingua cambia
     this.translate.onLangChange.subscribe((event) => {
-      setTimeout(() => {
-        if (this.areTranslationsLoaded()) {
-          this.translationService.loadTranslations();
-        }
-      }, 500);
+      this.translationService.loadTranslations();
     });
   }
 
@@ -38,9 +35,5 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('lang', language);
     this.activeLanguage = language;
     this.translate.use(language);
-  }
-
-  private areTranslationsLoaded(): boolean {
-    return this.translate.instant('example_key') !== 'example_key';
   }
 }
