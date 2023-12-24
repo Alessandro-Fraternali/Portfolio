@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { TranslationService } from '../../../app/services/translation-service.service'; // Assicurati di importare il servizio
+import { TranslationService } from '../../../app/services/translation-service.service';
 
 @Component({
   selector: 'app-header',
@@ -27,7 +27,9 @@ export class HeaderComponent implements OnInit {
 
     // Notifica il servizio di traduzione quando la lingua cambia
     this.translate.onLangChange.subscribe((event) => {
-      this.translationService.loadTranslations();
+      setTimeout(() => {
+        this.translationService.loadTranslations();
+      }, 500);
     });
   }
 

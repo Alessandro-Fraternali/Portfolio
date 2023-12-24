@@ -4,6 +4,8 @@
     overflow-x: hidden;
 
     .inner-page{
+
+        padding-bottom: calc($standard-pagging * 3);
         .form-container{
             display: flex;
             flex-direction: column;
