@@ -15,7 +15,7 @@
             display: grid;
             grid-template-rows: auto 3px auto;
             gap: 20px;
-            padding-bottom: calc($standard-pagging * 3);
+            padding-bottom: calc($standard-pagging * 5);
 
             @include laptopAndDesktop {
                 height: calc(100vh - $header-height * 4);
