@@ -4,30 +4,7 @@
         <h2>{{ 'about_me.intro' | translate }}</h2>
         <div class="info-container">
             <div class="introduction-container">
-                <h3> 
-                    {{ 'about_me.background_title' | translate }}
-                </h3>
-                <p>
-                    {{ 'about_me.background_text' | translate }}
-                </p>
-                <h3> 
-                    {{ 'about_me.job_title' | translate }}
-                </h3>
-                <p>
-                    {{ 'about_me.job_text' | translate }}
-                </p>
-                <h3> 
-                    {{ 'about_me.goals_title' | translate }}
-                </h3>
-                <p>
-                    {{ 'about_me.goals_text' | translate }}
-                </p>
-                <h3> 
-                    {{ 'about_me.hobby_title' | translate }}
-                </h3>
-                <p>
-                    {{ 'about_me.hobby_text' | translate }}
-                </p>
+                <app-title-text *ngFor="let bio of aboutMe.bio; let i = index" [titleText]="bio" [style.--order]="i + 1"></app-title-text>
             </div>
             <div class="separator"></div>
             <div class="skills-list-container">
@@ -35,10 +12,10 @@
                     <li #rightSlideOut class="right-slide-out" *ngFor="let skill of SkillsList; let i = index" [style.--order]="i + 1">
                         <img [src]="skill.icon" [alt]="skill.title">
                         {{ skill.title }}
-                    </li>                   
+                    </li>
                 </ul>
             </div>
-        </div>        
+        </div>
     </div>
     <app-footer [links]="footerLinks"></app-footer>
 </div>

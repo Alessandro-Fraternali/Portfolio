@@ -22,76 +22,36 @@
                 background-color: $accent-color;
             }
 
-            .timeline-element{
-                width: 50%;
-                opacity: 1;
-                
-                @media (max-width: 374px){
-                    width: 100%;
-                }
-
-                @include smartphone{
-                    width: 100%;
-                }
-
-                @include tablet{
-                    width: 100%;
-                }
-                
-                &:nth-child(odd) {
-                    text-align: right;
-                    padding-right: 10px;
+            ::ng-deep{
+                app-timeline-element{
+                    display: grid;
+                    &:nth-child(odd) .timeline-element{
+                        text-align: right;
+                        padding-right: 10px;
+                        @include slide-right;
+                        
+                        .timeline-text{
+                            p{
+                                text-align: right;
+                            }
+                        }
+                    }
                     
-                    .timeline-text{
-                        p{
-                            text-align: right;
-                        }
-                    }
-                }
+                    &:nth-child(even) .timeline-element{
+                        align-self: flex-end;
+                        padding-left: 10px;
+                        @include slide-left;
+                        justify-self: flex-end;
                 
-                &:nth-child(even) {
-                    align-self: flex-end;
-                    padding-left: 10px;
-
-                    .timeline-title{
-                        flex-direction: row-reverse;
-                    }
-
-                    .timeline-text{
-                        p{
-                            text-align: left;
+                        .timeline-title{
+                            flex-direction: row-reverse;
                         }
-                    }
-                }
-
-                .timeline-title{
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: center;
-                    gap: 20px;
-                    h3{
-                        padding: 10px 0;
-                        @include responsive-tertiary-title;
-                    }
-
-                    .hexa-counter{
-                        min-width: 30px;
-                        width: 30px;
-                        height: 30px;
-                        background-color: $accent-color;
-                        color: $background-color;
-                        display: flex;
-                        font-size: 20px;
-                        align-items: center;
-                        justify-content: center;
-                        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-                    }
-                }
-
-                .timeline-text{
-                    p{
-                        text-align: center;
-                        white-space: pre-line;
+                
+                        .timeline-text{
+                            p{
+                                text-align: left;
+                            }
+                        }
                     }
                 }
             }

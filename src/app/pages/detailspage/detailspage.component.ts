@@ -7,9 +7,8 @@ import { TranslationService } from '../../../app/services/translation-service.se
   styleUrls: ['./detailspage.component.scss'],
 })
 export class DetailspageComponent {
-  details: any;
+  details: any = [];
   detailsLoaded = false;
-  visibleElementsCount = 0;
 
   footerLinks = [
     { url: '/certificates', label: 'certificates.title' },
@@ -24,19 +23,6 @@ export class DetailspageComponent {
       if (translations) {
         this.details = translations.details;
         this.detailsLoaded = true;
-      }
-    });
-  }
-
-  @HostListener('window:scroll', ['$event'])
-  checkScroll(): void {
-    // Calcolare l'indice degli elementi visibili durante lo scrolling
-    const timelineElements = document.querySelectorAll('.timeline-element');
-    timelineElements.forEach((element, index) => {
-      const rect = element.getBoundingClientRect();
-      const isVisible = rect.top <= window.innerHeight && rect.bottom >= 0;
-      if (isVisible) {
-        this.visibleElementsCount = Math.max(this.visibleElementsCount, index + 1);
       }
     });
   }

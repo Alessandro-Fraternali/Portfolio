@@ -1,0 +1,50 @@
+@import '../../../styles.scss';
+
+.timeline-element{
+    width: 50%;
+    opacity: 1;
+    
+    @media (max-width: 374px){
+        width: 100%;
+    }
+
+    @include smartphone{
+        width: 100%;
+    }
+
+    @include tablet{
+        width: 100%;
+    }
+
+    .timeline-title{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 20px;
+        h3{
+            padding: 10px 0;
+            @include responsive-tertiary-title;
+            color: $accent-color;
+        }
+
+        .hexa-counter{
+            min-width: 30px;
+            width: 30px;
+            height: 30px;
+            background-color: $accent-color;
+            color: $background-color;
+            display: flex;
+            font-size: 20px;
+            align-items: center;
+            justify-content: center;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+    }
+
+    .timeline-text{
+        p{
+            text-align: center;
+            white-space: pre-line;
+        }
+    }
+}

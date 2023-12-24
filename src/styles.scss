@@ -45,7 +45,7 @@ body {
     h2 {
       padding: $standard-pagging 0;
       @include responsive-subtitle;
-      @include slide-right;
+      @include static-slide-right;
     }
   }
 }

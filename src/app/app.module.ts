@@ -20,6 +20,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HomeButtonComponent } from './components/home-button/home-button.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
+import { TitleTextComponent } from './components/title-text/title-text.component';
+import { TimelineElementComponent } from './components/timeline-element/timeline-element.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,7 +42,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     TextBlockComponent,
     CertificateCardComponent,
     HomeButtonComponent,
-    FooterComponent
+    FooterComponent,
+    TitleTextComponent,
+    TimelineElementComponent
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,8 @@
 }
 
 //animazioni mixin
+
+// animazioni con delay
 @mixin slide-up {
     @keyframes slideUpAnimation {
       from {
@@ -41,14 +43,78 @@
 }
 
 @mixin slide-right {
-    @keyframes slide-in {
+  @keyframes slide-right {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+  }
+
+  animation: slide-right calc(var(--order) * 150ms + 650ms) ease;
+}
+
+@mixin slide-left {
+  @keyframes slide-left {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+  }
+
+  animation: slide-left calc(var(--order) * 150ms + 850ms) ease;
+}
+
+
+//animazioni statiche
+@mixin static-slide-up {
+  @keyframes slideUpAnimation {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  animation: slideUpAnimation 1s ease;
+}
+
+@mixin static-slide-right {
+    @keyframes static-slide-right {
         from {
           transform: translateX(-100%);
+          opacity: 0;
         }
         to {
           transform: translateX(0%);
+          opacity: 1;
         }
     }
 
-    animation: slide-in 900ms;
+    animation: static-slide-right 900ms;
+}
+
+@mixin static-slide-left {
+  @keyframes static-slide-left {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0%);
+        opacity: 1;
+      }
+  }
+
+  animation: static-slide-left 900ms;
 }

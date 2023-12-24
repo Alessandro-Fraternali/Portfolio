@@ -9,6 +9,8 @@
             flex-direction: column;
             gap: 20px;
             margin: auto;
+            @include static-slide-up;
+            transition-delay: 1s;
 
             @include laptop{
                 width: 60%;
@@ -52,5 +54,44 @@
                 cursor: pointer;
             }
         }
+    }
+}
+
+//da migliorare
+.rough-animation1{
+    animation: rough-slide-up  700ms ease;
+}
+.rough-animation2{
+    animation: rough-slide-up  750ms ease;
+}
+.rough-animation3{
+    animation: rough-slide-up  800ms ease;
+}
+.rough-animation4{
+    animation: rough-slide-up  850ms ease;
+}
+.rough-animation5{
+    @keyframes rougher-slide-up {
+        from {
+        transform: translateY(80%);
+        opacity: 0;
+        }
+        to {
+        transform: translateY(0);
+        opacity: 1;
+        }
+    }
+    animation: rougher-slide-up 2s ease;
+}
+
+
+@keyframes rough-slide-up {
+    from {
+    transform: translateY(30%);
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);
+    opacity: 1;
     }
 }

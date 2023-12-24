@@ -36,5 +36,3 @@ export class ContactmepageComponent {
     this.form.reset();
   }
 }
-
-//https://dashboard.emailjs.com/admin/templates/itkvoue

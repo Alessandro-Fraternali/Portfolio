@@ -1,45 +1,82 @@
 {
-    "homepage":{
-        "return_button": "Return to the Homepage"
+    "homepage": {
+        "return_button": "Back to Homepage"
     },
-    "about_me":{
+    "about_me": {
         "title": "About Me",
-        "intro": "Introduction to the About Me page",
-        "text": "Biography"
+        "intro": "A glimpse into my journey, between code and passions",
+        "bio":[
+            {
+                "title": "Background and Education",
+                "text": "My adventure in the world of development began at the age of 15 when HTML4 and CSS2 dominated the digital scene. I took my first steps by creating components for portals on forumfree, forumcommunity, and occasionally on MySpace. In 2020, I made a significant decision: to enroll in the Boolean Careers course, which promised to train Full Stack Web Developers from scratch.\n\nSince then, my passion for coding has evolved into a structured training path. During the course, I gained in-depth skills and later chose to specialize in frontend, completing additional courses, including two focused on SEO. Since 2021, I've had the opportunity to work in teams on Angular projects, which I now consider my stronghold.\n\nThis continuous growth journey is fueled by curiosity and the desire to learn more in the vast universe of web development. Creating this portfolio also stems from my desire to put into practice what I've learned in recent years. The transition from team to individual work has allowed me to delve into Angular aspects usually handled by other colleagues."
+            },
+            {
+                "title": "Work Philosophy",
+                "text": "In my approach to work, I am always looking for new insights and solutions in the world of web development. I enjoy engaging with different perspectives, seeking input from colleagues and friends. Recently, I found an excellent study companion in ChatGPT, capable of advising me on how to approach various situations and creating exercises to improve my skills.\n\nThroughout my journey, I adopted a simple statement from one of my Boolean instructors on the first day, 'Always keep learning.' Just two words, but they immediately stuck with me, a constant invitation to keep the desire to learn and grow professionally alive."
+            },
+            {
+                "title": "Future Goals",
+                "text": "In 2021, I started a course on React, but due to work dynamics, I had to interrupt that path. However, I would like to resume it and use it for a couple of personal projects, considering it a technology of great relevance in the world of web development. I am confident that it would be a significant addition to my skill set.\n\nAdditionally, I would like to delve into the field of UX/UI. Designing user experience and interfaces is a crucial element for the success of any project, and I believe that investing time in this area can contribute significantly to my professional growth, as frontend developers work closely with web designers."
+            },
+            {
+                "title": "Hobbies",
+                "text": "Outside the coding world, I find my refuge in reading, exploring genres such as fantasy, science fiction, historical, and mystery. Lately, I have rediscovered gamebooks with pleasure.\nI love board games, practice Renaissance fencing, sport fishing, trekking, and archery. And, of course, I can't do without my cats, invaluable companions in the time I spend at home, also diligent supervisors of practically any domestic affair when they're not trying to eat my mouse cable."
+            }
+        ]
     },
-    "projects":{
+    "projects": {
         "title": "Projects",
-        "intro": "Introduction to the Projects page",
-        "visit_the_site": "Visit the site",
-        "explore_the_code": "Explore the code"
+        "intro": "Explore my journey in the world of web development through the projects I've completed",
+        "visit_the_site": "Visit the Site",
+        "explore_the_code": "Explore the Code"
     },
-    "certificates":{
+    "certificates": {
         "title": "Certificates",
-        "intro": "Introduction to the Certificates page",
-        "download_file": "Download the certificate"
+        "intro": "Discover the recognitions that testify to my constant commitment and growth in the industry",
+        "download_file": "Download Certificate"
     },
-    "details":{
+    "details": {
         "title": "Behind the Scenes",
-        "intro": "Introduction to the Behind the Scenes page",
-        "timeline":{
-            "title1": "First timeline title",
-            "text1": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title2": "Second timeline title",
-            "text2": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title3": "Third timeline title",
-            "text3": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title4": "Fourth timeline title",
-            "text4": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title5": "Fifth timeline title",
-            "text5": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!",
-            "title6": "Sixth timeline title",
-            "text6": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti fuga qui ratione provident non dicta impedit, est repellat doloremque tenetur sed neque adipisci architecto fugiat et facere ipsa. Tenetur, nihil!"
-        }
+        "intro": "Explore the backstage of my portfolio: curiosities and development choices",
+        "timeline": [
+            {
+                "title": "My Portfolio: Powered by Angular",
+                "text": "The choice to develop this portfolio with Angular aims to highlight my skills as a developer. Angular provides a robust and scalable environment, allowing me to fully showcase my abilities in creating advanced and dynamic web projects."
+            },
+            {
+                "title": "Development Arsenal",
+                "text": "Creating this portfolio required precise orchestration of languages and technologies to ensure a smooth and engaging user experience. The solid structure was built with HTML5, the style crafted with CSS3 and SCSS for advanced style sheet management, and TypeScript adds reliability and robustness to the code. \n\nTo make the portfolio accessible to an international audience, I implemented multilingual support through the ngx-translate library, allowing seamless translation of content into Italian and English. \nEssential for interaction, forms are handled precisely through emailJS, ensuring secure delivery of sent messages. \n\nThis is just a glimpse of the technologies used, always in line with the latest trends in the world of web programming."
+            },
+            {
+                "title": "Layout and Navigation",
+                "text": "The layout is designed for intuitive navigation: \n the minimalist homepage promptly presents the core of the page: 5 hexagonal buttons that serve as gateways to other sections. \n\n Each page, following a consistent pattern, features a header, a central body, and a footer dedicated to navigation. This uniform structure provides constant familiarity, making navigation smooth and effortless for users. \n\nThe header provides a constant visual anchor, literally there to say 'what you're looking at is mine and no one else's,' to which I added the utility of multilingual selection. \nThe central body provides specific details on the section under examination, while the footer, with options for the previous page, next page, and return to the homepage, allows effortless navigation between different sections of the portfolio. \n\nThis intuitive layout aims to ensure a cohesive user experience, allowing users to explore my project easily with a clear and consistent structure."
+            },
+            {
+                "title": "Accessibility and Scalability: Choosing REM",
+                "text": "In my approach to web design, I choose to use REMs to define text sizes. This choice not only optimizes accessibility, facilitating the experience for all users but also ensures natural scalability across different platforms. By opting for REMs, I aim to create a design suitable for every screen size and the needs of potentially visually impaired users."
+            },
+            {
+                "title": "Responsive Design: A Seamless Experience on Every Screen",
+                "text": "At the core of my portfolio is a commitment to a smooth and accessible user experience on every device. The foundation of this approach is responsive design, designed to ensure optimal viewing on smartphones, tablets, laptops, and desktops. The 'mobile-first' philosophy guides the process, paying particular attention to establishing an intuitive interface for mobile devices. \n\nThrough the use of custom mixins, I can precisely leverage the four viewports, adapting sizes and arrangement of elements to maximize usability. Responsive development is not just a reaction to screen sizes but a careful consideration of the user experience. Thanks to a fluid design, the portfolio naturally adapts to a variety of contexts, ensuring that every visitor can explore my work intuitively, regardless of the device used. \n\nThe 'mobile-first' approach emphasizes the priority assigned to mobile versions, ensuring optimal navigation and interaction even on smaller screens. Each component is carefully crafted to ensure an engaging presentation on all devices. In a continuously evolving digital world, responsive design is crucial to maintaining a cohesive and engaging experience, making my portfolio accessible to a wide range of users wherever they are."
+            },
+            {
+                "title": "Stylish and Optimized at the Same Time",
+                "text": "The art of defining custom styles for each component is combined with a strategic approach to optimizing style sheets. Each component has its distinctive style, but to ensure efficiency and consistency, common styles are centralized in dedicated SCSS files: these SCSS files are shared by importing them into styles.scss, ensuring efficiency and consistency for a uniform design. \nThe importance of this practice lies in its convenience and resource savings. Styles declared only once become immediately available to all components without the need for unnecessary duplications. \n\nThis approach not only simplifies the maintenance and updating of styles but also ensures visual consistency throughout the portfolio. When new components integrate into the system, they can instantly benefit from existing styles, reducing development time and ensuring uniformity in design. \n\nOptimizing style sheets is not just a matter of technical efficiency but a key element in maintaining a consistent and professional style on all pages of my portfolio. Intelligent organization of styles consolidates the overall management of design, demonstrating how practicality combines with elegance in every aspect of web development."
+            },
+            {
+                "title": "No Fluttering of Material or Stupid Bootstrap Classes in My Portfolio",
+                "text": "From the beginning, I chose a different path for this project. I prefer to avoid the massive use of pre-packaged frameworks, finding that their classes are often invasive. \nThe freedom to design a unique style is essential, and I believe that Material and Bootstrap are more suitable when the site's graphics are designed to adapt to their default style."
+            },
+            {
+                "title": "GitHub: Transparency and Security",
+                "text": "Transparency in my development process is a priority, which is why you can explore the code of my portfolio on GitHub. During development, I maintained an organized approach using dedicated commits and branches. \n\nGitHub becomes an additional behind-the-scenes of my project. Commits reflect the various stages of development, allowing you to follow the evolution of the code. Branches, strategically used, highlight the different features implemented or corrections made. \n\nThis practice not only facilitates code control but also demonstrates commitment and transparency in project management. I hope that exploring my repository on GitHub adds a level of understanding and trust in the development process behind my portfolio."
+            }
+        ]
     },
-    "contact_me":{
+    "contact_me": {
         "title": "Contact Me",
-        "intro": "Introduction to the Contact Me page",
-        "form":{
+        "intro": "Do you have questions or suggestions? Fill out the form for a quick response",
+        "form": {
             "your_name": "Your name",
             "your_email": "Your email",
             "subject": "Email subject",
@@ -48,3 +85,4 @@
         }
     }
 }
+        

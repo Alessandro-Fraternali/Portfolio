@@ -3,19 +3,26 @@
     <div class="inner-page">
         <h2>{{ 'details.intro' | translate }}</h2>
         <div class="timeline-container"  *ngIf="details?.timeline">
-            <div 
+            <app-timeline-element
                 *ngFor="let timelineElement of details.timeline; let i = index" 
-                class="timeline-element"
-            >
-                <div class="timeline-title">
-                    <h3>{{ timelineElement.title | translate }}</h3>
-                    <div class="hexa-counter">{{ i + 1}}</div>
-                </div>
-                <div class="timeline-text">
-                    <p>{{ timelineElement.text | translate }}</p>
-                </div>
-            </div>
+                [style.--order]="i + 1"
+                [timelineElement]="timelineElement"
+                [i]="i"
+            ></app-timeline-element>
         </div>
     </div>
     <app-footer [links]="footerLinks"></app-footer>
 </div>
+
+<!-- <div 
+    *ngFor="let timelineElement of details.timeline; let i = index" 
+    [style.--order]="i + 1"
+>
+    <div class="timeline-title">
+        <h3>{{ timelineElement.title | translate }}</h3>
+        <div class="hexa-counter">{{ i + 1}}</div>
+    </div>
+    <div class="timeline-text">
+        <p>{{ timelineElement.text | translate }}</p>
+    </div>
+</div> -->
