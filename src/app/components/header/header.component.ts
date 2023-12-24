@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
         if (this.areTranslationsLoaded()) {
           this.translationService.loadTranslations();
         }
-      }, 1000);
+      }, 500);
     });
   }
 
