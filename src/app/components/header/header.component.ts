@@ -25,11 +25,12 @@ export class HeaderComponent implements OnInit {
       this.translate.use(storedLang);
     }
 
-    // Notifica il servizio di traduzione quando la lingua cambia
     this.translate.onLangChange.subscribe((event) => {
       setTimeout(() => {
-        this.translationService.loadTranslations();
-      }, 500);
+        if (this.areTranslationsLoaded()) {
+          this.translationService.loadTranslations();
+        }
+      }, 1000);
     });
   }
 
@@ -37,5 +38,9 @@ export class HeaderComponent implements OnInit {
     localStorage.setItem('lang', language);
     this.activeLanguage = language;
     this.translate.use(language);
+  }
+
+  private areTranslationsLoaded(): boolean {
+    return this.translate.instant('example_key') !== 'example_key';
   }
 }
