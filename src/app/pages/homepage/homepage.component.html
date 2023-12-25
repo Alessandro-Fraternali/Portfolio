@@ -1,6 +1,12 @@
 <app-header></app-header>
 <div class="page-container">
     <div class="hexagons-container">
-        <app-hexagon class="scale-out" *ngFor="let hexagon of hexagons; let i = index" [hexagon]="hexagon" [style.--order]="i + 1"></app-hexagon>
+        <article class="hexagon" *ngFor="let hexagon of hexagons; let i = index" [style.--order]="i + 1">
+            <div class="inner-hexagon">
+              <a [href]="hexagon.link" class="hexagon-link">
+                {{ hexagon.title | translate }}
+              </a>
+            </div>
+        </article>
     </div>
 </div>
