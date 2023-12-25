@@ -28,22 +28,4 @@ export class HomepageComponent {
       link: 'contact_me',
     },
   ];
-
-  ngOnInit(){
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-    
-        if (entry.isIntersecting) {
-          entry.target.classList.add("scale-in");
-        } else {
-          // entry.target.classList.remove("side-slide");
-        }
-      });
-    });
-    
-    document.addEventListener("DOMContentLoaded", () => {
-      const hiddenElements = document.querySelectorAll('.scale-out');
-      hiddenElements.forEach((el) => observer.observe(el as Element));
-    });
-  }
 }
