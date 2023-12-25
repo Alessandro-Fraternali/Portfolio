@@ -27,19 +27,34 @@
 //animazioni mixin
 
 // animazioni con delay
-@mixin slide-up {
-    @keyframes slideUpAnimation {
-      from {
-        transform: translateY(50%);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
+@mixin scale-in {
+  @keyframes scaleIn {
+    from {
+      transform: scale(0);
+      transition: calc(var(--order) * 150ms + 350ms);
     }
-  
-    animation: slideUpAnimation  calc(var(--order) * 150ms + 650ms) ease;
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  animation: scaleIn  calc(var(--order) * 150ms + 300ms) ease;
+}
+
+@mixin slide-up {
+  @keyframes slideUpAnimation {
+    from {
+      transform: translateY(50%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  animation: slideUpAnimation  calc(var(--order) * 150ms + 650ms) ease;
 }
 
 @mixin slide-right {
