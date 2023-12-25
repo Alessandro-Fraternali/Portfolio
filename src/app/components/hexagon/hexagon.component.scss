@@ -1,6 +1,8 @@
 @import '../../../styles.scss';
 
 .hexagon {
+    width: $hexagon-lg;
+    height: $hexagon-lg;
     position: relative;
     background-color: $text-color;
     clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
@@ -15,16 +17,6 @@
     @include smartphone {
       width: $hexagon-sm;
       height: $hexagon-sm;
-    }
-
-    @include tablet {
-      width: $hexagon-lg;
-      height: $hexagon-lg;
-    }
-
-    @include laptop {
-      width: $hexagon-lg;
-      height: $hexagon-lg;
     }
 
     @media (min-width: 1370px) and (max-width: 1399px) {
