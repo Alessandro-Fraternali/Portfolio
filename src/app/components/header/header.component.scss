@@ -17,6 +17,7 @@ header{
     h1{
       a{
         color: $accent-color;
+        color: green !important;
         text-decoration: none;
         @include responsive-title;
 
