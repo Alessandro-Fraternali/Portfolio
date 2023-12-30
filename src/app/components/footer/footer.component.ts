@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ThemeService } from 'src/app/services/theme-service.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,4 +8,15 @@ import { Component, Input } from '@angular/core';
 })
 export class FooterComponent {
   @Input() links: { url: string; label: string }[] = [];
+  isLightTheme: boolean = false;
+
+  constructor(private themeService: ThemeService) {}
+
+  ngOnInit() {
+    // Al cambio di pagina, verifica lo stato del tema e aggiorna di conseguenza
+    this.themeService.isLightTheme$.subscribe((isLightTheme) => {
+      // Aggiorna il tuo componente in base allo stato del tema
+      this.isLightTheme = isLightTheme;
+    });
+  }
 }

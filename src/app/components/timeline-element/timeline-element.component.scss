@@ -32,12 +32,14 @@
             width: 30px;
             height: 30px;
             background-color: $accent-color;
-            color: $background-color;
             display: flex;
             font-size: 20px;
             align-items: center;
             justify-content: center;
             clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            span{
+                color: $background-color;
+            }
         }
     }
 
@@ -45,6 +47,21 @@
         p{
             text-align: center;
             white-space: pre-line;
+        }
+    }
+}
+
+.light-theme{
+    .timeline-title{
+        h3{
+            color: $light-accent-color;
+        }
+
+        .hexa-counter{
+            background-color: $light-accent-color;
+            span{
+                color: $light-background-color;
+            }
         }
     }
 }

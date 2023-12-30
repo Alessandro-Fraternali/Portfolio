@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import emailjs from '@emailjs/browser';
+import { ThemeService } from 'src/app/services/theme-service.service';
 
 @Component({
   selector: 'app-contactmepage',
@@ -8,6 +9,7 @@ import emailjs from '@emailjs/browser';
   styleUrls: ['./contactmepage.component.scss']
 })
 export class ContactmepageComponent {
+  isLightTheme: boolean = false;
   footerLinks = [
     { url: '/details', label: 'details.title' },
     { url: '/homepage', label: 'homepage.return_button' },
@@ -21,7 +23,7 @@ export class ContactmepageComponent {
     message: "",
   });
 
-  constructor(private fb: FormBuilder){}
+  constructor(private fb: FormBuilder, private themeService: ThemeService){}
 
   async send(){
     emailjs.init('1UjnbgZkznrgXyIoh')
@@ -34,5 +36,13 @@ export class ContactmepageComponent {
 
     alert("mail inviata");
     this.form.reset();
+  }
+
+  ngOnInit(){
+    // Al cambio di pagina, verifica lo stato del tema e aggiorna di conseguenza
+    this.themeService.isLightTheme$.subscribe((isLightTheme) => {
+      // Aggiorna il tuo componente in base allo stato del tema
+      this.isLightTheme = isLightTheme;
+    });
   }
 }

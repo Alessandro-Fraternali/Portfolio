@@ -5,19 +5,19 @@ header{
     top: 0;
     height: $header-height;
     width: 100vw;
+    border-bottom: 3px solid $accent-color;
     background-color: $background-color;
     color: $text-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    border-bottom: 3px solid $accent-color;
     z-index: 10;
 
     h1{
       a{
         color: $accent-color;
-        color: green !important;
+        color: green;
         text-decoration: none;
         @include responsive-title;
 
@@ -47,4 +47,22 @@ header{
           }
         }
       }
+}
+
+.light-theme{
+  h1{
+    a{
+      color: $light-accent-color;
+    }
+  }
+  ul{
+    li{
+      color: $light-text-color;
+      @include light-on-off-text;
+
+      &.active {
+        color: $light-accent-color;
+      }
+    }
+  }
 }

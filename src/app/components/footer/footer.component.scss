@@ -35,3 +35,10 @@ footer {
         }
     }
 }
+
+.light-theme {
+    a {
+        @include light-button;
+    }
+}
+

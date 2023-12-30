@@ -55,3 +55,23 @@
         margin-top: 5px;
     }
 }
+
+.light-theme{
+    &:hover .project-card-img img{
+        border-color: $light-accent-color;
+    }
+    &:hover h3{
+        color: $light-accent-color;
+    }
+    .project-card-img{
+        img{
+            border: 2px solid $light-text-color;
+        }
+        
+        .project-card-buttons{
+            a{
+                @include light-button;
+            }
+        }
+    }
+}

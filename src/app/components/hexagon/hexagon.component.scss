@@ -110,3 +110,19 @@
       margin-top: -58px;
     }
 }
+
+.light-theme {
+  background-color: $light-text-color;
+
+  &:hover{
+    background-color: $light-accent-color;
+  }
+
+  .inner-hexagon::before {
+    background-color: $light-background-color;
+  }
+
+  .hexagon-link {
+    @include light-on-off-text;
+  }  
+}

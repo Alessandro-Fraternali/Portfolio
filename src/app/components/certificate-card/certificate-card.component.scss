@@ -5,16 +5,11 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    filter: grayscale(1);
     transition: $transition;
     @include slide-up;
     
     @include laptop{
         flex-wrap: wrap;
-    }
-
-    &:hover{
-        filter: grayscale(0);
     }
 
     &:hover a{
@@ -41,5 +36,11 @@
             min-width: min-content;
             width: min-content;
         }
+    }
+}
+
+.certificate-card{
+    a{
+        @include light-button;
     }
 }

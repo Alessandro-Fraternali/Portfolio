@@ -1,4 +1,4 @@
-<article class="certificate-card">
+<article class="certificate-card"  [class.light-theme]="isLightTheme">
     <img [src]="certificateCard.img" [alt]="certificateCard.title">
     <a [href]="certificateCard.img">{{ 'certificates.download_file' | translate }}</a>
 </article>

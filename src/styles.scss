@@ -49,3 +49,21 @@ body {
     }
   }
 }
+
+.light-theme {
+  border-color: $light-accent-color;
+  color: $light-text-color;
+  background-color: $light-background-color;
+  
+  .inner-page{
+      background-color: $light-background-color;
+  }
+
+  h1, h2, h3, a, p {
+    color: $light-text-color;
+  }
+}
+
+.light-theme::-webkit-scrollbar-thumb {
+  background-color: $light-accent-color;
+}

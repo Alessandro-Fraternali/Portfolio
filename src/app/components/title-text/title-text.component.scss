@@ -13,3 +13,13 @@
         padding-bottom: 25px;
     }
 }
+
+.light-theme{
+    h3{
+        color: $light-accent-color;
+    }
+
+    p{
+        color: $light-text-color
+    }
+}

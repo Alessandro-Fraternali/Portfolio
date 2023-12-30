@@ -59,6 +59,26 @@
     }
 }
 
+.light-theme{
+    .inner-page{
+        .form-container{        
+            input, textarea, button{
+                border: 2px solid $light-text-color;
+                background-color: $light-background-color;
+                color: $light-text-color;
+
+                &:focus-visible {
+                    border-color: $light-accent-color;
+                }
+            }
+
+            button{
+                color: $light-text-color;
+            }
+        }
+    }
+}
+
 //da migliorare
 .rough-animation1{
     animation: rough-slide-up  700ms ease;
@@ -85,7 +105,6 @@
     }
     animation: rougher-slide-up 2s ease;
 }
-
 
 @keyframes rough-slide-up {
     from {

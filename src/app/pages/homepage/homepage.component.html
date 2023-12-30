@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="page-container">
+<div class="page-container" [class.light-theme]="isLightTheme">
     <div class="hexagons-container">
         <app-hexagon *ngFor="let hexagon of hexagons; let i = index" [hexagon]="hexagon" [style.--order]="i + 1"></app-hexagon>
     </div>

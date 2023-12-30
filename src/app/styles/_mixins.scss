@@ -10,6 +10,14 @@
     }
 }
 
+@mixin light-on-off-text {
+    color: $light-text-color;
+
+    &:hover{
+        color: $light-accent-color;
+    }
+}
+
 @mixin button {
     z-index: 2;
     padding: 6px;
@@ -23,5 +31,15 @@
 
     &:hover{
         border-color: $accent-color;
+    }
+}
+
+@mixin light-button {
+    @include light-on-off-text;
+    border: 2px solid $light-text-color;
+    background-color: $light-background-color;
+
+    &:hover{
+        border-color: $light-accent-color;
     }
 }

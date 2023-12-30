@@ -1,5 +1,6 @@
-<header>
+<header [class.light-theme]="isLightTheme">
     <h1><a href="/homepage">ALESSANDRO FRATERNALI</a></h1>
+    <h2 (click)="toggleTheme()">PORY</h2>
     <ul>
         <li (click)="switchLanguage('it')" [class.active]="activeLanguage === 'it'">ITA</li>
         |

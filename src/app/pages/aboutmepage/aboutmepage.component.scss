@@ -98,3 +98,18 @@
     }
 }
 
+.light-theme {
+    .inner-page {
+        .info-container {
+            .introduction-container {
+                &::-webkit-scrollbar-thumb {
+                    background-color: $light-accent-color;
+                }
+            }
+
+            .separator {
+                background-color: $light-accent-color;
+            }
+        }
+    }
+}
