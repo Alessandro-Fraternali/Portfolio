@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslationService } from '../../../app/services/translation-service.service';
 import { ThemeService } from 'src/app/services/theme-service.service';
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-header',
@@ -10,6 +11,8 @@ import { ThemeService } from 'src/app/services/theme-service.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  faSun = faSun;
+  faMoon = faMoon;
   activeLanguage: string;
   isLightTheme: boolean = false;
 
