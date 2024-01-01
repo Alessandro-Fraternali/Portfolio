@@ -22,6 +22,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { TitleTextComponent } from './components/title-text/title-text.component';
 import { TimelineElementComponent } from './components/timeline-element/timeline-element.component';
+import { PrivacyBannerComponent } from './components/privacy-banner/privacy-banner.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -44,7 +45,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeButtonComponent,
     FooterComponent,
     TitleTextComponent,
-    TimelineElementComponent
+    TimelineElementComponent,
+    PrivacyBannerComponent
   ],
   imports: [
     BrowserModule,
