@@ -1,0 +1,56 @@
+@import '../../../styles.scss';
+.privacy-banner-container{
+    height: 100px;
+    width: 100vw;
+    background-color: $text-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 30px;
+    
+    @include tablet{
+        height: 40px;
+    }
+
+    @include laptop{
+        height: 40px;
+    }
+
+    @include desktop{
+        height: 40px;
+    }
+
+
+
+    .privacy-banner-text{
+        padding: 10px 0;
+        
+        p{
+            color: $background-color;
+            
+        }
+    }
+    
+    .privacy-banner-button{
+        justify-self: flex-end;
+        background-color: $accent-color;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 0 30px;
+        
+        &:hover p{
+            
+        }
+        
+        p{
+            color: $background-color;
+            @include responsive-anchor;
+        }
+    }
+}

@@ -38,6 +38,10 @@
       background-color: $accent-color;
     }
 
+    &:hover .inner-hexagon .hexagon-link{
+      color: $accent-color;
+    }
+
     &:hover .inner-hexagon::before {
       transform: scale(0.95);
       -webkit-transform: scale(0.95);
