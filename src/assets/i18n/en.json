@@ -1,6 +1,7 @@
 {
     "homepage": {
-        "return_button": "Back to Homepage"
+        "return_button": "Back to Homepage",
+        "privacy-banner": "This website uses local storage to save your preferences. No personal data will be requested, and the use of cookies is not planned"
     },
     "about_me": {
         "title": "About Me",

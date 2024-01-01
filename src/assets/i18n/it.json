@@ -1,6 +1,7 @@
 {
     "homepage": {
-        "return_button": "Torna alla Homepage"
+        "return_button": "Torna alla Homepage",
+        "privacy-banner": "Questo sito sfrutta il localstorage per salvare le tue preferenze, non verranno richiesti dati personali e non è previsto l'uso dei cookies"
     },
     "about_me": {
         "title": "Chi sono",
