@@ -1,8 +1,8 @@
-<div class="privacy-banner-container">
+<div class="privacy-banner-container" *ngIf="isBannerVisible" [class.light-theme]="isLightTheme">
     <div class="privacy-banner-text">
         <p>Questo sito utilizza il localstorage per salvare le preferenze dell'utente</p>
     </div>
-    <div class="privacy-banner-button">
+    <div (click)="onCloseBanner()" class="privacy-banner-button">
         <p>OK</p>
     </div>
 </div>
