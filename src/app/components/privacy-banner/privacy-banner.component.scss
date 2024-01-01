@@ -44,13 +44,27 @@
         cursor: pointer;
         padding: 0 30px;
         
-        &:hover p{
-            
-        }
-        
         p{
             color: $background-color;
             @include responsive-anchor;
+        }
+    }
+}
+
+.light-theme {
+    background-color: $light-text-color;
+    
+    .privacy-banner-text{
+        p{
+            color: $light-background-color; 
+        }
+    }
+    
+    .privacy-banner-button{
+        background-color: $light-accent-color;
+        
+        p{
+            color: $light-background-color;
         }
     }
 }

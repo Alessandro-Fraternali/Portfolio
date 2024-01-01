@@ -122,6 +122,10 @@
     background-color: $light-accent-color;
   }
 
+  &:hover .inner-hexagon .hexagon-link{
+    color: $light-accent-color;
+  }
+
   .inner-hexagon::before {
     background-color: $light-background-color;
   }
