@@ -1,3 +1,9 @@
 <footer [class.light-theme]="isLightTheme">
-    <a *ngFor="let link of links" [href]="link.url">{{ link.label | translate }}</a>
+    <a class="mobile-buttons" *ngFor="let link of links; let i = index" [href]="link.url">
+        <ng-container *ngIf="i === 0"><fa-icon [icon]="faChevronLeft"></fa-icon></ng-container>
+        <ng-container *ngIf="i === 1"><fa-icon [icon]="faHouse"></fa-icon></ng-container>
+        <ng-container *ngIf="i === 2"><fa-icon [icon]="faChevronRight"></fa-icon></ng-container>
+    </a>
+    <a class="desktop-buttons" *ngFor="let link of links" [href]="link.url">{{ link.label | translate }}</a>
 </footer>
+

@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { ThemeService } from 'src/app/services/theme-service.service';
+import { faChevronRight, faChevronLeft, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-footer',
@@ -7,6 +8,9 @@ import { ThemeService } from 'src/app/services/theme-service.service';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+  faHouse = faHouse;
+  faChevronLeft = faChevronLeft;
+  faChevronRight = faChevronRight;
   @Input() links: { url: string; label: string }[] = [];
   isLightTheme: boolean = false;
 

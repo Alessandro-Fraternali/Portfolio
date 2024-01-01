@@ -21,16 +21,36 @@ footer {
         justify-content: center;
         gap: 10px;
         width: auto;
+    }
 
-        &:first-child:before {
-            content: '<';
-            font-style: 20px;
+    .mobile-buttons{
+        width: 40px;
+        
+        @include tablet{
+            display: none;
+        }
+
+        @include laptop{
+            display: none;
+        }
+
+        @include desktop{
+            display: none;
+        }
+    }
+
+    .desktop-buttons{
+        display: none;
+
+        @include tablet{
             display: block;
         }
-        
-        &:nth-child(3):after {
-            content: '>';
-            font-style: 30px;
+
+        @include laptop{
+            display: block;
+        }
+
+        @include desktop{
             display: block;
         }
     }
