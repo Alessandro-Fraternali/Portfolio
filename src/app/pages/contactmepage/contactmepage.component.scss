@@ -74,6 +74,7 @@
 
             button{
                 color: $light-text-color;
+                @include light-button;
             }
         }
     }
