@@ -60,7 +60,8 @@
 
         .hexa-counter{
             background-color: $light-accent-color;
-            span{
+            p{
+                @include responsive-anchor;
                 color: $light-background-color;
             }
         }
