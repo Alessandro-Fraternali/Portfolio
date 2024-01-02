@@ -31,19 +31,22 @@ header{
         }
       }
     }
-    .sun-icon{
+    .theme-icon{
       display: block;
       cursor: pointer;
       transition: $transition;
       font-size: 22px;
+      margin-left: -5px;
 
       @include laptop {
         margin-left: -15px;
       }
-
+      
       @include desktop{
         margin-left: -15px;
       }
+    }
+    .sun-icon{
       
       &:hover{
         color: $accent-color;
@@ -51,17 +54,6 @@ header{
     }
     .moon-icon{
       display: none;
-      cursor: pointer;
-      transition: $transition;
-      font-size: 22px;
-
-      @include laptop {
-        margin-left: -15px;
-      }
-
-      @include desktop{
-        margin-left: -15px;
-      }
 
       &:hover{
         color: $light-accent-color;

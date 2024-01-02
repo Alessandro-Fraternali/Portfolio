@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 .privacy-banner-container{
-    height: 100px;
+    height: 115px;
     width: 100vw;
     background-color: $text-color;
     display: flex;
@@ -26,7 +26,15 @@
 
 
     .privacy-banner-text{
-        padding: 10px 0;
+        padding-right: 10px;
+        
+        @include laptop{
+            padding-right: 100px;
+        }
+        
+        @include desktop{
+            padding-right: 100px;
+        }
         
         p{
             color: $background-color;

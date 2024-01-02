@@ -110,6 +110,12 @@
             .separator {
                 background-color: $light-accent-color;
             }
+
+            ul{
+                li{
+                    color: $light-text-color;
+                }
+            }
         }
     }
 }

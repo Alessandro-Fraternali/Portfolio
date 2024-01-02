@@ -1,7 +1,7 @@
 <header [class.light-theme]="isLightTheme">
     <h1><a href="/homepage">ALESSANDRO FRATERNALI</a></h1>
-    <fa-icon (click)="toggleTheme()" class="sun-icon" [icon]="faSun"></fa-icon>
-    <fa-icon (click)="toggleTheme()" class="moon-icon" [icon]="faMoon"></fa-icon>
+    <fa-icon (click)="toggleTheme()" class="theme-icon sun-icon" [icon]="faSun"></fa-icon>
+    <fa-icon (click)="toggleTheme()" class="theme-icon moon-icon" [icon]="faMoon"></fa-icon>
     <ul>
         <li (click)="switchLanguage('it')" [class.active]="activeLanguage === 'it'">ITA</li>
         |
