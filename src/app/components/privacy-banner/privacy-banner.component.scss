@@ -1,6 +1,5 @@
 @import '../../../styles.scss';
 .privacy-banner-container{
-    height: 115px;
     width: 100vw;
     background-color: $text-color;
     display: flex;
@@ -10,6 +9,10 @@
     bottom: 0;
     left: 0;
     padding-left: 30px;
+
+    @include smartphone{
+        padding: 15px;
+    }
     
     @include tablet{
         height: 55px;
@@ -51,6 +54,10 @@
         justify-content: center;
         cursor: pointer;
         padding: 0 30px;
+
+        @include smartphone{
+            height: 60px;
+        }
         
         p{
             color: $background-color;
