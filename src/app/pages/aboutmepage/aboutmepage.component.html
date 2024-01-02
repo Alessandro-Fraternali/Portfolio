@@ -2,6 +2,8 @@
 <div class="page-container" [class.light-theme]="isLightTheme">
     <div class="inner-page">
         <h2>{{ 'about_me.intro' | translate }}</h2>
+        <!-- meta description -->
+        <meta name="description" content="{{ 'about_me.intro' | translate }}">
         <div class="info-container">
             <div class="introduction-container">
                 <app-title-text *ngFor="let bio of aboutMe.bio; let i = index" [titleText]="bio" [style.--order]="i + 1"></app-title-text>

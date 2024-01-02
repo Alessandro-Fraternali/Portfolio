@@ -2,6 +2,8 @@
 <div class="page-container" [class.light-theme]="isLightTheme">
     <div class="inner-page">
         <h2>{{ 'contact_me.intro' | translate }}</h2>
+        <!-- meta description -->
+        <meta name="description" content="{{ 'contact_me.intro' | translate }}">
        <div class="form-container" [formGroup]="form">
         <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text" class="rough-animation1">
         <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="mail" class="rough-animation2">
