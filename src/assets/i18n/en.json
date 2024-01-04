@@ -78,12 +78,15 @@
     "contact_me": {
         "title": "Contact Me",
         "intro": "Do you have questions or suggestions? Fill out the form for a quick response",
+        "mail_sent": "Thank you for your message! I will reply soon.",
         "form": {
             "your_name": "Your name",
             "your_email": "Your email",
+            "email_validation": "You must enter a valid email address",
             "subject": "Email subject",
             "message": "Your message",
-            "button": "Send email"
+            "button": "Send email",
+            "error_message": "The data you entered is incorrect, please try again"
         }
     }
 }

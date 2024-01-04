@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { ThemeService } from 'src/app/services/theme-service.service';
 
@@ -9,6 +9,8 @@ import { ThemeService } from 'src/app/services/theme-service.service';
   styleUrls: ['./contactmepage.component.scss']
 })
 export class ContactmepageComponent {
+  errorForm: boolean = false;
+  mailSent: boolean = false
   isLightTheme: boolean = false;
   footerLinks = [
     { url: '/details', label: 'details.title' },
@@ -17,25 +19,29 @@ export class ContactmepageComponent {
   ];
 
   form: FormGroup = this.fb.group({
-    from_name: "",
-    from_email: "",
-    subject: "",
-    message: "",
+    from_name: ["", Validators.required],
+    from_email: ["", [Validators.required, Validators.email]],
+    subject: ["", Validators.required],
+    message: ["", Validators.required],
   });
 
   constructor(private fb: FormBuilder, private themeService: ThemeService){}
 
-  async send(){
-    emailjs.init('1UjnbgZkznrgXyIoh')
-    let response = await emailjs.send("service_zcekyld","template_tghykqq",{
-    from_name: this.form.value.from_name,
-    from_email: this.form.value.from_email,
-    subject: this.form.value.subject,
-    message: this.form.value.message,
-    });
-
-    alert("mail inviata");
-    this.form.reset();
+  async send() {
+    emailjs.init('1UjnbgZkznrgXyIoh');
+  
+    if (this.form.valid) {
+      let response = await emailjs.send("service_zcekyld","template_tghykqq",{
+        from_name: this.form.value.from_name,
+        from_email: this.form.value.from_email,
+        subject: this.form.value.subject,
+        message: this.form.value.message,
+      });
+  
+      this.mailSent = true;
+    } else {
+      this.errorForm = true;
+    }
   }
 
   ngOnInit(){

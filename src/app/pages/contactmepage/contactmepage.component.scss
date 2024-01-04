@@ -3,9 +3,31 @@
 .page-container{
     overflow-x: hidden;
 
-    .inner-page{
+    @include laptop{
+        overflow-y: hidden;
+    }
 
+    @include desktop{
+        overflow-y: hidden;
+    }
+
+    .inner-page{
         padding-bottom: calc($standard-pagging * 6);
+        
+        @include laptop{
+            overflow-y: hidden;
+        }
+    
+        @include desktop{
+            overflow-y: hidden;
+        }
+        
+        .mail-sent-message{
+            text-align: center;
+            margin-top: 30px;
+            @include static-slide-up;
+        }
+
         .form-container{
             display: flex;
             flex-direction: column;
@@ -13,6 +35,7 @@
             margin: auto;
             @include static-slide-up;
             transition-delay: 1s;
+            position: relative;
 
             @include laptop{
                 width: 60%;
@@ -35,6 +58,10 @@
                 }
             }
 
+            .mail-validator{
+                color: $accent-color;
+            }
+
             textarea{
                 height: 300px;
                 
@@ -54,6 +81,28 @@
                 opacity: 1;
                 width: 200px;
                 cursor: pointer;
+                @include responsive-anchor;
+            }
+
+            .form-error-message{
+                position: absolute;
+                width: 100%;
+                padding: 30px 0;
+                background-color: $background-color;
+                color: $text-color;
+                border: 3px solid $accent-color;
+                z-index: 2;
+                text-align: center;
+                @include static-slide-up;
+                bottom: 15%;
+                
+                .button{
+                    @include button;
+                    opacity: 1;
+                    margin: auto;
+                    margin-top: 20px;
+                    cursor: pointer;
+                }
             }
         }
     }
