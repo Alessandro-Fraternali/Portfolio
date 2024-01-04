@@ -24,6 +24,7 @@ import { TitleTextComponent } from './components/title-text/title-text.component
 import { TimelineElementComponent } from './components/timeline-element/timeline-element.component';
 import { PrivacyBannerComponent } from './components/privacy-banner/privacy-banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SeparatorComponent } from './components/separator/separator.component';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -47,7 +48,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FooterComponent,
     TitleTextComponent,
     TimelineElementComponent,
-    PrivacyBannerComponent
+    PrivacyBannerComponent,
+    SeparatorComponent
   ],
   imports: [
     BrowserModule,

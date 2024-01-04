@@ -5,17 +5,6 @@
         <!-- meta description -->
         <meta name="description" content="{{ 'contact_me.intro' | translate }}">
         <div class="contact-me-container">
-            <div class="links-section rough-animation6">
-                <a class="link-button" href="https://github.com/Alessandro-Fraternali" target="_blank">
-                    <fa-icon [icon]="faGithub" class="link-icon"></fa-icon> GitHub
-                </a>
-                <a class="link-button" href="https://www.linkedin.com/in/alessandro-fraternali-36625b1b1/" target="_blank">
-                    <fa-icon [icon]="faLinkedin" class="link-icon"></fa-icon> LinkedIn
-                </a>
-                <a class="link-button" href=".\assets\pdfs\AlessandroFraternali2024.pdf" download="AlessandroFraternaliFrontend.pdf">
-                    <fa-icon [icon]="faImagePortrait" class="link-icon"></fa-icon> Curriculum
-                </a>
-            </div>
             <div class="form-section">
                 <p *ngIf="this.mailSent" class="mail-sent-message">{{ 'contact_me.mail_sent' | translate }}</p>
                 <div *ngIf="!this.mailSent" class="form-container" [formGroup]="form">
@@ -32,6 +21,18 @@
                         <div class="button" (click)="this.errorForm = false" >Ok</div>
                     </div>
                 </div>
+            </div>
+            <app-separator></app-separator>
+            <div class="links-section rough-animation6">
+                <a class="link-button" href="https://github.com/Alessandro-Fraternali" target="_blank">
+                    <fa-icon [icon]="faGithub" class="link-icon"></fa-icon> GitHub
+                </a>
+                <a class="link-button" href="https://www.linkedin.com/in/alessandro-fraternali-36625b1b1/" target="_blank">
+                    <fa-icon [icon]="faLinkedin" class="link-icon"></fa-icon> LinkedIn
+                </a>
+                <a class="link-button" href=".\assets\pdfs\AlessandroFraternali2024.pdf" download="AlessandroFraternaliFrontend.pdf">
+                    <fa-icon [icon]="faImagePortrait" class="link-icon"></fa-icon> Curriculum
+                </a>
             </div>
         </div>
     </div>

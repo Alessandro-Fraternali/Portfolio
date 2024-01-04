@@ -30,7 +30,7 @@ body {
 }
 
 .page-container {
-  height: calc(100vh - $header-height);
+  height: calc(100vh - $header-height - $header-height);
   margin-top: $header-height;
   background-color: $background-color;
   overflow-x: hidden;

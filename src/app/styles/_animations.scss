@@ -1,4 +1,5 @@
-
+@import 'mixins';
+@import 'variables';
 
 //
 .right-slide-out{
@@ -132,4 +133,30 @@
   }
 
   animation: static-slide-left 900ms;
+}
+
+@mixin separator-animation-mobile {
+  @keyframes separator-animation-mobile {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+  }
+
+  animation: separator-animation-mobile 1s;
+}
+
+@mixin separator-animation-desktop {
+  @keyframes separator-animation-desktop {
+      0% {
+        height: 0;
+      }
+      100% {
+        height: 100%;
+      }
+  }
+
+  animation: separator-animation-desktop 1s;
 }
