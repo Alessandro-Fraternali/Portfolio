@@ -4,11 +4,13 @@
     overflow-x: hidden;
 
     @include laptopAndDesktop{
-        // overflow-y: hidden;
     }
 
     .inner-page{
-        // padding-bottom: calc($standard-pagging * 5);
+
+        @include smartphone{
+            padding-bottom: calc($header-height + $header-height);
+        }
         
         @include laptopAndDesktop{
             overflow-y: hidden;
