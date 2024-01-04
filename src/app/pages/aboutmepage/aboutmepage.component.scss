@@ -9,13 +9,11 @@
 
     .inner-page {
         display: grid;
-        padding: 0 30px 30px 30px;
 
         .info-container {
             display: grid;
             grid-template-rows: auto 3px auto;
             gap: 20px;
-            // padding-bottom: calc($standard-pagging * 4);
 
             @include laptopAndDesktop {
                 height: calc(100vh - $header-height * 4);
