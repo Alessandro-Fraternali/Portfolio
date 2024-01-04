@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { ThemeService } from 'src/app/services/theme-service.service';
+import { faIdBadge } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-contactmepage',
@@ -9,6 +11,9 @@ import { ThemeService } from 'src/app/services/theme-service.service';
   styleUrls: ['./contactmepage.component.scss']
 })
 export class ContactmepageComponent {
+  faGithub = faGithub;
+  faLinkedin = faLinkedin;
+  faIdBadge = faIdBadge;
   errorForm: boolean = false;
   mailSent: boolean = false
   isLightTheme: boolean = false;

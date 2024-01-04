@@ -4,24 +4,33 @@
         <h2>{{ 'contact_me.intro' | translate }}</h2>
         <!-- meta description -->
         <meta name="description" content="{{ 'contact_me.intro' | translate }}">
-        <div class="links-section">
-            <h2>github</h2>
-            <h2>linkedin</h2>
-        </div>
-        <div class="form-section">
-            <p *ngIf="this.mailSent" class="mail-sent-message">{{ 'contact_me.mail_sent' | translate }}</p>
-            <div *ngIf="!this.mailSent" class="form-container" [formGroup]="form">
-                <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text" class="rough-animation1">
-                <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="email" class="rough-animation2">
-                <p class="mail-validator" *ngIf="form?.get('from_email')?.hasError('email') && form?.get('from_email')?.touched">
-                    {{ 'contact_me.form.email_validation' | translate }}
-                </p>
-                <input formControlName="subject" [placeholder]="'contact_me.form.subject' | translate" type="text" class="rough-animation3">
-                <textarea formControlName="message" [placeholder]="'contact_me.form.message' | translate" rows="6" class="rough-animation4"></textarea>
-                <button (click)="send()" type="submit" class="rough-animation5">{{ 'contact_me.form.button' | translate}}</button>
-                <div class="form-error-message" *ngIf="errorForm">
-                    <p> {{ 'contact_me.form.error_message' | translate }} </p>
-                    <div class="button" (click)="this.errorForm = false" >Ok</div>
+        <div class="contact-me-container">
+            <div class="links-section rough-animation6">
+                <a class="link-button" href="https://github.com/Alessandro-Fraternali" target="_blank">
+                    <fa-icon [icon]="faGithub" class="link-icon"></fa-icon> GitHub
+                </a>
+                <a class="link-button" href="https://www.linkedin.com/in/alessandro-fraternali-36625b1b1/" target="_blank">
+                    <fa-icon [icon]="faLinkedin" class="link-icon"></fa-icon> LinkedIn
+                </a>
+                <a class="link-button" href=".\assets\pdfs\AlessandroFraternali2024.pdf" download="AlessandroFraternaliFrontend.pdf">
+                    <fa-icon [icon]="faIdBadge" class="link-icon"></fa-icon> Curriculum
+                </a>
+            </div>
+            <div class="form-section">
+                <p *ngIf="this.mailSent" class="mail-sent-message">{{ 'contact_me.mail_sent' | translate }}</p>
+                <div *ngIf="!this.mailSent" class="form-container" [formGroup]="form">
+                    <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text" class="rough-animation1">
+                    <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="email" class="rough-animation2">
+                    <p class="mail-validator" *ngIf="form?.get('from_email')?.hasError('email') && form?.get('from_email')?.touched">
+                        {{ 'contact_me.form.email_validation' | translate }}
+                    </p>
+                    <input formControlName="subject" [placeholder]="'contact_me.form.subject' | translate" type="text" class="rough-animation3">
+                    <textarea formControlName="message" [placeholder]="'contact_me.form.message' | translate" rows="6" class="rough-animation4"></textarea>
+                    <button (click)="send()" type="submit" class="rough-animation5">{{ 'contact_me.form.button' | translate}}</button>
+                    <div class="form-error-message" *ngIf="errorForm">
+                        <p> {{ 'contact_me.form.error_message' | translate }} </p>
+                        <div class="button" (click)="this.errorForm = false" >Ok</div>
+                    </div>
                 </div>
             </div>
         </div>

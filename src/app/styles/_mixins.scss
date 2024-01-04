@@ -28,6 +28,7 @@
     opacity: 0;
     text-align: center;
     width: 40%;
+    cursor: pointer;
 
     &:hover{
         border-color: $accent-color;
@@ -38,7 +39,7 @@
     @include light-on-off-text;
     border: 2px solid $light-text-color;
     background-color: $light-background-color;
-
+    
     &:hover{
         border-color: $light-accent-color;
     }
