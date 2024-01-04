@@ -3,22 +3,14 @@
 .page-container{
     overflow-x: hidden;
 
-    @include laptop{
-        overflow-y: hidden;
-    }
-
-    @include desktop{
+    @include laptopAndDesktop{
         overflow-y: hidden;
     }
 
     .inner-page{
         padding-bottom: calc($standard-pagging * 6);
         
-        @include laptop{
-            overflow-y: hidden;
-        }
-    
-        @include desktop{
+        @include laptopAndDesktop{
             overflow-y: hidden;
         }
 
@@ -47,14 +39,7 @@
                 gap: 30px;
                 padding-bottom: 30px;
 
-                @include laptop{
-                    padding-top: 50px;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: flex-end;
-                }
-
-                @include desktop{
+                @include laptopAndDesktop{
                     padding-top: 50px;
                     display: flex;
                     flex-direction: column;
@@ -66,12 +51,7 @@
                     opacity: 1;
                     width: auto;
 
-                    @include laptop{
-                        width: 200px;
-                        height: fit-content;
-                    }
-
-                    @include desktop{
+                    @include laptopAndDesktop{
                         width: 200px;
                         height: fit-content;
                     }
@@ -99,11 +79,7 @@
             
             .form-section{
 
-                @include laptop{
-                    padding-top: 50px;
-                }
-
-                @include desktop{
+                @include laptopAndDesktop{
                     padding-top: 50px;
                 }
 
@@ -122,11 +98,7 @@
                     transition-delay: 1s;
                     position: relative;
         
-                    @include laptop{
-                        width: 60%;
-                    }
-        
-                    @include desktop{
+                    @include laptopAndDesktop{
                         width: 60%;
                     }
                 
@@ -152,10 +124,6 @@
                         
                         @include laptop{
                             height: 150px;
-                        }
-            
-                        @include desktop{
-                            // height: 300px;
                         }
                     }
         

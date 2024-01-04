@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 import { ThemeService } from 'src/app/services/theme-service.service';
-import { faIdBadge } from '@fortawesome/free-solid-svg-icons';
+import { faIdBadge, faImagePortrait } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
@@ -14,6 +14,7 @@ export class ContactmepageComponent {
   faGithub = faGithub;
   faLinkedin = faLinkedin;
   faIdBadge = faIdBadge;
+  faImagePortrait = faImagePortrait;
   errorForm: boolean = false;
   mailSent: boolean = false
   isLightTheme: boolean = false;
