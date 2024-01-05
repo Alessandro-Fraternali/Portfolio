@@ -19,7 +19,6 @@ header{
         color: $accent-color;
         text-decoration: none;
         @include responsive-title;
-        color: green;
 
         @media (max-width: 374px){
           display: block;

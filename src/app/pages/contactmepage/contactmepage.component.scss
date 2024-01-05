@@ -172,10 +172,24 @@
                                 border-color: $light-accent-color;
                             }
                         }
+
+                        .mail-validator{
+                            color: $light-accent-color;
+                        }
             
                         button{
                             color: $light-text-color;
                             @include light-button;
+                        }
+
+                        .form-error-message{
+                            background-color: $light-background-color;
+                            color: $light-text-color;
+                            border-color: $light-accent-color;
+
+                            .button{
+                                @include light-button;
+                            }
                         }
                     }
                 }
