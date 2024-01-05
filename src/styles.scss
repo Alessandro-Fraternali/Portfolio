@@ -43,7 +43,7 @@ body {
     min-height: calc(100vh - $header-height - $footer-height);
 
     @include smartphone{
-      padding-bottom: calc($header-height + $header-height);
+      padding-bottom: $header-height;
     }
 
     h2 {
