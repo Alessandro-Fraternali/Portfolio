@@ -40,7 +40,7 @@ body {
     padding: $inner-container;
     position: relative;
     overflow-x: hidden;
-    min-height: calc(100vh - $header-height - $footer-height);
+    height: calc(100vh - $header-height - $footer-height);
 
     @include smartphone{
       padding-bottom: $header-height;
