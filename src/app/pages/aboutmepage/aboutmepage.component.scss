@@ -10,10 +10,6 @@
     .inner-page {
         display: grid;
 
-        @include smartphone{
-            padding-bottom: calc($header-height + $header-height);
-        }
-
         .info-container {
             display: grid;
             grid-template-rows: auto 3px auto;

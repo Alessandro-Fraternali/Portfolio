@@ -8,10 +8,6 @@
 
     .inner-page{
 
-        @include smartphone{
-            padding-bottom: calc($header-height + $header-height);
-        }
-        
         @include laptopAndDesktop{
             overflow-y: hidden;
             padding-bottom: 0;

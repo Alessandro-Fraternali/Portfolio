@@ -42,6 +42,10 @@ body {
     overflow-x: hidden;
     min-height: calc(100vh - $header-height - $footer-height);
 
+    @include smartphone{
+      padding-bottom: calc($header-height + $header-height);
+    }
+
     h2 {
       padding: $standard-pagging 0;
       @include responsive-subtitle;

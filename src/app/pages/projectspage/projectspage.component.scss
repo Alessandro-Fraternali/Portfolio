@@ -9,7 +9,6 @@
             display: grid;
             gap: 40px;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            padding-bottom: calc($standard-pagging * 5);
         }
     }
 }
