@@ -8,13 +8,13 @@
             <div class="form-section">
                 <p *ngIf="this.mailSent" class="mail-sent-message">{{ 'contact_me.mail_sent' | translate }}</p>
                 <div *ngIf="!this.mailSent" class="form-container" [formGroup]="form">
-                    <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text" class="rough-animation1">
-                    <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="email" class="rough-animation2">
+                    <input formControlName="from_name" [placeholder]="'contact_me.form.your_name' | translate" type="text" class="rough-animation1" [ngClass]="{'modified': form.get('from_name')?.dirty}">
+                    <input formControlName="from_email" [placeholder]="'contact_me.form.your_email' | translate" type="email" class="rough-animation2"  [ngClass]="{'modified': form.get('from_email')?.valid}">
                     <p class="mail-validator" *ngIf="form?.get('from_email')?.hasError('email') && form?.get('from_email')?.touched">
                         {{ 'contact_me.form.email_validation' | translate }}
                     </p>
-                    <input formControlName="subject" [placeholder]="'contact_me.form.subject' | translate" type="text" class="rough-animation3">
-                    <textarea formControlName="message" [placeholder]="'contact_me.form.message' | translate" rows="6" class="rough-animation4"></textarea>
+                    <input formControlName="subject" [placeholder]="'contact_me.form.subject' | translate" type="text" class="rough-animation3"  [ngClass]="{'modified': form.get('subject')?.dirty}">
+                    <textarea formControlName="message" [placeholder]="'contact_me.form.message' | translate" rows="6" class="rough-animation4"  [ngClass]="{'modified': form.get('message')?.dirty}"></textarea>
                     <button (click)="send()" type="submit" class="rough-animation5">{{ 'contact_me.form.button' | translate}}</button>
                     <div class="form-error-message" *ngIf="errorForm">
                         <p> {{ 'contact_me.form.error_message' | translate }} </p>

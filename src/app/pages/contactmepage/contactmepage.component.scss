@@ -105,6 +105,10 @@
                             border-color: $accent-color;
                         }
                     }
+
+                    .modified{
+                        border-color: $accent-color;
+                    }
         
                     .mail-validator{
                         color: $accent-color;
@@ -171,6 +175,10 @@
                             &:focus-visible {
                                 border-color: $light-accent-color;
                             }
+                        }
+
+                        .modified{
+                            border-color: $light-accent-color;
                         }
 
                         .mail-validator{
