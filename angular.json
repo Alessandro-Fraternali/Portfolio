@@ -28,7 +28,17 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects"
+              "src/_redirects",
+              {
+                "glob": "site.webmanifest",
+                "input": "./",
+                "output": "/"
+              },
+              {
+                "glob": "android-chrome-144x144.png",
+                "input": "./",
+                "output": "/"
+              }
             ],
             "styles": [
               "src/styles.scss"
