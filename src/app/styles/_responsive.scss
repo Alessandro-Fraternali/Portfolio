@@ -1,5 +1,11 @@
+@mixin xxs {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
 @mixin smartphone {
-  @media (max-width: 767px) {
+  @media (min-width: 375px) and (max-width: 767px) {
     @content;
   }
 }
