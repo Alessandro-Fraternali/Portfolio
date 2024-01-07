@@ -29,6 +29,7 @@
     "projects": {
         "title": "Progetti",
         "intro": "Esplora il mio percorso nel mondo dello sviluppo web attraverso i progetti che ho realizzato",
+        "subtitle": "Ogni progetto a cui ho lavorato ha un bottone per visitare il sito, mentre i progetti a cui ho lavorato individualmente hanno anche un bottone che porta al repository github associato",
         "visit_the_site": "Visita il sito",
         "explore_the_code": "Esplora il codice"
     },
@@ -39,7 +40,7 @@
     },
     "details": {
         "title": "Dietro le quinte",
-        "intro": "Esplora il backstage del mio portfolio: curiosità e scelte di sviluppo",
+        "intro": "Il backstage del mio portfolio: curiosità e scelte di sviluppo",
         "timeline": [
             {
                 "title": "Il mio portfolio: powered by Angular",
@@ -47,31 +48,59 @@
             },
             {
                 "title": "L'arsenale di sviluppo",
-                "text": "La creazione di questo portfolio ha richiesto un'orchestrazione precisa di linguaggi e tecnologie per garantire un'esperienza utente fluida e coinvolgente. \n La struttura solida è stata costruita con HTML5, lo stile curato con CSS3 e SCSS per una gestione avanzata dei fogli di stile, ed infine, TypeScript conferisce affidabilità e robustezza al codice. \n\n Per rendere il portfolio accessibile ad un pubblico internazionale, ho implementato la gestione del multilingua tramite la libreria ngx-translate, consentendo una traduzione fluida del contenuto in italiano e inglese. \nLe form, essenziali per l'interazione, sono gestite con precisione attraverso emailJS, garantendo una consegna sicura dei messaggi inviati. \n\n Questo è solo un assaggio delle tecnologie utilizzate, sempre in sintonia con le ultime novità del mondo della programmazione web."
+                "text": "Questo portfolio è stato creato utilizzando HTML5 per una solida struttura, CSS3 per uno stile curato e una gestione avanzata dei fogli di stile, mentre TypeScript è stato impiegato per garantire affidabilità e robustezza al codice. \n Questo costituisce solo un'introduzione alle tecnologie adoperate, anticipando approfondimenti sulle librerie e gli strumenti utilizzati."
             },
             {
                 "title": "Impaginazione e navigazione",
-                "text": "L'impaginazione è progettata per una navigazione intuitiva: \n l'homepage decisamente minimalista, presenta senza perdite di tempo il fulcro della pagina: 5 bottoni esagonali che fungono da gateway verso le altre sezioni. \n\n 6Ogni pagina, seguendo uno schema coerente, presenta un header, un corpo centrale e un footer dedicato alla navigazione. Questa struttura uniforme offre una familiarità costante, rendendo la navigazione fluida e agevole per gli utenti. \n\n L'header fornisce un acnoraggio visivo costante con il mio nome, un'icona per cambiare il tema e le opzioni di multilingua, assicurando un design pulito e funzionale. \n Il corpo centrale offre dettagli specifici sulla sezione in esame, mentre il footer, con opzioni per la pagina precedente, successiva e il ritorno alla homepage, consente una navigazione senza sforzo tra le diverse sezioni del portfolio. \n\n Questa impaginazione intuitiva mira a garantire una user experience coesa, permettendo agli utenti di esplorare agevolmente il mio progetto con una struttura chiara e uniforme."
+                "text": "L'impaginazione assicura un'esperienza intuitiva, con un'homepage minimalista che presenta 5 bottoni esagonali come gateway alle sezioni. \n Ogni pagina segue uno schema coerente: header con nome e opzioni, corpo centrale con dettagli specifici, e footer per una navigazione senza sforzo tra sezioni."
+            },
+            {
+                "title": "Struttura coerente per un'esplorazione agevole",
+                "text": "Ho optato per una struttura particolare ma uniforme, rendendo la navigazione fluida, con un'impaginazione mirata a garantire un'esperienza coesa, permettendo agli utenti di esplorare il progetto in modo agevole e strutturato."
             },
             {
                 "title": "Design responsivo: un'esperienza fluida su ogni schermo",
-                "text": "Al centro del mio portfolio si manifesta l'impegno per un'esperienza utente fluida e accessibile su ogni dispositivo. La base di questo approccio è il design responsivo, progettato per garantire una visualizzazione ottimale su smartphone, tablet, laptop e desktop. La filosofia 'mobile first' guida il processo, ponendo particolare attenzione all'instaurazione di un'interfaccia intuitiva per i dispositivi mobile, garantendo navigazione ed interazione ottimali anche su schermi più piccoli. \n\n Attraverso l'uso di mixin personalizzati posso sfruttare con precisione i quattro viewport, adattando dimensioni e disposizione degli elementi per massimizzare la fruibilità. Lo sviluppo responsivo non è solo una reazione alle dimensioni dello schermo, ma una considerazione attenta dell'esperienza utente. Grazie a un design fluido, il portfolio si adatta con naturalezza a una varietà di contesti, assicurando che ogni visitatore possa esplorare il mio lavoro in modo intuitivo, indipendentemente dal dispositivo utilizzato. \n\n Ogni componente è accuratamente plasmato per assicurare una presentazione accattivante su tutti i dispositivi. In un mondo digitale in continua evoluzione, il responsive design è cruciale per mantenere un'esperienza coesa e coinvolgente, rendendo il mio portfolio accessibile a una vasta gamma di utenti, ovunque essi si trovino."
+                "text": "Con un approccio 'mobile first', il design responsivo garantisce un'esperienza ottimale su ogni dispositivo: mixin personalizzati e attenta considerazione dell'esperienza utente consentono al mio progetto di adattarsi in modo naturale ai vari viewport, assicurando un'esplorazione intuitiva su qualsiasi dispositivo."
             },
             {
                 "title": "Accessibilità e scalabilità: la scelta del REM",
                 "text": "Nel mio approccio alla progettazione web, scelgo l'uso dei REM per definire le dimensioni del testo. Questa scelta non solo ottimizza l'accessibilità, agevolando l'esperienza di tutti gli utenti, ma garantisce anche una scalabilità naturale su diverse piattaforme. Optando per i REM, cerco di creare un design adatto a ogni dimensione di schermo e alle esigenze di utenti ipovedenti."
             },
             {
-                "title": "Non ci saranno sventolii di Material o stupide classi di Bootstrap nel mio portfolio.",
+                "title": "Non ci saranno sventolii di Material o stupide classi di Bootstrap nel mio portfolio",
                 "text": "Fin dall'inizio, ho scelto un percorso diverso per questo progetto. Preferisco evitare l'uso massiccio di framework preconfezionati, trovando che le loro classi siano spesso invasive. \nLa libertà di progettare uno stile unico è essenziale, e credo che Material e Bootstrap siano più adatti quando la grafica del sito è pensata per adattarsi al loro stile predefinito, e quindi non consoni ad un progetto personalizzato."
             },
             {
                 "title": "Ottimizzato e stiloso",
-                "text": "L'arte di definire stili personalizzati per ciascun componente si unisce a un approccio strategico di ottimizzazione dei fogli di stile. Ogni componente ha il proprio stile distintivo, ma per garantire efficienza e coerenza, gli stili comuni sono centralizzati in file SCSS dedicati: questi file SCSS vengono condivisi importandoli in styles.scss, e garantiscono efficienza e coerenza per un design uniforme. \n L'importanza di questa pratica risiede nella sua comodità e nel risparmio di risorse. Gli stili dichiarati una sola volta diventano immediatamente disponibili a tutti i componenti senza la necessità di duplicazioni inutili. \n\n Questo approccio non solo semplifica la manutenzione e l'aggiornamento degli stili, ma garantisce anche coerenza visiva in tutto il portfolio. Quando nuovi componenti si integrano nel sistema, possono beneficiare istantaneamente degli stili già esistenti, riducendo il tempo di sviluppo e garantendo uniformità nel design. \n\n L'ottimizzazione dei fogli di stile non è solo una questione di efficienza tecnica, ma un elemento chiave per mantenere uno stile coerente e professionale in tutte le pagine del mio portfolio. Un'organizzazione intelligente degli stili consolida la gestione complessiva del design, dimostrando come la praticità si unisca all'eleganza in ogni aspetto dello sviluppo web."
+                "text": "Definire stili personalizzati e ottimizzare i fogli di stile è essenziale. \n File SCSS centralizzati in styles.scss garantiscono efficienza e coerenza, semplificando la manutenzione. \n Nuovi componenti beneficiano degli stili esistenti, riducendo il tempo di sviluppo. \n L'ottimizzazione è cruciale per uno stile coerente e professionale, dimostrando la connessione tra praticità ed eleganza nello sviluppo web."
             },
             {
                 "title": "GitHub: trasparenza e sicurezza",
-                "text": "La trasparenza nel mio processo di sviluppo è una priorità, motivo per cui puoi esplorare il codice del mio portfolio su GitHub. Durante lo sviluppo, ho mantenuto un approccio organizzato utilizzando commit e branch dedicati. \n\n GitHub diventa così un ulteriore dietro le quinte del mio progetto. I commit riflettono le varie fasi dello sviluppo, consentendo di seguire l'evoluzione del codice. I branch, utilizzati in modo strategico, evidenziano le diverse funzionalità implementate o le correzioni apportate. \n\n Questa pratica non solo facilita il controllo del codice, ma dimostra anche impegno e trasparenza nella gestione del progetto. Spero che esplorare il mio repository su GitHub aggiunga un livello maggiore di comprensione e fiducia nel processo di sviluppo dietro il mio portfolio."
+                "text": "Commit organizzati e branch dedicati riflettono le fasi e le funzionalità implementate. \n Questa pratica agevola il controllo del codice, dimostrando impegno e trasparenza nella gestione del progetto. \n Esplorare il mio repository su GitHub aggiunge comprensione e fiducia nel processo di sviluppo."
+            },
+            {
+                "title": "Gestione avanzata dei branch per un'efficienza massima",
+                "text": "Sviluppo con due branch principali: master per il deploy stabile e stage per lo sviluppo attivo. \n Stage è collegato a un ambiente online per la verifica pre-deploy. \n Mantenendo master stabile, sono sicuro di non pubblicare modifiche indesiderate. \n Quando stage è sicuro, lo mergio in master per pubblicare le nuove funzionalità anche sul sito in produzione."
+            },
+            {
+                "title": "Gestione email senza backend: EmailJS",
+                "text": "La form nella pagina Contattami sfrutta la libreria EmailJS per semplificare l'invio di email senza dover lavorare anche al backend. \n Una soluzione comoda che libera tempo per concentrarmi sul resto del progetto."
+            },
+            {
+                "title": "Portfolio internazionale: l'esperienza del multilingua",
+                "text": "Al fine di accogliere un pubblico internazionale, ho introdotto la gestione multilingue nel mio portfolio mediante l'utilizzo di ngx-translate. \n Questa libreria facilita una transizione linguistica fluida, permettendo una traduzione agevole del contenuto sia in italiano che in inglese. \n Questa scelta mira a migliorare l'accessibilità del mio progetto, assicurando un'esperienza utente inclusiva e globale."
+            },
+            {
+                "title": "Tra chiaro e scuro: tua scelta, tuo stile",
+                "text": "Scopri la flessibilità visiva nel mio spazio online. Con un design personalizzato, attiva il tema chiaro cliccando sul sole o passa al tema scuro cliccando sulla luna. \n Una funzionalità sviluppata per adattarsi alle tue preferenze e offrirti un ambiente visivo confortevole durante la navigazione."
+            },
+            {
+                "title": "Solo LocalStorage",
+                "text": "La mia scelta di preservare la privacy: zero cookie, solo local storage. \n Utilizzo questa tecnica per salvare solo le preferenze dell'utente, come la scelta tra tema chiaro o scuro e la lingua selezionata. \n Un approccio al rispetto della privacy, garantendo un'esperienza personalizzata senza rinunciare alla sicurezza."
+            },
+            {
+                "title": "Il portfolio è solo l'inizio!",
+                "text": "Tutto questo è solo un assaggio delle mie competenze, ci sono ancora numerosi progetti da esplorare e implementazioni da realizzare per rendere questo portfolio sempre più ricco e dinamico."
             }
         ]
     },

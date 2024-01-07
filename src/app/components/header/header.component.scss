@@ -14,6 +14,10 @@ header{
     grid-template-columns: 1fr 30px 90px;
     align-items: center;
 
+    @include xxs{
+      padding: 0 15px;
+    }
+
     h1{
       a{
         color: $accent-color;

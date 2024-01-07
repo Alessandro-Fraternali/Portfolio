@@ -1,93 +1,123 @@
 {
     "homepage": {
-        "intro": "Explore my journey and projects in my portfolio. Dive into my creative world and skills through a variety of projects and achievements.",
+        "intro": "Discover my journey and projects in my portfolio. Explore my creative world and skills through a variety of projects and achievements.",
         "return_button": "Back to Homepage",
-        "privacy-banner": "This website uses local storage to save your preferences. No personal data will be requested, and the use of cookies is not planned"
+        "privacy-banner": "This site uses local storage to save your preferences; no personal data will be requested, and the use of cookies is not planned."
     },
     "about_me": {
         "title": "About Me",
         "intro": "A glimpse into my journey, between code and passions",
-        "bio":[
+        "bio": [
             {
                 "title": "Background and Education",
-                "text": "My adventure in the world of development began at the age of 15 when HTML4 and CSS2 dominated the digital scene. I took my first steps by creating components for portals on forumfree, forumcommunity, and occasionally on MySpace. In 2020, I made a significant decision: to enroll in the Boolean Careers course, which promised to train Full Stack Web Developers from scratch.\n\nSince then, my passion for coding has evolved into a structured training path. During the course, I gained in-depth skills and later chose to specialize in frontend, completing additional courses, including two focused on SEO. Since 2021, I've had the opportunity to work in teams on Angular projects, which I now consider my stronghold.\n\nThis continuous growth journey is fueled by curiosity and the desire to learn more in the vast universe of web development. Creating this portfolio also stems from my desire to put into practice what I've learned in recent years. The transition from team to individual work has allowed me to delve into Angular aspects usually handled by other colleagues."
+                "text": "My journey into the world of development began at the age of 15 when HTML4 and CSS2 dominated the digital scene. I took my first steps by creating components for portals on ForumFree, ForumCommunity, and occasionally even on MySpace. \n In 2020, I made a significant decision: to enroll in the Boolean Careers course, promising to train Full Stack Web Developers from scratch.\n\nSince then, my passion for coding has transformed into a structured training path. During the course, I gained in-depth skills and later chose to specialize in the frontend, completing additional courses, including two focused on SEO. Since 2021, I've had the opportunity to work in teams on Angular projects, which I consider my forte to date.\n\nThis ongoing growth journey is fueled by curiosity and the desire to learn more in the vast universe of web development. I am continuing to take dedicated courses. The creation of this portfolio also stems from my desire to put into practice what I have learned over the years. The transition from team to individual work has allowed me to delve into parts of Angular usually handled by other colleagues."
             },
             {
                 "title": "Work Philosophy",
-                "text": "In my approach to work, I am always looking for new insights and solutions in the world of web development. I enjoy engaging with different perspectives, seeking input from colleagues and friends. Recently, I found an excellent study companion in ChatGPT, capable of advising me on how to approach various situations and creating exercises to improve my skills.\n\nThroughout my journey, I adopted a simple statement from one of my Boolean instructors on the first day, 'Always keep learning.' Just two words, but they immediately stuck with me, a constant invitation to keep the desire to learn and grow professionally alive."
+                "text": "In my approach to work, I am always looking for new insights and solutions in the world of web development. I enjoy exploring different perspectives and seeking the opinions of colleagues and friends. Recently, I found in ChatGPT an excellent study companion, capable of advising me on how to approach different situations and at the same time creating exercises to improve my skills.\n\nThroughout my journey, I adopted a simple statement from one of my Boolean instructors on the first day, 'Always keep learning.' Just two words, but I immediately marked them in my notebook and still carry them with me, a constant reminder to keep the desire to learn and grow professionally alive."
             },
             {
                 "title": "Future Goals",
-                "text": "In 2021, I started a course on React, but due to work dynamics, I had to interrupt that path. However, I would like to resume it and use it for a couple of personal projects, considering it a technology of great relevance in the world of web development. I am confident that it would be a significant addition to my skill set.\n\nAdditionally, I would like to delve into the field of UX/UI. Designing user experience and interfaces is a crucial element for the success of any project, and I believe that investing time in this area can contribute significantly to my professional growth, as frontend developers work closely with web designers."
+                "text": "In 2021, I started a course on React, but due to some work dynamics, I had to interrupt it, although I would like to resume it and use it for a couple of personal projects, considering it a technology of great relevance in the world of web development. I am sure it would be a significant addition to my skills.\n\nAdditionally, I would like to delve into the field of UX/UI; user experience and interface design are crucial elements for the success of any project, and I believe that investing time in this area can significantly contribute to my professional growth, as frontend developers work closely with web designers."
             },
             {
                 "title": "Hobbies",
-                "text": "Outside the coding world, I find my refuge in reading, exploring genres such as fantasy, science fiction, historical, and mystery. Lately, I have rediscovered gamebooks with pleasure.\nI love board games, practice Renaissance fencing, sport fishing, trekking, and archery. And, of course, I can't do without my cats, invaluable companions in the time I spend at home, also diligent supervisors of practically any domestic affair when they're not trying to eat my mouse cable."
+                "text": "Outside the coding world, I find refuge in reading, exploring genres like fantasy, science fiction, historical, and mystery, and lately, I have pleasantly rediscovered gamebooks.\nI love board games, practice Renaissance fencing, sport fishing, trekking, and archery.\nAnd, of course, my cats cannot be missed—more than precious companions in the time I spend at home, also diligent supervisors of practically any domestic affair, when they're not trying to eat my mouse cable."
             }
         ]
     },
     "projects": {
         "title": "Projects",
-        "intro": "Explore my journey in the world of web development through the projects I've completed",
+        "intro": "Explore my journey in the world of web development through the projects I have created.",
+        "subtitle": "sottotitoloENG",
         "visit_the_site": "Visit the Site",
         "explore_the_code": "Explore the Code"
-    },
+    },    
     "certificates": {
         "title": "Certificates",
-        "intro": "Discover the recognitions that testify to my constant commitment and growth in the industry",
+        "intro": "Discover the acknowledgments that testify to my constant commitment and growth in the field.",
         "download_file": "Download Certificate"
     },
     "details": {
-        "title": "Behind the Scenes",
-        "intro": "Explore the backstage of my portfolio: curiosities and development choices",
+        "title": "Behind the scenes",
+        "intro": "The backstage of my portfolio: curiosities and development choices",
         "timeline": [
             {
-                "title": "My Portfolio: Powered by Angular",
+                "title": "My portfolio: powered by Angular",
                 "text": "The choice to develop this portfolio with Angular aims to highlight my skills as a developer. Angular provides a robust and scalable environment, allowing me to fully showcase my abilities in creating advanced and dynamic web projects."
             },
             {
-                "title": "Development Arsenal",
-                "text": "Creating this portfolio required precise orchestration of languages and technologies to ensure a smooth and engaging user experience. The solid structure was built with HTML5, the style crafted with CSS3 and SCSS for advanced style sheet management, and TypeScript adds reliability and robustness to the code. \n\nTo make the portfolio accessible to an international audience, I implemented multilingual support through the ngx-translate library, allowing seamless translation of content into Italian and English. \nEssential for interaction, forms are handled precisely through emailJS, ensuring secure delivery of sent messages. \n\nThis is just a glimpse of the technologies used, always in line with the latest trends in the world of web programming."
+                "title": "Development arsenal",
+                "text": "This portfolio was created using HTML5 for a solid structure, CSS3 for polished style and advanced style sheet management, while TypeScript was employed to ensure code reliability and robustness. \n This is just an introduction to the technologies used, with more details on the libraries and tools utilized to follow."
             },
             {
-                "title": "Layout and Navigation",
-                "text": "The layout is designed for intuitive navigation: \n the minimalist homepage promptly presents the core of the page: 5 hexagonal buttons that serve as gateways to other sections. \n\n Each page, following a consistent pattern, features a header, a central body, and a footer dedicated to navigation. This uniform structure provides constant familiarity, making navigation smooth and effortless for users. \n\nThe header provides a constant visual anchor, literally there to say 'what you're looking at is mine and no one else's,' to which I added the utility of multilingual selection. \nThe central body provides specific details on the section under examination, while the footer, with options for the previous page, next page, and return to the homepage, allows effortless navigation between different sections of the portfolio. \n\nThis intuitive layout aims to ensure a cohesive user experience, allowing users to explore my project easily with a clear and consistent structure."
+                "title": "Layout and navigation",
+                "text": "The layout ensures an intuitive experience, with a minimalist homepage featuring 5 hexagonal buttons as gateways to sections. \n Each page follows a consistent pattern: header with name and options, central body with specific details, and footer for effortless navigation between sections."
             },
             {
-                "title": "Accessibility and Scalability: Choosing REM",
-                "text": "In my approach to web design, I choose to use REMs to define text sizes. This choice not only optimizes accessibility, facilitating the experience for all users but also ensures natural scalability across different platforms. By opting for REMs, I aim to create a design suitable for every screen size and the needs of potentially visually impaired users."
+                "title": "Consistent structure for easy exploration",
+                "text": "I opted for a unique but uniform structure, making navigation smooth, with a layout aimed at ensuring a cohesive experience, allowing users to explore the project easily and in a structured manner."
             },
             {
-                "title": "Responsive Design: A Seamless Experience on Every Screen",
-                "text": "At the core of my portfolio is a commitment to a smooth and accessible user experience on every device. The foundation of this approach is responsive design, designed to ensure optimal viewing on smartphones, tablets, laptops, and desktops. The 'mobile-first' philosophy guides the process, paying particular attention to establishing an intuitive interface for mobile devices. \n\nThrough the use of custom mixins, I can precisely leverage the four viewports, adapting sizes and arrangement of elements to maximize usability. Responsive development is not just a reaction to screen sizes but a careful consideration of the user experience. Thanks to a fluid design, the portfolio naturally adapts to a variety of contexts, ensuring that every visitor can explore my work intuitively, regardless of the device used. \n\nThe 'mobile-first' approach emphasizes the priority assigned to mobile versions, ensuring optimal navigation and interaction even on smaller screens. Each component is carefully crafted to ensure an engaging presentation on all devices. In a continuously evolving digital world, responsive design is crucial to maintaining a cohesive and engaging experience, making my portfolio accessible to a wide range of users wherever they are."
+                "title": "Responsive design: seamless experience on every screen",
+                "text": "With a 'mobile-first' approach, responsive design ensures an optimal experience on every device: custom mixins and careful consideration of user experience allow my project to naturally adapt to various viewports, ensuring intuitive exploration on any device."
             },
             {
-                "title": "Stylish and Optimized at the Same Time",
-                "text": "The art of defining custom styles for each component is combined with a strategic approach to optimizing style sheets. Each component has its distinctive style, but to ensure efficiency and consistency, common styles are centralized in dedicated SCSS files: these SCSS files are shared by importing them into styles.scss, ensuring efficiency and consistency for a uniform design. \nThe importance of this practice lies in its convenience and resource savings. Styles declared only once become immediately available to all components without the need for unnecessary duplications. \n\nThis approach not only simplifies the maintenance and updating of styles but also ensures visual consistency throughout the portfolio. When new components integrate into the system, they can instantly benefit from existing styles, reducing development time and ensuring uniformity in design. \n\nOptimizing style sheets is not just a matter of technical efficiency but a key element in maintaining a consistent and professional style on all pages of my portfolio. Intelligent organization of styles consolidates the overall management of design, demonstrating how practicality combines with elegance in every aspect of web development."
+                "title": "Accessibility and scalability: the REM choice",
+                "text": "In my approach to web design, I choose to use REMs to define text sizes. This choice not only optimizes accessibility, making the experience easier for all users but also ensures natural scalability across different platforms. By opting for REMs, I aim to create a design suitable for every screen size and the needs of visually impaired users."
             },
             {
-                "title": "No Fluttering of Material or Stupid Bootstrap Classes in My Portfolio",
-                "text": "From the beginning, I chose a different path for this project. I prefer to avoid the massive use of pre-packaged frameworks, finding that their classes are often invasive. \nThe freedom to design a unique style is essential, and I believe that Material and Bootstrap are more suitable when the site's graphics are designed to adapt to their default style."
+                "title": "No Material fluttering or silly Bootstrap Classes in My Portfolio",
+                "text": "From the start, I chose a different path for this project. I prefer to avoid the extensive use of prepackaged frameworks, finding their classes often invasive. \nThe freedom to design a unique style is essential, and I believe Material and Bootstrap are more suitable when the site's graphics are designed to adapt to their default style, not fitting for a customized project."
             },
             {
-                "title": "GitHub: Transparency and Security",
-                "text": "Transparency in my development process is a priority, which is why you can explore the code of my portfolio on GitHub. During development, I maintained an organized approach using dedicated commits and branches. \n\nGitHub becomes an additional behind-the-scenes of my project. Commits reflect the various stages of development, allowing you to follow the evolution of the code. Branches, strategically used, highlight the different features implemented or corrections made. \n\nThis practice not only facilitates code control but also demonstrates commitment and transparency in project management. I hope that exploring my repository on GitHub adds a level of understanding and trust in the development process behind my portfolio."
+                "title": "Optimized and stylish",
+                "text": "Defining custom styles and optimizing style sheets is essential. \n Centralized SCSS files in styles.scss ensure efficiency and consistency, simplifying maintenance. \n New components benefit from existing styles, reducing development time. \n Optimization is crucial for a consistent and professional style, demonstrating the connection between practicality and elegance in web development."
+            },
+            {
+                "title": "GitHub: transparency and security",
+                "text": "Organized commits and dedicated branches reflect the phases and features implemented. \n This practice facilitates code control, demonstrating commitment and transparency in project management. \n Exploring my GitHub repository adds understanding and trust in the development process."
+            },
+            {
+                "title": "Advanced branch management for maximum efficiency",
+                "text": "Development with two main branches: master for stable deployment and stage for active development. \n Stage is linked to an online environment for pre-deployment verification. \n By keeping master stable, I ensure not to publish unwanted changes. \n When stage is secure, I merge it into master to release new features also on the production site."
+            },
+            {
+                "title": "Email management without backend: EmailJS",
+                "text": "The form on the Contact Me page uses the EmailJS library to simplify email sending without having to work on the backend as well. \n A convenient solution that frees up time to focus on the rest of the project."
+            },
+            {
+                "title": "International Portfolio: The Multilingual Experience",
+                "text": "In order to welcome an international audience, I introduced multilingual management in my portfolio using ngx-translate. \n This library facilitates a smooth language transition, allowing easy translation of content both in Italian and English. \n This choice aims to enhance the accessibility of my project, ensuring an inclusive and global user experience."
+            },
+            {
+                "title": "Between light and dark: your choice, your style",
+                "text": "Discover visual flexibility in my online space. With a custom design, activate the light theme by clicking on the sun or switch to the dark theme by clicking on the moon. \n A feature developed to adapt to your preferences and offer you a comfortable visual environment during navigation."
+            },
+            {
+                "title": "Only LocalStorage",
+                "text": "My choice to preserve privacy: zero cookies, only local storage. \n I use this technique to save only user preferences, such as the choice between light or dark theme and the selected language. \n An approach to privacy respect, ensuring a personalized experience without compromising security."
+            },
+            {
+                "title": "This Portfolio is just the beginning!",
+                "text": "All of this is just a taste of my skills. There are still numerous projects to explore and implementations to be made to make this portfolio even richer and more dynamic."
             }
+            
         ]
-    },
+    },    
     "contact_me": {
         "title": "Contact Me",
-        "intro": "Do you have questions or suggestions? Fill out the form for a quick response",
-        "mail_sent": "Thank you for your message! I will reply soon.",
+        "intro": "Have questions or suggestions? Fill out the form for a quick response.",
+        "mail_sent": "Thank you for your message! I'll respond soon.",
         "form": {
-            "your_name": "Your name",
-            "your_email": "Your email",
+            "your_name": "Your Name",
+            "your_email": "Your Email",
             "email_validation": "You must enter a valid email address",
-            "subject": "Email subject",
-            "message": "Your message",
-            "button": "Send email",
+            "subject": "Email Subject",
+            "message": "Your Message",
+            "button": "Send Email",
             "error_message": "The data you entered is incorrect, please try again"
         }
-    }
+    }    
 }
         

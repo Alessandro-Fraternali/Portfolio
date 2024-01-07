@@ -5,10 +5,24 @@
 
     .inner-page{    
         overflow-y: hidden;
+
+        h2{
+            padding-bottom: 20px;
+        }
+
+        p{
+            padding-bottom: 32px;
+            @include static-slide-right;
+        }
+
         .project-cards-container{
             display: grid;
             gap: 40px;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+            @include xxs{
+                gap: 100px;
+            }
 
             @include smartphone{
                 gap: 100px;

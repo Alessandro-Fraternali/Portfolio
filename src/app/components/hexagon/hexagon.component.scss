@@ -38,7 +38,7 @@
       background-color: $accent-color;
     }
 
-    &:hover .inner-hexagon .hexagon-link{
+    &:hover .inner-hexagon h2 .hexagon-link{
       color: $accent-color;
     }
 
@@ -73,17 +73,25 @@
       background-color: $background-color;
     }
   
-    .hexagon-link {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    h2{
       height: 100%;
-      width: 100%;
-      clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-      @include on-off-text;
-      text-align: center;
-    }  
+        width: 100%;
+      .hexagon-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        @include on-off-text;
+        text-align: center;
+  
+        @media (min-width: 1400px) {
+          font-size: 1.4rem;
+        }
+      } 
+    } 
 }
 
 /* Stili specifici per gli ultimi due esagoni */
@@ -122,7 +130,11 @@
     background-color: $light-accent-color;
   }
 
-  &:hover .inner-hexagon .hexagon-link{
+  .inner-hexagon h2 .hexagon-link{
+      color: $light-text-color;
+  }
+
+  &:hover .inner-hexagon h2 .hexagon-link{
     color: $light-accent-color;
   }
 

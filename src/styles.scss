@@ -11,6 +11,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: $default-font;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -40,6 +41,14 @@ body {
     padding: $inner-container;
     position: relative;
     overflow-x: hidden;
+
+    @include xxs{
+      padding: 0 15px 40px 15px;
+
+      h2{
+        white-space: break-spaces;
+      }
+    }
 
     @include smartphone{
       padding-bottom: 150px;
