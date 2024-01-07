@@ -18,6 +18,12 @@
         "code_link": ""
     },
     {
+        "title": "Cosmobile (old)",
+        "img": "../assets/images/projects/cosmobileold.jpg",
+        "site_link": "https://alessandro-fraternali.github.io/Cosmobile/",
+        "code_link": "https://github.com/Alessandro-Fraternali/Cosmobile"
+    },
+    {
         "title": "Novalux",
         "img": "../assets/images/projects/novalux.jpg",
         "site_link": "https://novalux.com/",
