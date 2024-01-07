@@ -14,7 +14,7 @@
             overflow-x: hidden;
 
             &::-webkit-scrollbar {
-                width: 6px;
+                width: 0px;
             }
             
             &::-webkit-scrollbar-thumb {
@@ -51,6 +51,27 @@
                                 text-align: left;
                             }
                         }
+                    }
+
+                    &:last-child{
+                            align-self: center;
+                            padding-left: 10px;
+                            @include slide-up;
+                            
+                            .timeline-element{
+                                justify-self: center;
+                                .timeline-title{
+                                    flex-direction: column-reverse;
+                                    gap: 0;
+                                }
+                        
+                                .timeline-text{
+                                    p{
+                                        text-align: center;
+                                    }
+                                }
+                            }
+                        
                     }
                 }
             }
