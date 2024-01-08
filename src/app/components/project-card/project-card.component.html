@@ -2,8 +2,8 @@
     <div class="project-card-img">
         <img [src]="projectCard.img" [alt]="projectCard.title">
         <div class="project-card-buttons">
-            <a [href]="projectCard.site_link">{{ 'projects.visit_the_site' | translate }}</a>
-            <a *ngIf="projectCard.code_link" [href]="projectCard.code_link">{{ 'projects.explore_the_code' | translate }}</a>
+            <a target="_blank" [href]="projectCard.site_link">{{ 'projects.visit_the_site' | translate }}</a>
+            <a target="_blank" *ngIf="projectCard.code_link" [href]="projectCard.code_link">{{ 'projects.explore_the_code' | translate }}</a>
         </div>
     </div>
     <h3>
