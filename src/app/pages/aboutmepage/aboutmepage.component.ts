@@ -15,7 +15,7 @@ export class AboutmepageComponent {
   aboutMeLoaded = false;
   footerLinks = [
     { url: '/contact_me', label: 'contact_me.title' },
-    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/home', label: 'homepage.return_button' },
     { url: '/projects', label: 'projects.title' },
   ];
   

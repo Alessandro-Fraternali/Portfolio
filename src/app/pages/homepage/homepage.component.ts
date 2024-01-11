@@ -11,23 +11,23 @@ export class HomepageComponent {
   hexagons = [
     {
       title: 'about_me.title',
-      link: 'about_me',
+      link: '/about',
     },
     {
       title: 'projects.title',
-      link: 'projects',
+      link: '/projects',
     },
     {
       title: 'certificates.title',
-      link: 'certificates',
+      link: '/certificates',
     },
     {
       title: 'details.title',
-      link: 'details',
+      link: '/details',
     },
     {
       title: 'contact_me.title',
-      link: 'contact_me',
+      link: '/contact_me',
     },
   ];
 
