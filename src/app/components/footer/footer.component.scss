@@ -1,8 +1,6 @@
 @import '../../../styles.scss';
 
 footer {
-    display: flex;
-    justify-content: space-around;
     padding: 10px;
     background-color: $background-color;
     border-top: 3px solid $accent-color;
@@ -12,53 +10,59 @@ footer {
     width: 100vw;
     height: $footer-height;
     z-index: 10;
-
-    a {
-        @include button;
-        opacity: 1;
+    
+    nav{
         display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: auto;
-    }
-
-    .mobile-buttons{
-        width: 40px;
-        
-        @include tablet{
+        justify-content: space-around;
+        a {
+            @include button;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: auto;
+        }
+    
+        .mobile-buttons{
+            width: 40px;
+            
+            @include tablet{
+                display: none;
+            }
+    
+            @include laptop{
+                display: none;
+            }
+    
+            @include desktop{
+                display: none;
+            }
+        }
+    
+        .desktop-buttons{
             display: none;
-        }
-
-        @include laptop{
-            display: none;
-        }
-
-        @include desktop{
-            display: none;
-        }
-    }
-
-    .desktop-buttons{
-        display: none;
-
-        @include tablet{
-            display: block;
-        }
-
-        @include laptop{
-            display: block;
-        }
-
-        @include desktop{
-            display: block;
+    
+            @include tablet{
+                display: block;
+            }
+    
+            @include laptop{
+                display: block;
+            }
+    
+            @include desktop{
+                display: block;
+            }
         }
     }
 }
 
 .light-theme {
-    a {
-        @include light-button;
+    nav{
+        a {
+            @include light-button;
+        }
     }
 }
 

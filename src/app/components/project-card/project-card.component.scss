@@ -49,21 +49,24 @@
             display: flex;
             justify-content: space-around;
             align-items: center;
-            // width: 100%;
             height: 100%;
-
+            width: -webkit-fill-available;
+            
             @include xxs{
                 align-items: flex-end;
                 height: 155%;
+                width: inherit;
             }
-
+            
             @include smartphone{
                 align-items: flex-end;
                 height: 155%;
+                width: inherit;
             }
 
             a{
                 @include button;
+                
 
                 @include xxs{
                     opacity: 1;
