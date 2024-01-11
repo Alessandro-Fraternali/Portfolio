@@ -29,7 +29,7 @@
     "projects": {
         "title": "Progetti",
         "intro": "Esplora il mio percorso nel mondo dello sviluppo web attraverso i progetti che ho realizzato",
-        "subtitle": "Ogni progetto a cui ho lavorato ha un bottone per visitare il sito, mentre i progetti a cui ho lavorato individualmente hanno anche un bottone che porta al repository github associato",
+        "subtitle": "Ogni progetto in cui ho collaborato ha un bottone per visitare il sito, mentre i progetti a cui ho lavorato individualmente hanno anche un bottone che porta al repository github associato",
         "visit_the_site": "Visita il sito",
         "explore_the_code": "Esplora il codice"
     },

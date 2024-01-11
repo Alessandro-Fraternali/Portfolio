@@ -9,14 +9,14 @@
                 <app-title-text *ngFor="let bio of aboutMe.bio; let i = index" [titleText]="bio" [style.--order]="i + 1"></app-title-text>
             </div>
             <app-separator></app-separator>
-            <div class="skills-list-container">
+            <aside class="skills-list-container">
                 <ul>
                     <li #rightSlideOut class="right-slide-out" *ngFor="let skill of SkillsList; let i = index" [style.--order]="i + 1">
                         <img [src]="skill.icon" [alt]="skill.title">
                         {{ skill.title }}
                     </li>
                 </ul>
-            </div>
+            </aside>
         </div>
     </div>
     <app-footer [links]="footerLinks"></app-footer>
