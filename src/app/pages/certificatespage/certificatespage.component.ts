@@ -12,7 +12,7 @@ export class CertificatespageComponent {
   CertificateList: any = [];
   footerLinks = [
     { url: '/projects', label: 'projects.title' },
-    { url: '/homepage', label: 'homepage.return_button' },
+    { url: '/home', label: 'homepage.return_button' },
     { url: '/details', label: 'details.title' },
   ];
   

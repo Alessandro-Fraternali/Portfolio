@@ -20,8 +20,8 @@ export class ContactmepageComponent {
   isLightTheme: boolean = false;
   footerLinks = [
     { url: '/details', label: 'details.title' },
-    { url: '/homepage', label: 'homepage.return_button' },
-    { url: '/about_me', label: 'about_me.title' },
+    { url: '/home', label: 'homepage.return_button' },
+    { url: '/about', label: 'about_me.title' },
   ];
 
   form: FormGroup = this.fb.group({
