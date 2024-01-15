@@ -25,6 +25,7 @@ import { TimelineElementComponent } from './components/timeline-element/timeline
 import { PrivacyBannerComponent } from './components/privacy-banner/privacy-banner.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { SeparatorComponent } from './components/separator/separator.component';
+import { RouterModule } from '@angular/router';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -56,6 +57,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
+    RouterModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

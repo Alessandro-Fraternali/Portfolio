@@ -12,12 +12,6 @@ export class DetailspageComponent {
   details: any = [];
   detailsLoaded = false;
 
-  footerLinks = [
-    { url: '/certificates', label: 'certificates.title' },
-    { url: '/home', label: 'homepage.return_button' },
-    { url: '/contact_me', label: 'contact_me.title' },
-  ];
-
   constructor(private translationService: TranslationService, private themeService: ThemeService) {}
 
   ngOnInit(): void {

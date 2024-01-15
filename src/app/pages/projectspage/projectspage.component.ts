@@ -10,12 +10,6 @@ import { ThemeService } from 'src/app/services/theme-service.service';
 export class ProjectspageComponent {
   isLightTheme: boolean = false;
   ProjectList: any = [];
-  footerLinks = [
-    { url: '/about', label: 'about_me.title' },
-    { url: '/home', label: 'homepage.return_button' },
-    { url: '/certificates', label: 'certificates.title' },
-  ];
-  
   constructor(private projectService: ProjectService, private themeService: ThemeService) {}
 
   ngOnInit(){

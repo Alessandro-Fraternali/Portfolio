@@ -10,11 +10,6 @@ import { ThemeService } from 'src/app/services/theme-service.service';
 export class CertificatespageComponent {
   isLightTheme: boolean = false;
   CertificateList: any = [];
-  footerLinks = [
-    { url: '/projects', label: 'projects.title' },
-    { url: '/home', label: 'homepage.return_button' },
-    { url: '/details', label: 'details.title' },
-  ];
   
   constructor(private certificatesService: CertificatesService, private themeService: ThemeService) {}
 

@@ -18,11 +18,6 @@ export class ContactmepageComponent {
   errorForm: boolean = false;
   mailSent: boolean = false
   isLightTheme: boolean = false;
-  footerLinks = [
-    { url: '/details', label: 'details.title' },
-    { url: '/home', label: 'homepage.return_button' },
-    { url: '/about', label: 'about_me.title' },
-  ];
 
   form: FormGroup = this.fb.group({
     from_name: ["", Validators.required],

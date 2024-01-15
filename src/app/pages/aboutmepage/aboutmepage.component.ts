@@ -13,11 +13,6 @@ export class AboutmepageComponent {
   SkillsList: any = [];
   aboutMe: any = [];
   aboutMeLoaded = false;
-  footerLinks = [
-    { url: '/contact_me', label: 'contact_me.title' },
-    { url: '/home', label: 'homepage.return_button' },
-    { url: '/projects', label: 'projects.title' },
-  ];
   
   constructor(private skillsService: SkillsService, private translationService: TranslationService, private themeService: ThemeService) {}
   ngOnInit(){
