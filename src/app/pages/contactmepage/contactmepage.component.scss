@@ -8,7 +8,7 @@
 
     .inner-page{
         padding-bottom: 0;
-        height: 1000px;
+        min-height: 1000px;
 
         @include tablet{
             height: -webkit-fill-available;
