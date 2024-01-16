@@ -1,15 +1,20 @@
 <footer [class.light-theme]="isLightTheme">
     <nav *ngIf="linksMap[currentPage]">
-        <ng-template ngFor let-link [ngForOf]="linksMap[currentPage]">
-            <a *ngIf="link === linksMap[currentPage][0]" class="mobile-buttons" [routerLink]="link.url"><fa-icon [icon]="faChevronLeft"></fa-icon></a>
-        </ng-template>    
-        <ng-template ngFor let-link [ngForOf]="linksMap[currentPage]">
-            <a *ngIf="link === linksMap[currentPage][1]" class="mobile-buttons" [routerLink]="link.url"><fa-icon [icon]="faHouse"></fa-icon></a>
-        </ng-template>      
-        <ng-template ngFor let-link [ngForOf]="linksMap[currentPage]">
-            <a *ngIf="link === linksMap[currentPage][2]" class="mobile-buttons" [routerLink]="link.url"><fa-icon [icon]="faChevronRight"></fa-icon></a>
-        </ng-template>        
-        <!-- <a class="mobile-buttons" *ngFor="let link of linksMap[currentPage]" [routerLink]="link.url"></a> -->
-      <a class="desktop-buttons" *ngFor="let link of linksMap[currentPage]" [routerLink]="link.url">{{ link.label | translate }}</a>
+      <ng-container *ngIf="translate.currentLang === 'it'">
+        <ng-container *ngFor="let link of linksMap[currentPage]">
+            <a [routerLink]="link.url">
+                <fa-icon class="mobile-buttons" [icon]="link.icon"></fa-icon>
+                <span class="desktop-buttons">{{ link.label | translate }}</span>
+            </a>
+          </ng-container>
+      </ng-container>
+      <ng-container *ngIf="translate.currentLang === 'en'">
+        <ng-container *ngFor="let link of linksMap[currentPage]">
+            <a [href]="link.url">
+                <fa-icon class="mobile-buttons" [icon]="link.icon"></fa-icon>
+                <span class="desktop-buttons">{{ link.label | translate }}</span>
+            </a>
+          </ng-container>
+      </ng-container>
     </nav>
 </footer>
