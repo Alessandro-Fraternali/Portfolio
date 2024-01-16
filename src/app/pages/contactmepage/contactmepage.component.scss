@@ -12,10 +12,12 @@
 
         @include tablet{
             height: -webkit-fill-available;
+            min-height: -webkit-fill-available;
         }
         
         @include laptopAndDesktop{
             height: -webkit-fill-available;
+            min-height: -webkit-fill-available;
             overflow-y: hidden;
             padding-bottom: 0;
         }
