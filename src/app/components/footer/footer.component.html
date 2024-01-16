@@ -1,11 +1,20 @@
 <footer [class.light-theme]="isLightTheme">
-    <nav>
-        <a class="mobile-buttons" *ngFor="let link of links; let i = index" [routerLink]="link.url">
-            <ng-container *ngIf="i === 0"><fa-icon [icon]="faChevronLeft"></fa-icon></ng-container>
-            <ng-container *ngIf="i === 1"><fa-icon [icon]="faHouse"></fa-icon></ng-container>
-            <ng-container *ngIf="i === 2"><fa-icon [icon]="faChevronRight"></fa-icon></ng-container>
-        </a>
-        <a class="desktop-buttons" *ngFor="let link of links" [routerLink]="link.url">{{ link.label | translate }}</a>
+    <nav *ngIf="linksMap[currentPage]">
+      <ng-container *ngIf="translate.currentLang === 'it'">
+        <ng-container *ngFor="let link of linksMap[currentPage]">
+            <a [routerLink]="link.url">
+                <fa-icon class="mobile-buttons" [icon]="link.icon"></fa-icon>
+                <span class="desktop-buttons">{{ link.label | translate }}</span>
+            </a>
+          </ng-container>
+      </ng-container>
+      <ng-container *ngIf="translate.currentLang === 'en'">
+        <ng-container *ngFor="let link of linksMap[currentPage]">
+            <a [href]="link.url">
+                <fa-icon class="mobile-buttons" [icon]="link.icon"></fa-icon>
+                <span class="desktop-buttons">{{ link.label | translate }}</span>
+            </a>
+          </ng-container>
+      </ng-container>
     </nav>
 </footer>
-

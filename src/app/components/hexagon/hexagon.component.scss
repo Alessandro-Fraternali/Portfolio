@@ -14,6 +14,11 @@
       height: $hexagon-xs;
     }
 
+    @media (min-width: 200px) and (max-width: 299px) {
+      width: 100px;
+      height: 100px;
+    }
+
     @include smartphone {
       width: $hexagon-sm;
       height: $hexagon-sm;

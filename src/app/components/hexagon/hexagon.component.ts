@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from 'src/app/services/theme-service.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ThemeService } from 'src/app/services/theme-service.service';
 export class HexagonComponent {
   isLightTheme: boolean = false;
   @Input() hexagon: any;
-  constructor(private themeService: ThemeService) {}
+  constructor(private themeService: ThemeService, public translate: TranslateService) {}
 
   ngOnInit() {
     // Al cambio di pagina, verifica lo stato del tema e aggiorna di conseguenza

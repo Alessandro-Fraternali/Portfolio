@@ -7,9 +7,17 @@
     }
 
     .inner-page{
-        height: -webkit-fill-available;
+        padding-bottom: 0;
+        min-height: 1000px;
 
+        @include tablet{
+            height: -webkit-fill-available;
+            min-height: -webkit-fill-available;
+        }
+        
         @include laptopAndDesktop{
+            height: -webkit-fill-available;
+            min-height: -webkit-fill-available;
             overflow-y: hidden;
             padding-bottom: 0;
         }

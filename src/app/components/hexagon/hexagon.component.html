@@ -1,7 +1,10 @@
 <article class="hexagon" [class.light-theme]="isLightTheme">
     <div class="inner-hexagon">
       <h2>
-        <a [routerLink]="hexagon.link" class="hexagon-link">
+        <a *ngIf="translate.currentLang === 'it'" [routerLink]="hexagon.link" class="hexagon-link">
+          {{ hexagon.title | translate }}
+        </a>
+        <a *ngIf="translate.currentLang === 'en'" [href]="hexagon.link" class="hexagon-link">
           {{ hexagon.title | translate }}
         </a>
       </h2>
